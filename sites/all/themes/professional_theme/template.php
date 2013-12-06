@@ -87,10 +87,15 @@ function professional_theme_menu_local_tasks(&$variables) {
  * Override or insert variables into the node template.
  */
 function professional_theme_preprocess_node(&$variables) {
-  $node = $variables['node'];
+  /*$node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
+  */
+  $vars['classes_array'][] = 'node--' . $vars['type'] . '--' . $vars['view_mode'];
+  
+  // Make "node--NODETYPE--VIEWMODE.tpl.php" templates available for nodes
+  $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__' . $vars['view_mode'];
 }
 
 function professional_theme_page_alter($page) {
