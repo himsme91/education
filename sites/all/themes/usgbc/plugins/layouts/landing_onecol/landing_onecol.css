@@ -1,0 +1,38 @@
+/* $Id: onecol.css,v 1.1 $ */
+
+#mainCol {
+  float: left;
+}
+
+
+.subcontent-wrapper {
+  float: left;
+  width: 780px;
+}
+
+
+#panels-dnd-main {
+  overflow: hidden;
+}
+
+/* @group Tagline */
+	h2.tagline{
+		font-size: 28px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 18px;
+		line-height: 30px;
+		color: #333;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 20px;
+	}
+		h2.tagline span {
+			color: #646464;
+			font-size: 20px;
+			text-align: center;
+			line-height: 28px;
+			display: block;
+			margin-top: 10px;
+			font-weight: 400;
+		}
+	/* @end */

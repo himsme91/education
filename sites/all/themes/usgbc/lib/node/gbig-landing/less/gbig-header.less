@@ -1,0 +1,44 @@
+#gbig #gbig-header {
+	#gradient > .vertical(white, #f1f1f1);
+	padding: 60px 0 40px;
+	text-align: center;
+	border-bottom: none;
+	
+	&:before, &:after {
+		content: "";
+		.position(absolute, 0, auto, auto, 0, 0);
+		display: block;
+		width: 100%;
+	}
+	
+	&:before {
+		z-index: 0;
+		height: 400px;
+		background: url('../img/texture.png') repeat-x center bottom;
+	}
+	
+	&:after {
+		z-index: 1;
+		height: 306px;
+		background: url('../img/header-buildings.png') no-repeat center bottom;
+		visibility: visible;
+	}
+	
+	.wrapper {
+		position: relative;
+		z-index: 2;
+	}
+	
+	h1 { .main-headline; }
+	h2 { .sub-headline; }
+	
+	#gbig-video {
+		.size(373px, 662px);
+		margin: 40px auto 0;
+		background: @grayLight;
+		border: 1px solid #a1a1a1;
+		.box-shadow(0 8px 24px fade(black, 8%));
+		
+		.btn-group { display: none; }
+	}
+}

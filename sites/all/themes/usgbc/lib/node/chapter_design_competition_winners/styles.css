@@ -1,0 +1,52 @@
+/* @group Design Competition Previous Winners */
+div.winner {
+    overflow: hidden;
+}
+
+div.winner img.left {
+    margin-right: 30px;
+}
+
+div.winner .info {
+    float: left;
+    width: 210px;
+}
+
+div.winner h4 {
+    font-size: 14px;
+    color: #555555;
+}
+
+div.winner p.placement {
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: 400px;
+    background:  url(../../img/placement-bg.gif) no-repeat left;
+    margin-left:-18px;
+    padding-left: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.winner:last-child p.placement {
+    background-image: url(../../img/honorable-mention-bg.gif);
+}
+
+div.winner .enlarge {
+    clear: left;
+    float:left;
+    font-size: 8px;
+    line-height: 10px;
+    padding-left: 14px;
+    background:  url(../../img/magnify-sm.gif) no-repeat left;
+    text-transform: uppercase;
+    color:#656565;
+    letter-spacing:1px;
+    font-weight: 400;
+}
+
+div.winner .enlarge:hover {
+    color:#8a8a8a;
+}
+/* @end */

@@ -1,0 +1,184 @@
+/* @override 
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/lib/css/section/help.css */
+
+/* @group Global theme adjustments */
+.modal-content input.field { margin-top: 3px; }
+/* @end */
+
+/* @group Sub-columns */
+.subCol-wrapper {
+	margin:  0 0 20px 0;
+	display: inline-block;
+}
+
+.subCol-row {
+	margin: 20px 0 0;
+	overflow: hidden;
+	float: left;
+}
+
+.subCol-row:nth-child(3n + 1) {
+	clear: left;
+}
+
+.subCol-line-row {
+	margin: 15px 0 0;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	float:left;
+	height: 162px;
+}
+
+.subCol-cell { float: left; }
+
+.twoColLeft .threeCol .subCol-cell {
+	width: 230px;
+	margin-left: 15px;
+}
+	.subCol-cell .styledlist li{
+		margin-bottom: 0;
+	}
+	
+.twoColLeft .threeCol .subCol-cell:first-child { margin-left: 0; }
+
+.fullCol .fourCol .subCol-cell {
+	width: 230px;
+	margin-left: 13px;
+}
+
+.fullCol .fourCol .subCol-cell:first-child { margin-left: 0; }
+/* @end */
+
+/* @group Call to Action Bar */
+.cta-bar,
+.survey {
+    margin: 15px 0;
+    overflow: hidden;
+    background: #F5F5F5;
+    border: 1px solid #D8DAD9;
+    
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    
+    -moz-box-shadow: 0 0 2px #FFF inset;
+    -webkit-box-shadow: 0 0 2px #FFF inset;
+    box-shadow: 0 0 2px #FFF inset;
+}
+
+.cta-bar h3,
+.survey h3 {
+    float: left;
+    font-size: 18px;
+    color: #505050;
+    padding-left: 12px;
+    margin: 0;
+    line-height: 40px;
+    height: 40px;
+}
+
+.cta-bar a.alt-button {
+    float: right;
+    padding: 0 25px;
+    line-height: 40px;
+    height: 40px;
+    margin-right: 0;
+    
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+/* @end */
+
+/* @group Q&A */
+div.question { margin-bottom: 20px; }
+div.answer { position: relative; }
+
+div.answer h4.label {
+	color: #909090;
+	letter-spacing: .1em;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+div.answer .user-feedback {
+	color: #bec1c3;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/* @end */
+
+/* @group Help Topics */
+.extra-links { display: none; }
+
+li.extra-links {
+    background: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li.show-hide-links { background: none !important; }
+
+li.show-hide-links a { 
+	color: #666;
+	background: url(../../img/arrow-sm.png) right center no-repeat;
+	padding-right: 8px;
+	font-size: 11px;
+}
+
+li.show-hide-links a:hover { color: black; }
+/* @end */
+
+/* @group Survey Forms */
+.survey {
+    padding: 12px;
+    margin-bottom: 25px;
+}
+
+.survey h3 {
+    padding: 0;
+    line-height: 20px;
+    height: auto;
+    margin-right: 25px;
+    margin-bottom: 8px;
+}
+
+.survey .group {
+    padding-top: 2px;
+}
+
+.survey .group label {
+    float: left;
+    margin-left: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.survey textarea {
+    background-color: white;
+    width: 506px;
+    height: 75px;
+}
+/* @end */
+
+	#content p.sub-text {
+		margin: 8px 0 0;
+		text-align: center;
+	}
+	.chat-button.arrow-button span{
+		padding:3px 0 3px 24px;
+	    line-height:18px;
+	    background: url(../../img/chat-icon.gif) no-repeat left;
+	}
+
+
+
+#modal {
+    position: absolute !important;
+}
+
+
+
+
+
+

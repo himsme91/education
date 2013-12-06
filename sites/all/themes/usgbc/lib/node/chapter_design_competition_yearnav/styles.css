@@ -1,0 +1,23 @@
+/* @group Design Competition Winners - Year Nav */
+ul.year-nav {
+    margin: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+ul.year-nav li {
+    float: left;
+    margin-right: 40px;
+}
+
+ul.year-nav li a {
+    font-size: 18px;
+    color: #c4c4c4;
+    font-weight: 400;
+}
+
+ul.year-nav li.selected a,
+ul.year-nav li a:hover {
+    color: #898b8c;
+}
+/* @end */

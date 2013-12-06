@@ -1,0 +1,35 @@
+{ "nodes":[
+     {
+         "node":{
+        "SKU":"3692",
+		"base_price":	"65",
+		"member_price": "50"
+		}
+	},
+	{
+    	"node":{
+		"SKU":"3693",
+		"base_price":	"78",
+		"member_price": "68"
+		}
+	},
+	
+	{
+    	"node":{
+    	"SKU":"659",
+		"base_price":	"50",
+		"member_price": "41.5"
+		}
+	},
+	
+	{
+    	"node":{
+    	"SKU":"916",
+		"base_price":	"65",
+		"member_price": "50"
+		}
+	}
+	
+	]
+}
+

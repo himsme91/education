@@ -1,0 +1,470 @@
+/* @group Stage Elements */
+#member-banner {
+	height: 299px;
+	border: 1px solid #f6f6f6;
+	background: url('img/stage-bg.png') no-repeat;
+	position: relative;
+}
+
+#member-banner p {
+	font-size: 28px;
+	line-height: 1.2em;
+	text-align: center;
+	padding-top: 105px;
+	font-weight: 100;
+	color: #898b8d;
+}
+
+/* remove from browsers 
+that don't support animation */
+.ie6 #member-banner p,
+.ie7 #member-banner p,
+.ie8 #member-banner p,
+.ie9 #member-banner p {
+	display: none;
+}
+
+
+
+#member-banner p strong {
+	font-weight: bold;
+	color: #85c240;
+	display: block;
+}
+
+#member-banner .industries .industry {
+	position: absolute;
+	width: 78px;
+	height: 88px;
+	z-index: 1;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+
+	#member-banner .industries .architects {
+		background-image: url('img/architects.png');
+		left: 309px;
+		top: 33px;
+	}
+	
+	#member-banner .industries .builders {
+		background-image: url('img/builders.png');
+		left: 390px;
+		top: 33px;
+	}
+	
+	#member-banner .industries .real-estate {
+		background-image: url('img/real-estate.png');
+		left: 269px;
+		top: 103px;
+	}
+	
+	#member-banner .industries .consultants {
+		background-image: url('img/consultants.png');
+		left: 350px;
+		top: 103px;
+	}
+	
+	#member-banner .industries .engineers {
+		background-image: url('img/engineers.png');
+		left: 431px;
+		top: 103px;
+	}
+	
+	#member-banner .industries .non-profit {
+		background-image: url('img/non-profit.png');
+		left: 309px;
+		top: 173px;
+	}
+	
+	#member-banner .industries .education {
+		background-image: url('img/education.png');
+		left: 390px;
+		top: 173px;
+	}
+	
+#member-banner .member-logo {
+	width: 251px;
+	height: 251px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	margin-top: -125px;
+	z-index: 2;
+	background: url('img/member-logo.png') no-repeat;
+	opacity: 0;
+}
+
+#member-banner .final-scene {
+	width: 100%;
+	height: 299px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	background: url('img/final-scene.png') no-repeat;
+	opacity: 0;
+}
+/* @end */
+
+/* @group Animations */
+	/* @group Headline Fade-Out */
+	@-webkit-keyframes headlineFadeOut {
+		from {
+			-webkit-transform: scale(1);
+		}
+		
+		38% {
+			opacity: 1;
+			-webkit-transform: scale(1.2);
+		}
+		
+		to {
+			opacity: 0;
+			-webkit-transform: scale(.8);
+		}
+	}
+	
+	@-moz-keyframes headlineFadeOut {
+		from {
+			-moz-transform: scale(1);
+		}
+		
+		38% {
+			opacity: 1;
+			-moz-transform: scale(1.2);
+		}
+		
+		to {
+			opacity: 0;
+			-moz-transform: scale(.8);
+		}
+	}
+	
+	@-o-keyframes headlineFadeOut {
+		from {
+			-o-transform: scale(1);
+		}
+		
+		38% {
+			opacity: 1;
+			-o-transform: scale(1.2);
+		}
+		
+		to {
+			opacity: 0;
+			-o-transform: scale(.8);
+		}
+	}
+	
+	@-ms-keyframes headlineFadeOut {
+		from {
+			-ms-transform: scale(1);
+		}
+		
+		38% {
+			opacity: 1;
+			-ms-transform: scale(1.2);
+		}
+		
+		to {
+			opacity: 0;
+			-ms-transform: scale(.8);
+		}
+	}
+	
+	@keyframes headlineFadeOut {
+		from {
+			transform: scale(1);
+		}
+		
+		38% {
+			opacity: 1;
+			transform: scale(1.2);
+		}
+		
+		to {
+			opacity: 0;
+			transform: scale(.8);
+		}
+	}
+	
+	#member-banner.animate p {
+		-webkit-animation: headlineFadeOut .6s ease 2.5s 1 both;
+		-moz-animation: headlineFadeOut .6s ease 2.5s 1 both;
+		-o-animation: headlineFadeOut .6s ease 2.5s 1 both;
+		-ms-animation: headlineFadeOut .6s ease 2.5s 1 both;
+		animation: headlineFadeOut .6s ease 2.5s 1 both;
+	}
+	/* @end */
+	
+	/* @group Industries Pop-In */
+	@-webkit-keyframes industryPop {
+		from {
+			opacity: 0;
+			-webkit-transform: scale(.8);
+		}
+		
+		62% {
+			opacity: 1;
+			-webkit-transform: scale(1.25);
+		}
+		
+		to {
+			opacity: 1;
+			-webkit-transform: scale(1);
+		}
+	}
+	
+	@-moz-keyframes industryPop {
+		from {
+			opacity: 0;
+			-moz-transform: scale(.8);
+		}
+		
+		62% {
+			opacity: 1;
+			-moz-transform: scale(1.25);
+		}
+		
+		to {
+			opacity: 1;
+			-moz-transform: scale(1);
+		}
+	}
+	
+	@-o-keyframes industryPop {
+		from {
+			opacity: 0;
+			-o-transform: scale(.8);
+		}
+		
+		62% {
+			opacity: 1;
+			-o-transform: scale(1.25);
+		}
+		
+		to {
+			opacity: 1;
+			-o-transform: scale(1);
+		}
+	}
+	
+	@-ms-keyframes industryPop {
+		from {
+			opacity: 0;
+			-ms-transform: scale(.8);
+		}
+		
+		62% {
+			opacity: 1;
+			-ms-transform: scale(1.25);
+		}
+		
+		to {
+			opacity: 1;
+			-ms-transform: scale(1);
+		}
+	}
+	
+	@keyframes industryPop {
+		from {
+			opacity: 0;
+			transform: scale(.8);
+		}
+		
+		62% {
+			opacity: 1;
+			transform: scale(1.25);
+		}
+		
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	
+	#member-banner.animate .consultants {
+		-webkit-animation: industryPop .2s ease 3.2s 1 both;
+		-moz-animation: industryPop .2s ease 3.2s 1 both;
+		-o-animation: industryPop .2s ease 3.2s 1 both;
+		-ms-animation: industryPop .2s ease 3.2s 1 both;
+		animation: industryPop .2s ease 3.2s 1 both;
+	}
+	
+	#member-banner.animate .builders {
+		-webkit-animation: industryPop .2s ease 3.25s 1 both;
+		-moz-animation: industryPop .2s ease 3.25s 1 both;
+		-o-animation: industryPop .2s ease 3.25s 1 both;
+		-ms-animation: industryPop .2s ease 3.25s 1 both;
+		animation: industryPop .2s ease 3.25s 1 both;
+	}
+	
+	#member-banner.animate .engineers {
+		-webkit-animation: industryPop .2s ease 3.3s 1 both;
+		-moz-animation: industryPop .2s ease 3.3s 1 both;
+		-o-animation: industryPop .2s ease 3.3s 1 both;
+		-ms-animation: industryPop .2s ease 3.3s 1 both;
+		animation: industryPop .2s ease 3.3s 1 both;
+	}
+	
+	#member-banner.animate .education {
+		-webkit-animation: industryPop .2s ease 3.35s 1 both;
+		-moz-animation: industryPop .2s ease 3.35s 1 both;
+		-o-animation: industryPop .2s ease 3.35s 1 both;
+		-ms-animation: industryPop .2s ease 3.35s 1 both;
+		animation: industryPop .2s ease 3.35s 1 both;
+	}
+	
+	#member-banner.animate .non-profit {
+		-webkit-animation: industryPop .2s ease 3.4s 1 both;
+		-moz-animation: industryPop .2s ease 3.4s 1 both;
+		-o-animation: industryPop .2s ease 3.4s 1 both;
+		-ms-animation: industryPop .2s ease 3.4s 1 both;
+		animation: industryPop .2s ease 3.4s 1 both;
+	}
+	
+	#member-banner.animate .real-estate {
+		-webkit-animation: industryPop .2s ease 3.45s 1 both;
+		-moz-animation: industryPop .2s ease 3.45s 1 both;
+		-o-animation: industryPop .2s ease 3.45s 1 both;
+		-ms-animation: industryPop .2s ease 3.45s 1 both;
+		animation: industryPop .2s ease 3.45s 1 both;
+	}
+	
+	#member-banner.animate .architects {
+		-webkit-animation: industryPop .2s ease 3.5s 1 both;
+		-moz-animation: industryPop .2s ease 3.5s 1 both;
+		-o-animation: industryPop .2s ease 3.5s 1 both;
+		-ms-animation: industryPop .2s ease 3.5s 1 both;
+		animation: industryPop .2s ease 3.5s 1 both;
+	}
+	/* @end */
+	
+	/* @group Member Logo Fade In */
+	@-webkit-keyframes logoFadeIn {
+		from {
+			opacity: 0;
+			-webkit-transform: scale(.9);
+		}
+		
+		62% {
+			-webkit-transform: scale(1);
+		}
+		
+		to {
+			opacity: 1;
+			-webkit-transform: scale(1);
+		}
+	}
+	
+	@-moz-keyframes logoFadeIn {
+		from {
+			opacity: 0;
+			-moz-transform: scale(.9);
+		}
+		
+		62% {
+			-moz-transform: scale(1);
+		}
+		
+		to {
+			opacity: 1;
+			-moz-transform: scale(1);
+		}
+	}
+	
+	@-o-keyframes logoFadeIn {
+		from {
+			opacity: 0;
+			-o-transform: scale(.9);
+		}
+		
+		62% {
+			-o-transform: scale(1);
+		}
+		
+		to {
+			opacity: 1;
+			-o-transform: scale(1);
+		}
+	}
+	
+	@-ms-keyframes logoFadeIn {
+		from {
+			opacity: 0;
+			-ms-transform: scale(.9);
+		}
+		
+		62% {
+			-ms-transform: scale(1);
+		}
+		
+		to {
+			opacity: 1;
+			-ms-transform: scale(1);
+		}
+	}
+	
+	@keyframes logoFadeIn {
+		from {
+			opacity: 0;
+			transform: scale(.9);
+		}
+		
+		62% {
+			transform: scale(1);
+		}
+		
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	
+	#member-banner.animate .member-logo {
+		-webkit-animation: logoFadeIn 3s ease 6s 1 both;
+		-moz-animation: logoFadeIn 3s ease 6s 1 both;
+		-o-animation: logoFadeIn 3s ease 6s 1 both;
+		-ms-animation: logoFadeIn 3s ease 6s 1 both;
+		animation: logoFadeIn 3s ease 6s 1 both;
+	}
+	/* @end */
+	
+	/* @group Final Scene Fade In */
+	@-webkit-keyframes finalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	
+	@-moz-keyframes finalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	
+	@-o-keyframes finalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	
+	@-ms-keyframes finalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	
+	@keyframes finalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	
+	#member-banner.animate .final-scene {
+		-webkit-animation: finalFadeIn 5s ease 7s 1 both;
+		-moz-animation: finalFadeIn 5s ease 7s 1 both;
+		-o-animation: finalFadeIn 5s ease 7s 1 both;
+		-ms-animation: finalFadeIn 5s ease 7s 1 both;
+		animation: finalFadeIn 5s ease 7s 1 both;
+	}
+	/* @end */
+/* @end */

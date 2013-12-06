@@ -1,0 +1,24 @@
+/* $Id: twocol_leftmain.css,v 1.1  $ */
+
+#mainCol {
+  float: left;
+}
+
+.subcontent-wrapper {
+  float: left;
+  width: 100% !important;
+}
+
+#mainCol,
+#content.twoColRight .subcontent-wrapper #mainCol { 
+  width: 720px;
+}
+
+#sideCol {
+  float: right;
+  width: 210px;
+}
+
+#panels-dnd-main {
+  overflow: hidden;
+}

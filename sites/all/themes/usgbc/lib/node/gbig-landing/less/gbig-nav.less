@@ -1,0 +1,37 @@
+#gbig #gbig-nav {
+	background: @tealDark;
+	padding: 60px 0;
+	
+	a {
+		float: left;
+		width: 300px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+		padding: 20px 20px 20px 75px;
+		position: relative;
+		
+		&:hover { background: lighten(@tealDark, 5%); }
+		
+		strong {
+			font-size: 24px;
+			font-weight: 700;
+			color: white;
+			display: block;
+			margin-bottom: .25em;
+		}
+		
+		span {
+			color: @teal;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 1.3em;
+		}
+		
+		img {
+			display: block;
+			.position(absolute, auto, 0, auto, auto, 0);
+		}
+	}
+	
+	a:first-child, a:nth-child(4) { margin-left: 0;}
+}

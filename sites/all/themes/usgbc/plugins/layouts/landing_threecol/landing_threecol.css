@@ -1,0 +1,80 @@
+/* $Id: landing_threecol.css,v 1.1 $ */
+
+/* @group 3-Col Landing */
+
+.three-cols {
+    margin-left: -20px;
+    padding-bottom: 5px;
+}
+
+.three-cols:after {
+    content: ".";
+    margin-left: -10px;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.three-cols .col {
+    float: left;
+    width: 232px;
+    margin-left: 10px;
+}
+
+
+.three-cols .col {
+	width: 306px;
+	margin-left: 20px;
+}
+
+
+.col .block-link,
+.col .block-link,
+.col .block {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.three-cols .block-link p,
+.three-cols .block-link p {
+    min-height: 150px;
+}
+
+.col .block-link:hover,
+.col .block-link:hover,
+.col .block-link:hover,
+.col .block-link:hover {
+    background: #fafafa;
+    border-color: #b1b1b1;
+
+    -moz-box-shadow:0 0 5px rgba(0,0,0,.25);
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,.25);
+    box-shadow:0 0 5px rgba(0,0,0,.25);
+}
+
+/* @end */
+
+/* @group Tagline */
+	h2.tagline{
+		font-size: 28px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 18px;
+		line-height: 30px;
+		color: #333;
+	}
+		h2.tagline span {
+			color: #646464;
+			font-size: 20px;
+			text-align: center;
+			line-height: 28px;
+			display: block;
+			margin-top: 10px;
+			font-weight: 400;
+		}
+	/* @end */

@@ -1,0 +1,19 @@
+#content #ways-to-comment { margin-bottom: 30px; }
+#content #ways-to-comment .col .emphasized-box { min-height: 84px; }
+
+#content #ways-to-comment .col p {
+	padding-top: 60px;
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#content #ways-to-comment .forum p {
+	padding-top: 52px;
+	background-image: url('/sites/all/assets/section/leed/comment-forum.png');
+}
+
+#content #ways-to-comment .online p { background-image: url('/sites/all/assets/section/leed/comment-online.png'); }
+#content #ways-to-comment .letter p { background-image: url('/sites/all/assets/section/leed/comment-letter.png'); }

@@ -1,0 +1,15 @@
+/* @group Global theme adjustments */
+.grid-item { height: 300px; }
+.grid-item img { margin-left: -4px; }
+.grid-item h5 { margin-bottom: 5px; }
+/* @end */
+
+/* @group iOS Badges */
+.ios { position: relative; }
+
+.ios img.madefor {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+}
+/* @end */

@@ -1,0 +1,32 @@
+/* $Id: twocol_highlighted.css,v 1.1  $ */
+
+
+#highlighted,
+#mainCol {
+  float: left;
+}
+
+
+.subcontent-wrapper {
+  float: left;
+  width: 780px;
+}
+
+#highlighted {
+  width: 780px;
+  margin-bottom: 20px;
+}
+
+#mainCol,
+#content.twoColRight .subcontent-wrapper #mainCol { 
+  width: 540px; 
+}
+
+#sideCol {
+  float: right;
+  width: 210px;
+}
+
+#panels-dnd-main {
+  overflow: hidden;
+}

@@ -1,0 +1,11 @@
+/* @group LEED Rating System Infographic */
+#leed-rating-systems {
+	width: 781px;
+	height: 261px;
+	background: url('img/rating-systems-graphic.png');
+	margin: 0 !important;
+}
+
+#leed-rating-systems li {
+	display: none;
+}

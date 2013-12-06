@@ -1,0 +1,118 @@
+#leed-pro-stories .left-c {
+	float: left;
+	width: 66.5%;
+	
+}
+
+#leed-pro-stories .right-c {
+	float: right;
+	width: 30%;
+	margin-right: 20px;
+}
+
+#leed-pro-stories .emphasized-box p {
+	line-height: 1.4;
+	font-size: 13px;
+
+}
+
+#leed-pro-stories .video-items {
+	clear: both;
+}
+
+#leed-pro-stories .video-items .video {
+	float: left;
+	width: 240px;
+	margin-right: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+	#leed-pro-stories .video-items .video .outset-frame {
+		margin-bottom: 13px;
+		display: block;
+		-webkit-transition: all .12s ease-in-out;
+		-moz-transition: all .12s ease-in-out;
+		-o-transition: all .12s ease-in-out;
+		transition: all .12s ease-in-out;
+	}
+	
+	#leed-pro-stories .video-items .video .outset-frame:hover,
+	#leed-pro-stories .video-items .video .outset-frame:active {		
+		/*-moz-transform: scale(1.03);
+		-webkit-transform: scale(1.03);
+		transform: scale(1.03);*/
+		
+		-webkit-box-shadow:
+		        0 1px 0 rgba(0,0,0,.4) inset,
+		        0 -1px 0 rgba(0,0,0,.4) inset,
+		        1px 0 0 rgba(0,0,0,.4) inset,
+		        -1px 0 0 rgba(0,0,0,.4) inset,
+		        0 2px 0 rgba(255,255,255,.3) inset,
+		        0 1px 4px rgba(21,172,201,1)
+		    ;
+		
+		    -moz-box-shadow:
+		        0 1px 0 rgba(0,0,0,.4) inset,
+		        0 -1px 0 rgba(0,0,0,.4) inset,
+		        1px 0 0 rgba(0,0,0,.4) inset,
+		        -1px 0 0 rgba(0,0,0,.4) inset,
+		        0 2px 0 rgba(255,255,255,.3) inset,
+		        0 1px 4px rgba(21,172,201,1)
+		    ;
+		
+		    box-shadow:
+		        0 1px 0 rgba(0,0,0,.4) inset,
+		        0 -1px 0 rgba(0,0,0,.4) inset,
+		        1px 0 0 rgba(0,0,0,.4) inset,
+		        -1px 0 0 rgba(0,0,0,.4) inset,
+		        0 2px 0 rgba(255,255,255,.3) inset,
+		        0 1px 4px rgba(21,172,201,1)
+		    ;
+	}
+	
+	#leed-pro-stories .video-items .video .info {
+		padding-left: 42px;
+		clear: both;
+		margin: 0 0 0 4px;
+	}
+	
+		#leed-pro-stories .video-items .video .info span {
+			display: block;
+			float: left;
+			text-indent: -9999px;
+			height: 80px;
+			background-repeat: no-repeat;
+			width: 40px;
+			margin-left: -43px;
+			margin-top: 3px;
+		}
+		
+		#leed-pro-stories .video-items .video .info .ap-bd    { background-image: url("img/credential-ap-bdc.gif");}
+		#leed-pro-stories .video-items .video .info .ap-homes { background-image: url("img/credential-ap-homes.gif");}
+		#leed-pro-stories .video-items .video .info .ap-idc   { background-image: url("img/credential-ap-idc.gif");}
+		#leed-pro-stories .video-items .video .info .ap-nd    { background-image: url("img/credential-ap-nd.gif");}
+		#leed-pro-stories .video-items .video .info .ap-om    { background-image: url("img/credential-ap-om.gif");}
+		#leed-pro-stories .video-items .video .info .ga       { background-image: url("img/credential-ga.gif");}
+		#leed-pro-stories .video-items .video .info .fellow   { background-image: url("img/credential-leed-fellow.gif");}
+		
+		
+		
+		#leed-pro-stories .video-items .video .info h4 {
+			font-size: 14px;
+			line-height: 1.2;
+			margin-bottom: 3px;			
+		}
+		
+		#leed-pro-stories .video-items .video .info p {
+			font-size: 12px;
+			line-height: 1.3;
+			color: #777;
+			margin-bottom: 4px;
+		}
+		
+		#leed-pro-stories .video-items .video .info a {
+			font-size: 11px;
+			background: url('img/play-vid.gif') no-repeat left center;
+			padding-left: 10px;
+		}

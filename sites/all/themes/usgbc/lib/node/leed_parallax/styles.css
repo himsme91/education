@@ -1,0 +1,97 @@
+	/* @group Parallax Header */
+	#parallax-shadow {
+		position: absolute;
+		height: 304px;
+		width: 960px;
+		background: url(../../img/leed-header-shadow.png) no-repeat;
+		z-index: 1;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding-box;
+		background-clip: padding-box;
+		-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+	}
+	
+	#parallax {
+		height: 304px;
+		width: 960px;
+		overflow: hidden;
+		position: relative;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding-box;
+		background-clip: padding-box;
+		display: block;
+		
+		
+	}
+	
+	#parallax img{
+		width: 1040px;
+		position: absolute;
+		height: 391px;
+		top: 50%;
+		left: 50%;
+		margin-top: -196px;
+		margin-left: -520px;
+	}
+	
+	
+	
+	#parallax h1 {
+		position: absolute;
+		text-align: center;
+		opacity: 0;
+		top: 25px;
+		width: 960px;
+		display: block;
+		color: #FFF;
+		font-size: 180px;
+		text-shadow: 
+			0 1px 0 #ccc, 
+			0 2px 0 #c9c9c9,
+			0 3px 0 #bbb,
+			0 4px 0 #b9b9b9,
+			0 5px 0 #aaa,
+			0 6px 1px rgba(0,0,0,.1),
+			0 0 5px rgba(0,0,0,.1),
+			0 1px 3px rgba(0,0,0,.3),
+			0 3px 5px rgba(0,0,0,.2),
+			0 5px 10px rgba(0,0,0,.25),
+			0 10px 10px rgba(0,0,0,.2),
+			0 20px 20px rgba(0,0,0,.15)
+		;
+	}	
+	
+	/* @end */
+
+
+/* IE gets static graphic */
+.ie6 #parallax,
+.ie7 #parallax,
+.ie8 #parallax,
+.ie9 #parallax {
+	background: url('img/leed-placeholder.png');
+}
+
+/* hide uneeded elements */
+.ie6 #parallax-shadow,
+.ie7 #parallax-shadow,
+.ie8 #parallax-shadow,
+.ie9 #parallax-shadow,
+.ie6 #parallax img,
+.ie7 #parallax img,
+.ie8 #parallax img,
+.ie9 #parallax img,
+.ie6 #parallax h1,
+.ie7 #parallax h1,
+.ie8 #parallax h1,
+.ie9 #parallax h1 {
+	display: none !important;
+}

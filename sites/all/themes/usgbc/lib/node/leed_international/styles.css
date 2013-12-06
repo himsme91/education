@@ -1,0 +1,166 @@
+/* @group Flag list */    
+
+#flag-list {
+	margin-bottom: 15px;
+}
+
+#flag-list:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+	#flag-list li {
+		float: left;
+		list-style: none;
+		margin: 0 8px 18px 0;
+		position: relative;
+		margin-right: 20px;
+	}
+	
+	#flag-list li a {
+		position: relative;
+		z-index: 1;
+		display: block;
+	}
+	
+	/*#flag-list:hover li a:not(:hover) .flag-image {
+		opacity: .85;
+	}*/
+	
+			
+		#flag-list .flag-image {
+			display: block;
+			float: left;   
+			
+/*			-webkit-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out; */
+
+			width: 70px;
+			-webkit-box-shadow: 
+				0 1px 0 rgba(0,0,0,.2) inset,
+				0 -1px 0 rgba(0,0,0,.2) inset,
+				1px 0 0 rgba(0,0,0,.2) inset,
+				-1px 0 0 rgba(0,0,0,.2) inset,
+				0 2px 0 rgba(255,255,255,.3) inset,
+				0 1px 2px rgba(0,0,0,.25);
+			-moz-box-shadow: 
+				0 1px 0 rgba(0,0,0,.2) inset,
+				0 -1px 0 rgba(0,0,0,.2) inset,
+				1px 0 0 rgba(0,0,0,.2) inset,
+				-1px 0 0 rgba(0,0,0,.2) inset,
+				0 2px 0 rgba(255,255,255,.3) inset,
+				0 1px 2px rgba(0,0,0,.25);
+			box-shadow: 
+				0 1px 0 rgba(0,0,0,.2) inset,
+				0 -1px 0 rgba(0,0,0,.2) inset,
+				1px 0 0 rgba(0,0,0,.2) inset,
+				-1px 0 0 rgba(0,0,0,.2) inset,
+				0 2px 0 rgba(255,255,255,.3) inset,
+				0 1px 3px rgba(0,0,0,.25);
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+		}
+
+		#flag-list li .flag-image img {
+			width: 70px;
+			display: block;
+			z-index: -1;
+			position: relative;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+		}
+		
+		#flag-list li .flag-text {
+			display: block;
+			position: absolute;
+			background: rgba(255,255,255,.9);
+			*background: white;
+			padding: 8px;
+			width: 180px;
+			font-size: 11px;
+			text-align: center;
+			top: 10px;
+			left: 50%;
+			margin-left: -98px;
+			border: 1px solid rgba(0,0,0,.2);
+			*border: 1px solid #ccc;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+			box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		
+			-moz-background-clip: padding;     /* Firefox 3.6 */
+			-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+			background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+					
+			opacity: 0;
+			transform: scale(.1);
+			-ms-transform: scale(.1);
+			-webkit-transform: scale(.1);
+			-o-transform: scale(.1);
+			-moz-transform: scale(.1);
+			
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+			
+			*display:none;
+		}
+		
+		#flag-list li .flag-text:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			bottom: -8px;
+			left: 50%;
+			margin-left: -10px;
+			width: 20px;
+			height: 8px;
+			background: url(/themes/usgbc/lib/img/int-flag-arrow.png) bottom center;
+		}
+		
+		#flag-list li a:hover .flag-text {
+			display: block;
+			top: -35px;
+			opacity: 1;
+			transform: scale(1);
+			-ms-transform: scale(1);
+			-webkit-transform: scale(1);
+			-o-transform: scale(1);
+			-moz-transform: scale(1);
+			*display:block;
+		}
+		
+.container {
+	position: relative;
+	z-index: 1;
+}
+
+.inset-frame {
+	display: block;
+	float: left;    
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .5) inset;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .5) inset;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .5) inset;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.inset-frame img {
+	display: block;
+	z-index: -1;
+	position: relative;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+		
+		
+		
+/* @end */

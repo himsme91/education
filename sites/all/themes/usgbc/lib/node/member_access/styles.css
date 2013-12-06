@@ -1,0 +1,55 @@
+/* @group Member Benefits Access page */    
+
+#member-benefits-mast {
+    padding: 30px 30px 30px 220px;
+    background: url(img/member-logo-160.gif) 30px 30px no-repeat;
+}
+
+#member-benefits-mast h1 {
+    line-height: 1;
+}
+
+#member-benefits-mast .kicker {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+#member-benefits-mast img {
+    float: left;
+    display: block;
+}
+
+#member-benefits-mast .jumbo-button-dark {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+#member-benefits-list {
+    background-color: #fafafa;
+    padding: 18px 30px;
+}
+
+#member-benefits-list h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 0 1px 0 white;
+    margin-bottom: 5px;
+}
+
+#member-benefits-list li {
+    font-size: 15px;
+    padding: 10px 0 10px;
+    border-top: 1px solid #eee;
+    color: #555;
+    list-style: none;
+    margin: 0;
+}
+
+#member-benefits-list li:first-child {
+    border: 0;
+}
+
+
+/* @end */

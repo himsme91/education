@@ -1,0 +1,175 @@
+.bold{
+	font-weight:bold;
+}
+.addenda{
+	font-size: 13px;
+}
+.type{
+	font-size: 12px;
+}
+.sh-content ul{
+	margin-top: 0px !important;
+}
+.sh-content li{
+	padding: 5px 0 !important;
+}
+.img-exp{
+    float: right;
+    height: 15px;
+    width: 15px;
+}
+.img-col{
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+ .style14
+      { height: 43px;      }
+      .style19
+      { height: 41px;      }
+      .style20
+      { height: 28px;      }
+      .style21
+      { height: 25px;      }
+      .style22
+      { height: 32px;      }
+      .style24
+      { height: 41px; width: 54px; text-align: center;      }
+      .style25
+      { height: 43px; width: 54px; text-align: center;      }
+      .style26
+      { height: 28px; width: 54px; text-align: center;      }
+      .style27
+      { height: 25px; width: 54px; text-align: center;      }
+      .style28
+      { height: 32px; width: 54px; text-align: center;      } 
+      
+table.Appbox {
+    margin: 0;
+    padding: 0;
+    width: 590px;
+}
+table.Appbox td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+    padding: 6px 6px 6px 12px;
+}
+table.Appbox td.withimages {
+    background: none repeat scroll 0 0 #F7F7F7;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.Appbox td.rowli {
+    background: none repeat scroll 0 0 #DFDFDF;
+    text-align: center;
+    width: 35px;
+}
+table.Appbox td.rowli1 {
+    background: url("../img/li/appBoxtick.gif") no-repeat scroll center center #F7F7F7;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.Appbox td.rowli2 {
+    background: url("../img/li/appBoxcross.gif") no-repeat scroll center center #F7F7F7;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.Appbox td.rowli3 {
+    background: url("../img/li/appBoxcircle.gif") no-repeat scroll center center #F7F7F7;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.Appbox td.rowli4 {
+    background: url("../img/li/appBoxdoubletickgreyed.gif") no-repeat scroll center center #F7F7F7;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.Appbox td.firstcolumn {
+    background-color: #5C5C5C;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #4E4E4E, #676767);
+    color: white;
+    font-family: "proxima-nova-1","proxima-nova-2",arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    height: 10px;
+    padding: 7px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    width: 29%;
+}
+table.Appbox td.headerrows {
+    background-color: #5C5C5C;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #4E4E4E, #676767);
+    color: white;
+    font-family: "proxima-nova-1","proxima-nova-2",arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    height: 10px;
+    padding: 7px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    width: 35px;
+}
+table.appboxDesc {
+    margin: 0;
+    padding: 0;
+    width: 590px;
+}
+table.appboxDesc td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+    color: #4F6B72;
+    padding: 6px 6px 6px 12px;
+}
+table.appboxDesc td.withimages {
+    background: none repeat scroll 0 0 #DFDFDF;
+    color: #5C5C5C;
+    font-family: "proxima-nova-1","proxima-nova-2",arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+table.appboxDesc td.novalue {
+    background: none repeat scroll 0 0 #DFDFDF;
+    color: #797268;
+    text-align: center;
+    width: 35px;
+}
+table.appboxDesc td.firstcolumn {
+    background-color: #5C5C5C;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #4E4E4E, #676767);
+    color: white;
+    font-family: "proxima-nova-1","proxima-nova-2",arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    height: 10px;
+    padding: 7px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    width: 58%;
+}
+table.appboxDesc td.headerrows {
+    background-color: #FFFFFF;
+    color: #5C5C5C;
+    font-family: "proxima-nova-1","proxima-nova-2",arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    height: 10px;
+    padding: 7px;
+    text-align: left;
+    width: 35px;
+}

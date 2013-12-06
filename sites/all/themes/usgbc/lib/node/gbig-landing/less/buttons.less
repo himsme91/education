@@ -1,0 +1,27 @@
+.btn {
+	display: inline-block;
+	width: 232px;
+	padding: 8px 12px;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	color: white;
+	background: @gray;
+	.border-radius(5px);
+	
+	&:hover {
+		color: white;
+		background: darken(@gray, 10%);
+	}
+	
+	&:active {
+		color: fade(white, 70%);
+		background: darken(@gray, 20%);
+	}
+}
+
+.btn-primary {
+	background: @green;
+	&:hover { background: darken(@green, 10%); }
+	&:active { background: darken(@green, 20%); }
+}

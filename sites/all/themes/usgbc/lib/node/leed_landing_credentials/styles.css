@@ -1,0 +1,29 @@
+/* @group leed_landing_credentials */
+
+#leed-credentials .group-3 {
+  width: 120px;
+  float: right;
+}
+#leed-credentials .group-2 {
+  width: 80px;
+  float: right;
+  clear: right;
+}
+  #leed-credentials .group-1 {
+  width: 40px;
+  float: right;
+  clear: right;
+}
+#leed-credentials img{
+  /*margin: 0 0 5px;*/
+  margin-left: 5px;
+
+  float: left;
+  margin-bottom: 5px;
+  position: relative;
+}
+#leed-credentials img:last-child {
+  margin-right: 0;
+}
+
+/* @end */

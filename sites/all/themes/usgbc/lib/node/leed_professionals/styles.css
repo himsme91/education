@@ -1,0 +1,24 @@
+#leed-professionals { margin-bottom: 25px; }
+#leed-professionals .aside { margin-bottom: 5px; }
+
+#leed-professionals h5 { 
+	float: left; 
+	margin: 9px 0;
+}
+
+#leed-professionals .leed-ap h5 { margin: 2px 0; }
+
+#leed-professionals h5 a {
+	font-size: 13px;
+	color: #686868;
+}
+
+#leed-professionals h5 a small {
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: .02em;
+}
+
+#leed-professionals .icons {
+	margin-left: 200px;
+}

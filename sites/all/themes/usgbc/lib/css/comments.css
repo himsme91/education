@@ -1,0 +1,88 @@
+@CHARSET "ISO-8859-1";
+/* css for comments - start */
+
+#comments .comment-submitted h5 {
+    color: #999999;
+    float: right;
+    font-size: 12px;
+}
+
+#comments .comment-submitted h4 {
+    padding-top: 0;
+}
+
+#comments .comment-submitted{
+	margin-bottom: 5px;
+	}
+
+#comments .comment-content p{
+	margin-top: 10px;
+}
+
+#comments .comment-title,
+#comment-controls {
+display: none;
+}
+#comment-form .lower-comment textarea {
+    background-color: #FFFFFF !important;
+    height: 70px;
+}
+
+#comment-form-title,
+#comments .box-title
+{
+display: none;
+}
+
+#switch_edit-comment{
+display: none !important;
+}
+#comments ul li {
+    list-style: none;
+    margin-left: 0;
+}
+
+/*
+//breaks footer links in IE 7 - commenting out in case it's used elsewhere
+
+ul.links {
+	float:right;
+}
+
+*/
+
+#comments .permalink, #comments .comment_reply{
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background: url("../img/reply.png") no-repeat scroll right center transparent;
+    color: #777777;
+    font-size: 11px;
+    opacity: 0.5;
+    padding-right: 25px;
+}
+#comments .permalink a, #comments .comment_reply a{
+color: #777777;
+}
+
+#comments .permalink:hover, #comments .comment_reply:hover {
+    color: #999999;
+    opacity: 1;
+}
+#comments .permalink a:hover, #comments .comment_reply a:hover{
+color: #999999;
+}
+
+#comments .indented {
+    margin-left: 90px;
+}
+
+.textarea-identifier{
+display: none;
+}
+.grippie
+{
+display: none;
+}
+#uniform-edit-fivestar-rating-1 {
+display: none;
+}
+/* css for comments - end */

@@ -1,0 +1,60 @@
+body { 
+	background: @bgColor url('../img/map.png') no-repeat center fixed; 
+	display: table;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#international {
+	* { .box-sizing(border-box); }
+	padding-top: 10%;
+	
+	.page { 
+		.clearfix;
+		display: none; 
+		padding-bottom: 100px;
+	}
+	
+	.collapse { 
+		margin-bottom: 35px; 
+		
+		
+		
+		.collapse-content {
+			display: none;
+			padding-left: 30px;
+		}
+		
+		&.open h3 a { color: white; font-weight: 100; }
+	}
+	
+	.plain-list li { 
+		list-style: none; 
+		margin-left: 0;
+	}
+	
+	.social-list {
+		margin-top: 50px;
+		li { display: inline-block; margin: 0; }
+		li + li { margin-left: 15px; }
+		
+		a {
+			display: block;
+			width: 32px;
+			height: 32px;
+			text-indent: -9999px;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+			&:hover { .opacity(50); }
+		}
+		
+		.twitter a { background-image: url('../img/icon-twitter.png'); }
+		.facebook a { background-image: url('../img/icon-facebook.png'); }
+		.linkedin a { background-image: url('../img/icon-linkedin.png'); }
+		.weibo a { background-image: url('../img/icon-weibo.png'); }
+	}
+}

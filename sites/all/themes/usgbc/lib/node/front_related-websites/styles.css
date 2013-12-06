@@ -1,0 +1,59 @@
+/* @group Related Websites */
+	#related-websites {
+		background: url(img/gray-noise.png) #f5f5f5;
+		display: block;
+		position: relative;
+		border: 1px solid #D1D1D1;
+		padding: 10px 12px;
+		height: 142px;
+		padding: 0;
+		margin-bottom: 18px;
+		clear: both;
+		
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		
+		-moz-background-clip: padding; 
+		-webkit-background-clip: padding-box; 
+		background-clip: padding-box; 
+		
+		-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.08), 0 1px 0 rgba(255,255,255,1) inset;
+		-moz-box-shadow: 0 2px 2px rgba(0,0,0,.08), 0 1px 0 rgba(255,255,255,1) inset;
+		box-shadow: 0 2px 2px rgba(0,0,0,.08), 0 1px 0 rgba(255,255,255,1) inset;
+	}
+	
+	#related-websites a {
+		width: 238px;
+		height: 131px;
+		border-right: 1px solid #FFF;
+		border-left: 1px solid #D1D1D1;
+		float: left;
+		margin-top: 5px;
+		position: relative;
+	}
+	
+	#related-websites a:first-child { border-left: none; }
+	#related-websites a:last-child { border-right: none; }
+		
+	#related-websites a span {
+		font-size: 13px;
+		padding: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	#related-websites a span h4 {
+		font-size: 11px;
+		text-shadow: 0px 1px 0px #FFF;
+		font-weight: bold;
+		color: #17B0CD;
+	}
+	
+	#related-websites a span p {
+		color: #1a1a1a;
+		font-size: 13px;
+		line-height: 20px;
+		text-shadow: 0px 1px 0px #FFF;
+	}
+	/* @end */

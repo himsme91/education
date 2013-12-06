@@ -1,0 +1,1630 @@
+/* @override
+	http://usgbc.trav.mododev.com/lib/css/forms.css
+	http://usgbc1.trav.mododev.com/lib/css/forms.css
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/lib/css/forms.css
+*/
+
+/* @group Form elements */
+fieldset {
+	border: 1px solid #eee;
+	padding: 8px 15px;
+	margin-bottom: 15px;
+
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+legend {
+	padding: 0 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+label {
+    display: block;
+    color: #555;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#normal-labels label {
+	font-weight: normal;
+}
+.form-item{
+	margin-bottom:15px;
+	clear:both;
+}
+
+.mini-search .form-item{
+	margin-bottom:0px;
+}
+
+.field {
+	font-family: arial, san-serif;
+    background: white;
+    border: 1px solid #bbb;
+    padding: 6px 8px;
+    width: 300px;
+    color: #777;
+    outline: none;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 1px 0 white;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 1px 0 white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 1px 0 white;
+}
+
+.field:focus {
+	border-color: #888;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 1px 0 white;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 1px 0 white;
+	box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 0 8px rgba(0,0,0,.15);
+	background: #f9f9f9\9; /* IE8 & below */
+	
+}
+
+input.invalid,
+input.error {
+	border-color: #EA4D1C;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 0 8px rgba(255,0,0,.3);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 0 8px rgba(255,0,0,.3);
+	box-shadow: 0 1px 2px rgba(0,0,0,.13) inset, 0 0 8px rgba(255,0,0,.3);
+	background: #fceded\9; /* IE8 & below */
+}
+
+
+textarea.field {
+	min-height: 70px;
+	width: 476px;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+.xsm { width: 55px !important; }
+.sm  { width: 85px !important; }
+.md  { width: 150px !important; }
+.lg  { width: 220px !important; }
+.xlg { width: 350px !important; }
+
+.short { height: 140px; }
+.tall { height: 450px; }
+
+.filefield-element {
+    overflow: hidden;
+}
+
+.node-form div.uploader {
+  position: relative;
+  float: none;
+  overflow: hidden;
+}
+
+.pulled-item textarea.field {
+	width: 400px;
+}
+
+#sideCol .field {
+	width: 195px;
+	font-size: 12px;
+}
+
+input.field:focus {
+	color: #333;
+}
+
+.form-section {
+	padding: 15px 0;
+	overflow: hidden;
+}
+
+.form-section-head {
+	clear: both;
+	border-bottom: 1px solid #eee;
+	padding: 0 0 5px 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #222;
+}
+
+.form-controls {
+	border-top: 2px solid #eee;
+	padding-top: 15px;
+}
+
+.element .validation-label {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px;
+	display: block;
+}
+
+.element span.valid {
+	color: #61925f;
+}
+
+.element span.invalid {
+	color: #8d494a;
+}
+
+/* @end */
+
+/* @group Sub-form elements */
+
+.sub-form-element {
+	display: block;
+	clear: both;
+	border: 1px solid #ddd;
+	padding: 14px 14px 24px 14px;
+	margin: 5px 0;
+
+	background-color: #FEFEFE;
+	background-color: rgba(255,255,255,.85);
+
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+}
+.sub-form-element:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.form-element .sub-form-element .label {
+	float: none;
+}
+
+.compress {
+    line-height: 13px;
+}
+
+
+.sub-form-element .pulled-item {
+	margin-bottom: 12px;
+	clear: both;
+	padding-left: 130px;
+}
+
+.aside .sub-form-element .pulled-item { padding-left: 118px; }
+
+.sub-form-element .pulled-item:last-child {
+	margin-bottom: 0;
+}
+
+.sub-form-element .item-wrapper .pulled-item:last-child {
+    margin-bottom: 12px;
+}
+
+.sub-form-element .pulled-item label {
+	margin-left: -130px;
+	width: 120px;
+	float: left;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 6px 0;
+	text-align: right;
+	text-shadow: 0 1px 0 #FFF;
+	color: #888;
+    line-height: 1.2em;
+}
+.sub-form-element .pulled-item label .label-text {
+    line-height: 20px;
+}
+.sub-form-element .pulled-item label .small {
+    line-height: 1em;
+}
+
+.sub-form-element .pulled-item .inputlist {
+	 clear: none;
+}
+
+.sub-form-element .pulled-item .columnlist {
+	margin: 0px;
+}
+
+.sub-form-element .pulled-item ul label {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.pulled-item .selectlist .selector,
+.pulled-item .selector,
+.pulled-item ul {
+	margin-bottom: 0 !important;
+}
+
+.selectlist li {
+	 list-style: none;
+	 margin: 0;
+	 display: block;
+	 float: left;
+}
+
+.sub-form-item .selectlist label {
+	width: 125px;
+}
+
+.sub-form-item .selectlist .sub-label {
+	 float: left;
+	 display: block;
+	 padding: 6px 3px 0 0;
+	 font-size: 11px;
+}
+
+.sub-form-item .selectlist .selector {
+	float: left;
+	margin-top: -1px;
+}
+
+.sub-form-item .selectlist div.selector {
+  width: 70px;
+}
+
+.sub-form-item .selectlist div.selector select {
+  width: 70px;
+}
+
+.sub-form-item .selectlist div.selector span {
+  width: 38px;
+}
+
+/* @end */
+
+/* @group double address fields */
+
+#mailing-address-form #card-address1,
+#mailing-address-form #edit-address1,
+#billing-address-form #card-address1,
+#billing-address-form #edit-address1 { margin-bottom: 6px; }
+
+/* @end */
+
+/* @group Upload Element */
+.upload-wrapper{
+  float: left;
+}
+.upload-wrapper div.upload {
+  float: none;
+}
+
+/* @end */
+
+/* @group Standard Buttons */
+
+.button-group {
+	clear: both;
+	padding: 0 1px 8px;
+	overflow: hidden;
+}
+
+.stacked-button-group {
+    overflow: visible;
+    margin-bottom: 12px;
+}
+
+/* ALL BUTTONS NEED THESE */
+.small-button,
+.small-warning-button,
+.warning-button,
+.small-alt-button,
+.button,
+.alt-button,
+.gray-button,
+.large-button,
+.large-button-dark,
+.jumbo-button,
+.jumbo-button-dark,
+.jumbo-action-button,
+.jumbo-alt-action-button,
+.node-form input.form-submit,
+input[type="button"] {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.button-group .small-button,
+.button-group .small-warning-button,
+.button-group .warning-button,
+.button-group .small-alt-button,
+.button-group .button,
+.button-group .alt-button,
+.button-group .gray-button,
+.button-group .large-button,
+.button-group .large-button-dark {
+    float: left;
+}
+
+
+.stacked-button-group .small-button,
+.stacked-button-group .small-warning-button,
+.stacked-button-group .warning-button,
+.stacked-button-group .small-alt-button,
+.stacked-button-group .button,
+.stacked-button-group .alt-button,
+.stacked-button-group .gray-button,
+.stacked-button-group .large-button,
+.stacked-button-group .large-button-dark {
+    float: none;
+    margin: 0 0 4px 0 !important;
+}
+
+/* override this rule within different
+color styles for best results */
+.small-button:focus,
+.small-warning-button:focus,
+.warning-button:focus,
+.small-alt-button:focus,
+.button:focus,
+.alt-button:focus,
+.gray-button:focus,
+.large-button:focus,
+.large-button-dark:focus,
+.jumbo-button:focus,
+.jumbo-button-dark:focus,
+.jumbo-action-button:focus,
+.jumbo-alt-action-button:focus,
+.node-form input.form-submit:focus {
+	border: 1px solid #555;
+}
+
+
+/* Default Node form button */
+.node-form input.form-submit,
+input[type="button"].form-submit{
+    border: 1px solid #777;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+
+    -webkit-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset;
+    box-shadow: 0 1px 0 rgba(250,250,250,.2) inset;
+
+    background: #999;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #888, #999);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#888));
+    -pie-background: linear-gradient(#999, #888 100%);
+    font-size: 11px;
+    padding: 4px 12px 3px;
+    margin-right: 5px;
+    height: 13px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+.node-form input.form-submit:hover{
+    background: #888;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #777, #999);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#777));
+    -pie-background: linear-gradient(#999, #777 100%);
+}
+
+.node-form input.form-submit:active;{
+    background: #777;
+    border-color: #666;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+}
+
+
+    /* @group Color */
+
+        /* BLUE */
+        .small-alt-button,
+		input[type='submit'].small-alt-button,
+        .button,
+        .jumbo-action-button{
+            border: 1px solid #347F93;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.20);
+
+            -webkit-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            -moz-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+
+            background-color: #57ABC0;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #3D92A8, #57ABC0);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#57ABC0), to(#3D92A8));
+            -pie-background: linear-gradient(#57ABC0, #3D92A8 100%);
+        }
+
+        .small-alt-button:hover,
+		input[type='submit'].small-alt-button:hover,
+        .button:hover,
+        .jumbo-action-button:hover,
+        .block-link:hover .small-alt-button,
+        .block-link:hover .button,
+        .block-link:hover .jumbo-action-button{
+            border-color: #0e7486;
+
+            background-color: #128fa6;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #128fa6, #17b0cd);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#17b0cd), to(#128fa6));
+            -pie-background: linear-gradient(#17b0cd, #128fa6 100%);
+        }
+
+        .small-alt-button:active,
+		input[type='submit'].small-alt-button:active,
+        .button:active,
+        
+        .button.active,
+        .jumbo-action-button:active,
+        .block-link:active .small-alt-button,
+        .block-link:active .button,
+        .block-link:active .jumbo-action-button {
+        	background: #128fa6;
+        	border: 1px solid #107f93;
+
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+            box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+        }
+
+        .small-alt-button:focus,
+        .button:focus,
+        .jumbo-action-button:focus,
+        .block-link:active .small-alt-button,
+        .block-link:active .button,
+        .block-link:active .jumbo-action-button,
+/*        .node-form input.form-submit:focus */
+{
+	 		border-color: #0b5d6c;
+		}
+
+
+
+        /* GREEN */
+        .alt-button,
+        .jumbo-alt-action-button {
+            border: 1px solid #78a83f;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+
+            -webkit-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            -moz-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+
+        	background-color: #a8d573;
+        	background-image: -moz-linear-gradient(100% 100% 90deg, #85c53b, #a8d573);
+        	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a8d573), to(#85c53b));
+        	-pie-background: linear-gradient(#a8d573, #85c53b 100%);
+        }
+
+        .alt-button:hover,
+        .jumbo-alt-action-button:hover,
+        .block-link:hover .alt-button,
+        .block-link:hover .jumbo-alt-action-button {
+            border-color:#70a631;
+
+        	background-color: #70a631;
+        	background-image: -moz-linear-gradient(100% 100% 90deg, #70a631, #a8d573);
+        	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a8d573), to(#70a631));
+        	-pie-background: linear-gradient(#a8d573, #70a631 100%);
+        }
+
+        .alt-button:active,
+        .jumbo-alt-action-button:active,
+        .block-link:active .alt-button,
+        .block-link:active .jumbo-alt-action-button {
+            background: #70a631;
+            border-color: #67992d;
+
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+            box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+        }
+
+        /* LIGHT GRAY */
+        .large-button,
+        .jumbo-button,
+        input[type="button"] {
+            border: 1px solid #ccc;
+            text-shadow: 0 1px 0 rgba(255,255,255,1);
+
+            -webkit-box-shadow: 0 1px 0px rgba(250,250,250,1) inset, 0 1px 3px rgba(0,0,0,.28);
+            -moz-box-shadow: 0 1px 2px rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            box-shadow: 0 1px 2px rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+
+            background-color: #f9f9f9; /* fallback color */
+            background-image: -moz-linear-gradient(100% 100% 90deg, #EEEEEE, #FCFCFC);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFC), to(#EEEEEE));
+            -pie-background: linear-gradient(#fcfcfc, #eee 100%);
+        }
+
+        .large-button:hover,
+        .jumbo-button:hover,
+        .block-link:hover .large-button,
+        .block-link:hover .jumbo-button,
+        input[type="button"]:hover {
+            background-color: #fbfbfb; /* fallback color */
+            background-image: -moz-linear-gradient(100% 100% 90deg, #f7f7f7, #FFF);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#f7f7f7));
+            -pie-background: linear-gradient(#fff, #f7f7f7 100%);
+        }
+
+        .large-button:active,
+        .jumbo-button:active,
+        .block-link:active .large-button,
+        .block-link:active .jumbo-button,
+        input[type="button"]:active {
+            border: 1px solid #ccc;
+
+            -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+        	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+        	box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+
+        	background-color: #f6f6f6; /* fallback color */
+        	background-image: -moz-linear-gradient(100% 100% 90deg, #f3f3f3, #f9f9f9);
+        	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#f3f3f3));
+        	-pie-background: linear-gradient(#f9f9f9, #f3f3f3 100%);
+        }
+
+        /* MED GRAY */
+        .small-button,
+        .gray-button{
+            border: 1px solid #777;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+
+            -webkit-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            -moz-box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+            box-shadow: 0 1px 0 rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+
+            background: #999;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #888, #999);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#888));
+            -pie-background: linear-gradient(#999, #888 100%);
+        }
+
+        .small-button:hover,
+        .gray-button:hover,
+        .block-link:hover .small-button,
+        .block-link:hover .gray-button {
+            background: #888;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #777, #999);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#777));
+            -pie-background: linear-gradient(#999, #777 100%);
+        }
+
+        .small-button:active,
+        .gray-button:active,
+        .block-link:active .small-button,
+        .block-link:active .gray-button	{
+            background: #777;
+            border-color: #666;
+
+            box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+        }
+
+        /* DARK GRAY */
+        .large-button-dark,
+        .jumbo-button-dark {
+            border: 1px solid #333;
+            text-shadow: 0 -1px 0 rgba(0,0,0,1);
+
+            background-color: #666; /* fallback color */
+        	background-image: -moz-linear-gradient(100% 100% 90deg, #333, #666);
+        	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#333));
+
+        	-webkit-box-shadow: 0 1px 2px rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+        	-moz-box-shadow: 0 1px 2px rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+        	box-shadow: 0 1px 2px rgba(250,250,250,.2) inset, 0 1px 3px rgba(0,0,0,.28);
+        }
+
+        .large-button-dark:hover,
+        .jumbo-button-dark:hover,
+        .block-link:hover .large-button-dark,
+        .block-link:hover .jumbo-button-dark {
+            background-color: #777; /* fallback color */
+            background-image: -moz-linear-gradient(100% 100% 90deg, #333, #777);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#333));
+            -pie-background: linear-gradient(#777, #333 100%);
+        }
+
+        .large-button-dark:active,
+        .jumbo-button-dark:active,
+        .block-link:active .large-button-dark,
+        .block-link:active .jumbo-button-dark {
+            border: 1px solid #222;
+
+        	box-shadow: 0 1px 4px rgba(0,0,0,.6) inset;
+        	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.6) inset;
+        	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.6) inset;
+
+        	background-color: #333; /* fallback color */
+        	background-image: -moz-linear-gradient(100% 100% 90deg, #222, #555);
+        	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#222));
+        	-pie-background: linear-gradient(#555, #222 100%);
+        }
+
+
+
+
+        /* RED */
+        .small-warning-button,
+        .warning-button,
+        .node-form input.form-submit.warning-button,
+        .node-form input.form-submit[value=Remove] {
+            border: 1px solid #800;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+
+            -webkit-box-shadow: 0 1px 0 rgba(250,250,250,.3) inset, 0 1px 3px rgba(0,0,0,.28);
+            -moz-box-shadow: 0 1px 0 rgba(250,250,250,.3) inset, 0 1px 3px rgba(0,0,0,.28);
+            box-shadow: 0 1px 0 rgba(250,250,250,.3) inset, 0 1px 3px rgba(0,0,0,.28);
+
+            background: #900;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #900, #c00);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C00), to(#900));
+            -pie-background: linear-gradient(#C00, #900 100%);
+        }
+
+        .small-warning-button:hover,
+        .warning-button:hover,
+        .node-form input.form-submit.warning-button:hover,
+        .node-form input.form-submit[value=Remove]:hover {
+            background: #800;
+            background-image: -moz-linear-gradient(100% 100% 90deg, #800, #c00);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c00), to(#800));
+            -pie-background: linear-gradient(#c00, #800 100%);
+        }
+
+        .small-warning-button:active,
+        .warning-button:active,
+        .node-form input.form-submit.warning-button:active,
+        .node-form input.form-submit[value=Remove]:active {
+            background: #700;
+            border-color: #500;
+
+            box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+        }
+
+
+
+
+        /* SHINY */
+        .jumbo-shiny-button {
+	    	color: #545454;
+	    	font-size: 13px;
+	    	padding: 18px 10px;
+	    	text-align: center;
+
+	    	-moz-border-radius: 5px;
+	    	border-radius: 5px;
+
+	        border: 1px solid #e1e1e1;
+	        text-shadow: 0 1px 0 rgba(255,255,255,1);
+
+	        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+	        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+	        box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+
+	        background-color: #e5e5e5; /* fallback color */
+	        background-image: -moz-linear-gradient(100% 100% 90deg, #dadada, #f1f1f1);
+	        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#dadada));
+	        -pie-background: linear-gradient(#f1f1f1, #dadada 100%);
+	    }
+
+	    .jumbo-shiny-button:hover {
+	    	color: #545454;
+	        background-color: #fbfbfb; /* fallback color */
+	        background-image: -moz-linear-gradient(100% 100% 90deg, #dadada, #FFF);
+	        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#dadada));
+	        -pie-background: linear-gradient(#FFF, #dadada 100%);
+	    }
+
+	    .jumbo-shiny-button:active, .jumbo-shiny-button.selected {
+	        border: 1px solid #bbb;
+	        padding: 19px 10px 17px;
+
+	        -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+	    	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+	    	box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+
+	    	background-color: #c1c1c1; /* fallback color */
+	    	background-image: -moz-linear-gradient(100% 100% 90deg, #d8d8d8, #c1c1c1);
+	    	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c1c1c1), to(#d8d8d8));
+	    	-pie-background: linear-gradient(#c1c1c1, #d8d8d8 100%);
+	    }
+
+
+
+
+    /* @end */
+
+    /* @group Size */
+
+        /* SMALL */
+        .small-button,
+        .small-alt-button,
+        .small-warning-button,
+        .block-link .small-button,
+        .block-link .small-alt-button,
+        .node-form .content-add-more input.form-submit {
+            font-size: 11px;
+            padding: 4px 12px 5px;
+            margin-right: 5px;
+            height: 13px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .small-button:active,
+        .small-alt-button:active,
+        .block-link:active .small-button,
+        .block-link:active .small-alt-button,
+        .node-form .content-add-more input.form-submit:active {
+            padding-top: 5px;
+            padding-bottom: 4px;
+        }
+
+		/* adjust so looks same on <a> and <input> */
+        a.small-button,
+        a.small-alt-button,
+        a.small-warning-button {
+            padding: 4px 12px 5px;
+        }
+
+        a.small-button:active,
+        a.small-alt-button:active,
+        a.block-link:active .small-button,
+        a.block-link:active .small-alt-button {
+            padding-top: 5px;
+            padding-bottom: 4px;
+        }
+
+
+        /* MEDIUM */
+        .button,
+        .alt-button,
+        .gray-button,
+        .warning-button,
+        .node-form input.form-submit,
+        input[type="button"] {
+            font-size: 13px;
+            padding: 6px 10px 5px;
+            margin-right: 8px;
+
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .button:active,
+        .alt-button:active,
+        .gray-button:active,
+        .block-link:active .button,
+        .block-link:active .alt-button,
+        .block-link:active .gray-button,
+        .node-form input.form-submit:active,
+        input[type="button"]:active {
+            padding-top: 7px;
+            padding-bottom: 4px;
+        }
+
+        /* LARGE */
+        .large-button,
+        .large-button-dark {
+            font-size: 14px;
+        	padding: 6px 8px;
+
+    		-moz-border-radius: 5px;
+    		border-radius: 5px;
+        }
+
+        .large-button:active,
+        .large-button-dark:active,
+        .block-link:active .large-button,
+        .block-link:active .large-button-dark {
+            padding-top: 7px;
+            padding-bottom: 5px;
+        }
+
+        /* JUMBO */
+        .jumbo-button,
+        .jumbo-button-dark,
+        .jumbo-action-button,
+        .jumbo-alt-action-button {
+            padding: 10px;
+            font-size: 16px;
+            float: none;
+margin-bottom: 10px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .jumbo-button:active,
+        .jumbo-button-dark:active,
+        .jumbo-action-button:active,
+        .block-link:active .jumbo-button,
+        .block-link:active .jumbo-button-dark,
+        .block-link:active .jumbo-action-button,
+        .block-link:active .jumbo-alt-action-button {
+            padding-top: 11px;
+            padding-bottom: 9px;
+        }
+        input[type="button"] {
+        	padding: 6px 20px 5px;
+        }
+
+    /* @end */
+
+    /* @group Text Color */
+
+        /* WHITE */
+        .small-button,
+        .small-alt-button,
+        .button,
+        .alt-button,
+        .gray-button,
+        .large-button-dark,
+        .jumbo-button-dark,
+        .jumbo-action-button,
+        .jumbo-alt-action-button,
+        .small-warning-button,
+        .warning-button {
+            color: white !important;
+            /* color: rgba(255,255,255,.9) !important; */
+        }
+
+        /* BLACK */
+        .large-button,
+        .jumbo-button,
+        input[type="button"] {
+            color: #333 !important;
+            /* color: rgba(0,0,0,.6) !important; */
+        }
+    /* @end */
+
+    /* @group Shadow or No Shadow */
+        .jumbo-alt-action-button {
+
+        }
+
+
+    /* @end */
+
+/* @end */
+
+/* @group Button Notes */
+.button-note {
+	float: left;
+	padding: 7px 0;
+}
+
+.small-button-note {
+	float: left;
+	padding: 4px 3px;
+	font-size: 12px;
+}
+
+.danger-text { 
+	color: #af0000; 
+	opacity: 0;
+	
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-o-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+
+a:hover + .danger-text { opacity: 1; }
+/* @end */
+
+/* @group Arrow Buttons */
+.arrow-button {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 18px;
+	text-align:center;
+	text-transform: uppercase;
+	color:#393e3e;
+	display:block;
+}
+
+.arrow-button span {
+	padding:3px 22px 3px 0;
+	line-height:18px;
+	background: url(../../../usgbc/lib/img/arrow-button.gif) no-repeat right;
+}
+/* @end */
+
+/* @group Disabled Buttons */
+.disabled {
+	filter: alpha(opacity=40);
+	zoom:1;
+	opacity: 0.4;
+	cursor: default;
+}
+/* @end */
+
+/* @group Form Column System */
+
+
+
+/* for 3 column layout */
+#mainCol .form-column-set {
+	margin-left: -15px;
+	overflow: hidden;
+}
+
+	#mainCol .form-column-set .form-column {
+		padding-left: 15px;
+		float: left;
+	}
+
+	#mainCol .form-column-set #account-username-field,
+    #mainCol .form-column-set #account-password-field {
+        width: 200px;
+    }
+
+    #mainCol .form-column-set #account-username-field input,
+    #mainCol .form-column-set #account-password-field input {
+        width: 180px;
+    }
+
+	#mainCol .form-column-set .form-column input.field,
+	#mainCol .form-column-set .form-column input.field {
+		width: 237px;
+	}
+
+#mainCol .form-column-set .form-column .element {
+	width: 246px;
+}
+
+
+#mainCol .form-column-set .form-column {
+
+}
+
+#mainCol .form-column-set .full-column .element {
+	width: auto;
+}
+
+
+
+/* form columns inside twoColLeft layout */
+.twoColLeft #mainCol .form-column-set {
+	margin-left: -15px;
+	overflow: hidden;
+}
+
+	.twoColLeft #mainCol .form-column-set .form-column {
+		padding-left: 15px;
+		float: left;
+	}
+
+	.twoColLeft #mainCol .form-column-set .form-column input.field,
+	.twoColLeft #mainCol .form-column-set .form-column input.field {
+		width: 340px;
+	}
+
+.twoColLeft #mainCol .form-column-set .form-column .element {
+	width: 352px;
+}
+
+/* form columns inside quick edit form box */
+#mainCol .quick-edit-form input.field,
+#mainCol .quick-edit-form input.field {
+	width: 237px;
+	margin-top: 3px;
+}
+
+#tax-exempt-form .element label {
+    margin-bottom: 3px;
+}
+
+#tax-exempt-form .element img.ui-datepicker-trigger {
+    margin-left: 3px;
+    margin-bottom: -4px;
+}
+
+#mainCol .quick-edit-form .form-column-set .form-column .element {
+	width: 246px;
+	margin-bottom: 10px;
+}
+
+/* form columns inside quick edit form box, inside tab box */
+#mainCol .aside .quick-edit-form .form-column-set .form-column input.field,
+#mainCol .aside .quick-edit-form .form-column-set .form-column input.field {
+	width: 224px;
+	margin-top: 3px;
+}
+
+#mainCol .aside .quick-edit-form .form-column-set .form-column .element {
+	width: 232px;
+	margin-bottom: 10px;
+}
+
+
+/* form columns inside quick edit form box, inside twoColLeft layout */
+.twoColLeft #mainCol .quick-edit-form .form-column-set .form-column input.field,
+.twoColLeft #mainCol .quick-edit-form .form-column-set .form-column input.field {
+	width: 327px;
+	margin-top: 3px;
+}
+
+.twoColLeft #mainCol .quick-edit-form .form-column-set .form-column .element {
+	width: 339px;
+	margin-bottom: 10px;
+}
+
+
+
+/* quick edit form on account settings page */
+.quick-edit-form {
+	padding: 14px;
+	background: #F9F9F9;
+	border: 1px solid #ddd;
+
+	-moz-border-radius:3px;
+	border-radius:3px;
+
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.08) inset;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.08) inset;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.08) inset;
+}
+.quick-edit-form:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.quick-edit-form .update-settings-btn-note {
+	float: left;
+	font-size: 11px;
+	display: block;
+	padding: 5px 0;
+}
+/* @end */
+
+
+/* @group Registration */
+
+/* @group form elements */
+
+.registration-process label,
+.checkout-process label {
+	 font-size: 13px;
+	 margin-bottom: 2px;
+	 font-weight: normal;
+}
+
+.registration-process input.field,
+.checkout-process input.field {
+	font-size: 16px;
+	color: #333;
+	width: 275px;
+}
+
+.registration-process input.inactive,
+.registration-process textarea.inactive,
+.checkout-process input.inactive,
+.checkout-process textarea.inactive {
+	color: #BDBDBD;
+}
+
+
+
+/* @end */
+
+
+/* @group registration process indicator */
+
+.registration-steps {
+    height: 80px;
+    overflow: hidden;
+    margin-left: 0 !important;
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3) inset;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.3) inset;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3) inset;
+
+	background-color: #ccc; /* fallback color */
+    background-image: -moz-linear-gradient(100% 100% 90deg, #DDD, #EEE);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#EEE));
+    -pie-background: linear-gradient(#ddd, #eee 100%);
+}
+
+	.registration-steps li {
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding: 20px 25px 16px;
+		height: 44px;
+		text-transform: uppercase;
+		border-right: 1px solid rgba(0,0,0,.1);
+		border-left: 1px solid rgba(250,250,250,.4);
+	}
+
+	.registration-steps li:first-child {
+		border-left: 0;
+	}
+
+	.registration-steps li:last-child {
+	 	border-right: 0;
+	}
+
+	.registration-steps li.selected {
+		background: rgba(0,0,0,.05) url(../img/steps-selected.png) bottom center no-repeat;
+}
+
+
+		.registration-steps li span {
+			 font-size: 14px;
+			 font-weight: 600;
+			 display: block;
+			 text-shadow: 0 1px 0 white;
+			 color: #333;
+			 margin-left: 1px;
+		}
+
+		.registration-steps li strong {
+			 font-weight: 300;
+			 font-size: 23px;
+			 display: block;
+			 color: #1FA5CD;
+			 text-shadow: 0 1px 0 white;
+		}
+
+
+
+
+/* @end */
+/* @group misc reg styles */
+
+.form-section-head .small {
+	font-weight: normal;
+}
+
+/* @end */
+
+/* @group Existing company search */
+
+
+.existing-company-check .button,
+.existing-company-check p {
+	background: #999;
+	border-color: #888;
+	font-size: 11px;
+	padding: 4px 7px;
+	line-height: 12px;
+	margin-right: 0;
+	float: right;
+
+	-moz-border-radius: 12px;
+	border-radius:12px;
+}
+
+.existing-company-check p {
+	background: none;
+	padding-right: 0;
+	margin: 0 5px 0 0 !important;
+	padding-top: 6px;
+}
+
+
+.existing-company-check .button {
+	border: 1px solid #333;
+    text-shadow: 0 -1px 0 black;
+    color: #eee;
+
+    background-color:#777;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #333, #777);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#333));
+    -pie-background: linear-gradient(#777, #333 100%);
+}
+
+.existing-company-check .button:hover {
+	color: white;
+}
+
+
+
+/* @end */
+
+/* @group Registration Summary box */
+
+#reg-summary {
+	background: #fff;
+	padding: 0px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	width: 208px;
+	margin-top: 15px;
+
+	-moz-border-radius: 5px;
+	border-radius:5px;
+}
+
+#reg-summary.stick {
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+
+	#reg-summary h4 {
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		text-shadow: 0 -1px 0 #000;
+		background: #444;
+		padding: 8px 10px;
+		margin: 0;
+
+		-moz-border-radius:3px 3px 0 0;
+		border-radius:3px 3px 0 0;
+}
+
+#reg-summary dl {
+	margin-bottom: 0;
+}
+
+#reg-summary dt,
+#reg-summary dd {
+	 padding: 5px 10px;
+	 margin: 0 !important;
+}
+
+#reg-summary dt {
+	padding-bottom: 0px;
+}
+
+#reg-summary dd {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 6px;
+}
+
+#reg-summary .total {
+	overflow: hidden;
+	background: url(../img/total-bg.png);
+}
+
+#reg-summary .total dt {
+	 float: right;
+	 padding: 14px 5px 0;
+	 font-size: 12px;
+	 color: white;
+}
+
+#reg-summary .total dd {
+	border: 0;
+	float: right;
+	padding: 10px 8px 8px 0px;
+	font-size: 18px;
+	text-shadow: 0 1px 0 #ccc;
+	font-weight: bold;
+	font-family: helvetica, arial;
+}
+
+/* @end */
+
+/* @group Radio button columns */
+
+
+/*
+.radio-triplets {
+	margin-left: -12px;
+}
+
+.radio-triplets .triplet-panel {
+	width: 213px;
+	float: left;
+	background: #f9f9f9;
+	padding: 15px;
+	margin-left: 12px;
+	border: 1px solid #ddd;
+	height: 320px;
+
+	-moz-border-radius:3px;
+	border-radius:3px;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.08) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.08) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.08) inset;
+}
+
+.radio-triplets .triplet-panel-slim {
+	width: 174px;
+}
+
+.radio-triplets .triplet-panel .panel-title {
+	font-weight: bold;
+	text-shadow: 0 1px 0 white;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 8px;
+}
+
+.radio-triplets .triplet-panel .inputlist label {
+	font-weight: normal;
+}*/
+
+
+
+.do-first-blurb {
+	font-weight: bold;
+	font-size: 14px;
+
+	padding: 0 0 0 24px;
+	background: url(../img/arrow.png) left center no-repeat;
+	width: 130px;
+	margin: 100px auto;
+	text-shadow: 0 1px 0 white;
+}
+
+
+
+/* tax exempt form */
+
+#tax-exempt-form .element {
+	overflow: hidden;
+}
+
+#tax-exempt-form .element select {
+	margin-right: 0px;
+}
+
+#tax-exempt-form .element .slash {
+	float: left;
+	padding: 0 5px;
+	display: block;
+}
+/* @end */
+/* @end */
+
+/* @group USGBC Datepicker theme */
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 4px;
+	text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	width: 82px !important;
+	margin: 0 2px;
+}
+
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+
+.ui-datepicker .ui-widget-header {
+	border: 0 !important;
+}
+
+
+/* top of calendar */
+.ui-datepicker {
+	width: 200px;
+	padding: 7px;
+	background: #F3F3F3;
+	border: 1px solid #ccc;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+
+	-webkit-box-shadow:
+		0 1px 0 rgba(255,255,255,.9) inset,
+		0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow:
+		0 1px 0 rgba(255,255,255,.9) inset,
+		0 1px 2px rgba(0,0,0,.1);
+	box-shadow:
+		0 1px 0 rgba(255,255,255,.9) inset,
+		0 1px 2px rgba(0,0,0,.1);
+}
+
+.ui-datepicker .ui-datepicker-header {
+	position:relative;
+	background: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+.ui-datepicker .ui-datepicker-header a {
+	position:absolute;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	width: 14px;
+	height: 19px;
+	padding: 0;
+	background: none;
+	border: none;
+	margin: 0;
+
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev {  left: 0;  }
+.ui-datepicker .ui-datepicker-next {  right: 0;  }
+
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	background: none;
+	margin: 2px;
+	top: 0;
+	list-style: 0;
+	left: 0;
+	width: 10px;
+	height: 15px;
+	background: url(../img/datepicker-arrows.png) center top no-repeat;
+}
+
+
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next span {
+	background-position: center -15px;
+}
+
+.ui-datepicker .ui-datepicker-header a:hover span {
+	background-position: center -30px;
+}
+
+.ui-datepicker .ui-datepicker-header a:hover.ui-datepicker-next span {
+	background-position: center -45px;
+}
+
+
+
+/* lower calendar */
+.ui-datepicker .ui-datepicker-calendar {
+	width: 100%;
+	border-collapse: collapse;
+
+	display: ;
+	margin: 0 !important;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 2px !important;
+
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+
+	-webkit-box-shadow:
+		0 2px 2px rgba(0,0,0,.12) inset,
+		0 1px 0 white;
+	-moz-box-shadow:
+		0 2px 2px rgba(0,0,0,.12) inset,
+		0 1px 0 white;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,.12) inset,
+		0 1px 0 white;
+}
+
+.ui-datepicker .ui-datepicker-calendar * {
+	background: none;
+}
+
+
+
+/* day-of-week header */
+
+.ui-datepicker .ui-datepicker-calendar thead * {
+	border: 0;
+}
+
+.ui-datepicker .ui-datepicker-calendar thead th {
+	 padding: 4px 0;
+	 text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-calendar thead span {
+	font-size: 12px;
+	color: #5e7c83;
+}
+
+
+/* regular days */
+
+
+.ui-datepicker .ui-datepicker-calendar td {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ccc;
+}
+
+.ui-datepicker .ui-datepicker-calendar td a {
+	 display: block;
+	 padding: 4px 0 4px 2px;
+	 font-weight: 400;
+	 letter-spacing: 1px;
+	 margin: 0;
+	 text-align: center;
+	 border: 0;
+}
+
+.ui-datepicker .ui-datepicker-calendar td .ui-state-hover {
+    background: #E7F0F2;
+    border: 1px solid #95b1b7;
+    margin: -1px;
+    position: relative;
+
+    color: #5e7c83;
+    text-shadow: 0 1px 0 white;
+
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.9) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.9) inset;
+}
+
+.ui-datepicker .ui-datepicker-calendar td .ui-state-active {
+	background: #17B0CD;
+
+	border: 1px solid #108095;
+	margin: -1px;
+	position: relative;
+
+
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+}
+
+/* @end */
+
+input[type='submit'].small-button,
+input[type='submit'].small-alt-button,
+input[type='submit'].small-warning-button,
+.node-form .content-add-more input[type='submit'].form-submit,
+.node-form input[type='submit'].form-submit {
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+
+	display: inline;
+
+
+	 /* TL: I changed this to 15 because 13 didn't
+	 look quite right, its possible it will need to
+	 be made more specific if other instances are
+	 thrown off now*/
+	 height: 15px;
+}
+button::-moz-focus-inner,
+
+input[type="reset"]::-moz-focus-inner,
+
+input[type="button"]::-moz-focus-inner,
+
+input[type="submit"]::-moz-focus-inner,
+
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+border:0;padding:0;margin:0;
+}

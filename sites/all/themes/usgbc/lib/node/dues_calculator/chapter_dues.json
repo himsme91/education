@@ -1,0 +1,692 @@
+{
+  "nodes" : [
+    {
+      "node" : {
+        "title" : "Indiana Chapter",
+        "bp" : "M80",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+   },
+    {
+      "node" : {
+        "title" : "Hampton Roads Green Building Council",
+        "bp" : "M1141",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Florida Capital Region Chapter",
+        "bp" : "M1452",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Chihuahuan Desert Chapter",
+        "bp" : "M1453",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Montana Chapter",
+        "bp" : "M1832",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "California Central Coast Chapter",
+        "bp" : "M1921",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Inland Empire Chapter",
+        "bp" : "M1922",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Connecticut Green Building Council",
+        "bp" : "M1923",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Ohio Chapter",
+        "bp" : "M2015",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Northwest Ohio Chapter",
+        "bp" : "M2016",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Piedmont Triad NC Chapter",
+        "bp" : "M2385",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Wyoming Chapter",
+        "bp" : "M2386",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Rhode Island Chapter",
+        "bp" : "M2538",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "New Hampshire Chapter",
+        "bp" : "M3330",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Alaska Chapter",
+        "bp" : "M341",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Arkansas Chapter",
+        "bp" : "M342",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Maryland Chapter",
+        "bp" : "M343",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Detroit Regional Chapter",
+        "bp" : "M344",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "East Tennessee Chapter",
+        "bp" : "M345",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Nebraska Flatwater Chapter",
+        "bp" : "M346",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Plains Chapter",
+        "bp" : "M347",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Kentucky Chapter",
+        "bp" : "M348",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Maine Chapter",
+        "bp" : "M349",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Middle Tennessee Chapter",
+        "bp" : "M350",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Missouri Heartland Chapter",
+        "bp" : "M351",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "San Diego Chapter",
+        "bp" : "M352",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Missouri Gateway Chapter",
+        "bp" : "M353",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "West Virginia Provisional Chapter",
+        "bp" : "M3745",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "North Dakota Provisional Chapter",
+        "bp" : "M3813",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "South Dakota Chapter",
+        "bp" : "M3814",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Massachusetts Chapter",
+        "bp" : "M3815",
+        "memprice" : "$50.00",
+       "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "South Carolina Chapter",
+        "bp" : "M476",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Illinois Chapter",
+        "bp" : "M478",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Minnesota Chapter",
+        "bp" : "M527",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "U.S. Caribbean Chapter",
+        "bp" : "M630",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Oklahoma Chapter",
+        "bp" : "M631",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Southwest Virginia Chapter",
+        "bp" : "M632",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "North Florida Chapter",
+        "bp" : "M642",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Alabama Chapter",
+        "bp" : "M68",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Arizona Chapter",
+        "bp" : "M69",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Idaho Chapter",
+        "bp" : "M695",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Iowa Chapter",
+        "bp" : "M697",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Utah Chapter",
+        "bp" : "M698",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Atlanta Chapter",
+        "bp" : "M70",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Cascadia Region Green Building Council",
+        "bp" : "M71",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Florida Chapter",
+        "bp" : "M72",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Texas - Balcones Chapter",
+        "bp" : "M73",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Illinois Chapter",
+        "bp" : "M74",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Cincinnati Regional Chapter",
+        "bp" : "M75",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Colorado Chapter",
+        "bp" : "M76",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Delaware Valley Green Building Council",
+        "bp" : "M77",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Florida Gulf Coast Chapter",
+        "bp" : "M78",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Texas Gulf Coast Chapter",
+        "bp" : "M79",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Indiana Chapter",
+        "bp" : "M80",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "James River Green Building Council",
+        "bp" : "M81",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+   {
+      "node" : {
+        "title" : "Nevada Chapter",
+        "bp" : "M82",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Long Island Chapter",
+        "bp" : "M83",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Los Angeles Chapter",
+        "bp" : "M84",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Memphis Regional Chapter",
+        "bp" : "M844",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Georgia Chapter",
+        "bp" : "M845",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Charlotte Region Chapter",
+        "bp" : "M846",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Vermont Green Building Network",
+        "bp" : "M847",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Northeast Ohio Chapter",
+        "bp" : "M848",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Green Building Alliance",
+        "bp" : "M849",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "National Capital Region Chapter",
+        "bp" : "M85",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central Pennsylvania Chapter",
+        "bp" : "M850",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "The Green Roundtable",
+        "bp" : "M851",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Southface Energy Institute",
+        "bp" : "M852",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Wisconsin Green Building Alliance",
+        "bp" : "M853",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Central California Chapter",
+        "bp" : "M854",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Hawaii Chapter",
+        "bp" : "M855",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Louisiana Chapter",
+        "bp" : "M856",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "New Jersey Chapter",
+        "bp" : "M86",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "New Mexico Chapter",
+        "bp" : "M87",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "New York Chapter",
+        "bp" : "M88",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "New York Upstate Chapter",
+        "bp" : "M89",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "North Carolina Triangle Chapter",
+        "bp" : "M90",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "North Texas Chapter",
+        "bp" : "M91",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Northern California Chapter",
+        "bp" : "M92",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Orange County Chapter",
+        "bp" : "M93",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Redwood Empire Chapter",
+        "bp" : "M94",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "South Florida Chapter",
+        "bp" : "M95",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "West Michigan Chapter",
+        "bp" : "M96",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Heart of Florida Chapter",
+        "bp" : "M962",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Northern Gulf Coast Chapter",
+        "bp" : "M963",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    },
+    {
+      "node" : {
+        "title" : "Mississippi Chapter",
+        "bp" : "M967",
+        "memprice" : "$50.00",
+        "nonmemprice" : "$70.00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+/* @override 
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/plugins/layouts/landing_1_2_3/landing_1_2_3.css */
+
+/* $Id: landing_1_2_3.css,v 1.1 $ */
+
+/* @group Global theme adjustments */
+.grid-item { height: 265px; }
+.grid-item h5 { margin-bottom: 10px; }
+
+#content .ag-header p.result-count {
+    font-size: 11px;
+    color: #848484;
+    font-style: italic;
+    margin: 0;
+}
+
+.ag-footer { border-top: 1px solid #f0f0f0; }
+
+#sideCol .section .details {
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+#sideCol .section .details dt, 
+#sideCol .section .details dd {
+    font-size: 11px;
+    float: left;
+    width: 50%;
+    padding-bottom: .25em;
+    margin: 0;
+}
+
+#sideCol .section .details dt {
+    font-weight: bold;
+    clear: left;
+}
+
+a.more,
+ul#leed-cats li.all a {
+    padding-right: 8px;
+    background: url(../../img/arrow-sm.png) no-repeat right;
+}
+/* @end */
+
+/* @group LEED Landing Page */
+	
+	/* @group Layout */
+	.landing-group-two,
+	.landing-group-three {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 23px;
+	}
+		.landing_1_2_3 .landing-two, 
+		.landing_1_2_3 .landing-three {
+			float: left;
+			background: none;
+			border: 1px solid transparent;
+		}
+		.landing_1_2_3 .landing-two {
+			width: 592px;
+			margin: 0 20px 0 0;
+		}
+		.landing_1_2_3 .landing-two.last {
+			width: 344px;
+		}
+		.landing_1_2_3 .landing-three {
+			width: 280px;
+			margin-right: 21px;
+		}
+			/* Create borders behind each element */
+			.landing-three:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0px;
+				z-index: -1;
+				height: 100%;
+				width: 544px;
+				padding: 0 12px;
+				border: 1px solid #DDD; 
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+			}
+			.landing-three:before {width: 280px;}
+			
+			/* Set left position for first elements in row */
+			.landing-three:nth-child(1):before {
+				left: 0px;
+			}
+			
+			/* Set left position for middle element in row */
+			.landing-three:nth-child(2):before {
+				left: 327px;
+			}
+			
+			/* Set left position for last elements in row */
+			.landing-three:nth-child(3):before {
+				right: 0;
+			}
+		
+		#content .landing-two p {
+			
+		}
+		#content .landing-two img {
+			margin-top: 8px;
+		}
+		.landing-three.last, 
+		.landing-two.last {
+			margin-right: 0px;
+		}
+		#content .landing-three p {
+			margin-bottom: 25px;
+		}
+		/* position button at the bottom of div */
+		.landing-three .button {
+			position: absolute;
+			bottom: 12px;
+			width: 160px;
+		}
+			.landing-three:nth-child(1) .button {
+				left: 13px;
+			}
+			.landing-three:nth-child(2) .button {
+				left: 340px;
+			}
+			.landing-three:nth-child(3) .button {
+				right: 103px;
+			}
+		
+		.landing-three .button-group {
+			position: absolute;
+			bottom: 12px;
+			margin-bottom: 0;
+			left: 13px;
+		}
+			.landing-three:nth-child(1) .button-group {
+				left: 13px;
+			}
+			.landing-three:nth-child(2) .button-group {
+				left: 340px;
+			}
+			.landing-three:nth-child(3) .button-group {
+				right: 268;
+			}
+			.landing-three .button-group .button {
+				position: relative;
+				bottom: auto;
+				left: auto;
+				right: auto;
+				width: auto;
+			}
+		
+			
+			
+		.landing_1_2_3 .landing-full {
+			border: none;
+			margin: 0;
+			display: none;
+		}
+	/* @end */
+	/* @group Tagline */
+	h2.tagline{
+		font-size: 28px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 18px;
+		line-height: 30px;
+		color: #333;
+	}
+		h2.tagline span {
+			color: #646464;
+			font-size: 20px;
+			text-align: center;
+			line-height: 28px;
+			display: block;
+			margin-top: 10px;
+			font-weight: 400;
+		}
+	/* @end */
+/* @end */

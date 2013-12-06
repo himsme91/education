@@ -1,0 +1,2723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="urn:sap-com:document:sap:rfc:functions">
+    <wsdl:documentation>
+        <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+    </wsdl:documentation>
+    <wsp:UsingPolicy wsdl:required="false"/>
+    <wsp:Policy wsu:Id="IF_Z_WS_ADM_WSE">
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+            <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <wsp:ExactlyOne xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"/>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUserDeleteLpinfo">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUserDeleteApinfo">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUserCompanyMembersh">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUpdateUser">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUpdateProject">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmGetUserDetails">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmGetProjTimelineOpt">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmGetProjDetails">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmGetProjectList">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmGetProjectByAccess">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmCreateUser">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmCreateProject">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsAdmUserPwdChange">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsPrjAddCredits">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="OP_ZWsPrjWithdrawCredits">
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+    </wsp:Policy>
+    <wsdl:types>
+        <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+            <xsd:simpleType name="byte16">
+                <xsd:restriction base="xsd:base64Binary">
+                    <xsd:maxLength value="16"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char1">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char10">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="10"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char12">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="12"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char14">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="14"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char15">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="15"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char2">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="2"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char20">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="20"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char220">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="220"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char24">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="24"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char241">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="241"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char3">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char30">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="30"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char32">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="32"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char4">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char40">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="40"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char50">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="50"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char6">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="6"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char60">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="60"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char8">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="8"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="clnt3">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="date">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="10"/>
+                    <xsd:pattern value="\d\d\d\d-\d\d-\d\d"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="lang">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric2">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="2"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric3">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="time">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="8"/>
+                    <xsd:pattern value="\d\d:\d\d:\d\d"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:complexType name="ZCAC_BP_ADDITION">
+                <xsd:sequence>
+                    <xsd:element name="ADDTYPE" type="n1:numeric2"/>
+                    <xsd:element name="DATA_TYPE" type="n1:numeric2"/>
+                    <xsd:element name="CUSTOMIZING_FIELD" type="n1:char20"/>
+                    <xsd:element name="TEXT" type="n1:char60"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TABLE_OF_ZCAC_BP_ADDITION">
+                <xsd:sequence>
+                    <xsd:element name="item" type="n1:ZCAC_BP_ADDITION" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+        <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:n0="urn:sap-com:document:sap:rfc:functions">
+            <xsd:import namespace="urn:sap-com:document:sap:rfc:functions"/>
+            <xsd:simpleType name="RfcException.Message.Number">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="byte1022">
+                <xsd:restriction base="xsd:base64Binary">
+                    <xsd:maxLength value="1022"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char1">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char10">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="10"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char1000">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1000"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char132">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="132"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char1536">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1536"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char18">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="18"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char2">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="2"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char20">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="20"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char24">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="24"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char255">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="255"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char3">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char30">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="30"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char32">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="32"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char35">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="35"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char4">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char40">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="40"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char42">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="42"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char5">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="5"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char50">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="50"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char6">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="6"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char60">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="60"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char64">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="64"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="char80">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="80"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="cuky5">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="5"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="curr11.2">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="11"/>
+                    <xsd:fractionDigits value="2"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="curr13.3">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="13"/>
+                    <xsd:fractionDigits value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="curr15.2">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="15"/>
+                    <xsd:fractionDigits value="2"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="date">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="10"/>
+                    <xsd:pattern value="\d\d\d\d-\d\d-\d\d"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="decimal15.0">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="15"/>
+                    <xsd:fractionDigits value="0"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="decimal28.9">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="28"/>
+                    <xsd:fractionDigits value="9"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="decimal5.0">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="5"/>
+                    <xsd:fractionDigits value="0"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="decimal9.5">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="9"/>
+                    <xsd:fractionDigits value="5"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="lang">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric1">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric4">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric5">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="5"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric6">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="6"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="numeric7">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="7"/>
+                    <xsd:pattern value="\d*"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="quantum13.3">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="13"/>
+                    <xsd:fractionDigits value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="quantum15.3">
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:totalDigits value="15"/>
+                    <xsd:fractionDigits value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="time">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="8"/>
+                    <xsd:pattern value="\d\d:\d\d:\d\d"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType name="unit3">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:complexType name="ZwsFmErrorLog">
+                <xsd:sequence>
+                    <xsd:element name="Mandt" type="n0:clnt3"/>
+                    <xsd:element name="FmName" type="n0:char60"/>
+                    <xsd:element name="Crdat" type="n0:date"/>
+                    <xsd:element name="Crtim" type="n0:time"/>
+                    <xsd:element name="ProjId" type="n0:char10"/>
+                    <xsd:element name="UserAlias" type="n0:char40"/>
+                    <xsd:element name="Type" type="n0:char1"/>
+                    <xsd:element name="Id" type="n0:char20"/>
+                    <xsd:element name="MsgNo" type="n0:numeric3"/>
+                    <xsd:element name="MsgText" type="n0:char220"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZbapiAddress">
+                <xsd:sequence>
+                    <xsd:element name="Addresstype" type="n0:char10"/>
+                    <xsd:element name="Standardaddressusage" type="n0:char1"/>
+                    <xsd:element name="Usagevalidfrom" type="n0:date"/>
+                    <xsd:element name="Usagevalidto" type="n0:date"/>
+                    <xsd:element name="Validtoreadforchange" type="n0:date"/>
+                    <xsd:element name="Standardaddress" type="n0:char1"/>
+                    <xsd:element name="COName" type="n0:char40"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="District" type="n0:char40"/>
+                    <xsd:element name="Regiogroup" type="n0:char8"/>
+                    <xsd:element name="PostlCod1" type="n0:char10"/>
+                    <xsd:element name="PostlCod2" type="n0:char10"/>
+                    <xsd:element name="PostlCod3" type="n0:char10"/>
+                    <xsd:element name="Pcode1Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode2Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode3Ext" type="n0:char10"/>
+                    <xsd:element name="PoBox" type="n0:char10"/>
+                    <xsd:element name="PoWONo" type="n0:char1"/>
+                    <xsd:element name="PoBoxCit" type="n0:char40"/>
+                    <xsd:element name="PoBoxReg" type="n0:char3"/>
+                    <xsd:element name="PoboxCtry" type="n0:char3"/>
+                    <xsd:element name="PoCtryiso" type="n0:char2"/>
+                    <xsd:element name="Street" type="n0:char60"/>
+                    <xsd:element name="StrAbbr" type="n0:char2"/>
+                    <xsd:element name="HouseNo" type="n0:char10"/>
+                    <xsd:element name="HouseNo2" type="n0:char10"/>
+                    <xsd:element name="HouseNo3" type="n0:char10"/>
+                    <xsd:element name="StrSuppl1" type="n0:char40"/>
+                    <xsd:element name="StrSuppl2" type="n0:char40"/>
+                    <xsd:element name="StrSuppl3" type="n0:char40"/>
+                    <xsd:element name="Location" type="n0:char40"/>
+                    <xsd:element name="Building" type="n0:char20"/>
+                    <xsd:element name="Floor" type="n0:char10"/>
+                    <xsd:element name="RoomNo" type="n0:char10"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="TimeZone" type="n0:char6"/>
+                    <xsd:element name="Taxjurcode" type="n0:char15"/>
+                    <xsd:element name="HomeCity" type="n0:char40"/>
+                    <xsd:element name="Transpzone" type="n0:char10"/>
+                    <xsd:element name="Langu" type="n0:lang"/>
+                    <xsd:element name="Languiso" type="n0:char2"/>
+                    <xsd:element name="CommType" type="n0:char3"/>
+                    <xsd:element name="Extaddressnumber" type="n0:char20"/>
+                    <xsd:element name="DontUseP" type="n0:char4"/>
+                    <xsd:element name="DontUseS" type="n0:char4"/>
+                    <xsd:element name="MoveDate" type="n0:date"/>
+                    <xsd:element name="MoveAddress" type="n0:char10"/>
+                    <xsd:element name="Validfromdate" type="n0:date"/>
+                    <xsd:element name="Validtodate" type="n0:date"/>
+                    <xsd:element name="MoveAddrGuid" type="n0:char32"/>
+                    <xsd:element name="CityNo" type="n0:char12"/>
+                    <xsd:element name="DistrctNo" type="n0:char8"/>
+                    <xsd:element name="Chckstatus" type="n0:char1"/>
+                    <xsd:element name="PboxcitNo" type="n0:char12"/>
+                    <xsd:element name="StreetNo" type="n0:char12"/>
+                    <xsd:element name="Homecityno" type="n0:char12"/>
+                    <xsd:element name="Telephone" type="n0:char30"/>
+                    <xsd:element name="Fax" type="n0:char30"/>
+                    <xsd:element name="EMail" type="n0:char241"/>
+                    <xsd:element name="Uri" type="tns:char132"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapibus1006Address">
+                <xsd:sequence>
+                    <xsd:element name="Standardaddress" type="n0:char1"/>
+                    <xsd:element name="COName" type="n0:char40"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="District" type="n0:char40"/>
+                    <xsd:element name="Regiogroup" type="n0:char8"/>
+                    <xsd:element name="PostlCod1" type="n0:char10"/>
+                    <xsd:element name="PostlCod2" type="n0:char10"/>
+                    <xsd:element name="PostlCod3" type="n0:char10"/>
+                    <xsd:element name="Pcode1Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode2Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode3Ext" type="n0:char10"/>
+                    <xsd:element name="PoBox" type="n0:char10"/>
+                    <xsd:element name="PoWONo" type="n0:char1"/>
+                    <xsd:element name="PoBoxCit" type="n0:char40"/>
+                    <xsd:element name="PoBoxReg" type="n0:char3"/>
+                    <xsd:element name="PoboxCtry" type="n0:char3"/>
+                    <xsd:element name="PoCtryiso" type="n0:char2"/>
+                    <xsd:element name="Street" type="n0:char60"/>
+                    <xsd:element name="StrAbbr" type="n0:char2"/>
+                    <xsd:element name="HouseNo" type="n0:char10"/>
+                    <xsd:element name="HouseNo2" type="n0:char10"/>
+                    <xsd:element name="HouseNo3" type="n0:char10"/>
+                    <xsd:element name="StrSuppl1" type="n0:char40"/>
+                    <xsd:element name="StrSuppl2" type="n0:char40"/>
+                    <xsd:element name="StrSuppl3" type="n0:char40"/>
+                    <xsd:element name="Location" type="n0:char40"/>
+                    <xsd:element name="Building" type="n0:char20"/>
+                    <xsd:element name="Floor" type="n0:char10"/>
+                    <xsd:element name="RoomNo" type="n0:char10"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="TimeZone" type="n0:char6"/>
+                    <xsd:element name="Taxjurcode" type="n0:char15"/>
+                    <xsd:element name="HomeCity" type="n0:char40"/>
+                    <xsd:element name="Transpzone" type="n0:char10"/>
+                    <xsd:element name="Langu" type="n0:lang"/>
+                    <xsd:element name="Languiso" type="n0:char2"/>
+                    <xsd:element name="CommType" type="n0:char3"/>
+                    <xsd:element name="Extaddressnumber" type="n0:char20"/>
+                    <xsd:element name="DontUseP" type="n0:char4"/>
+                    <xsd:element name="DontUseS" type="n0:char4"/>
+                    <xsd:element name="MoveDate" type="n0:date"/>
+                    <xsd:element name="MoveAddress" type="n0:char10"/>
+                    <xsd:element name="Validfromdate" type="n0:date"/>
+                    <xsd:element name="Validtodate" type="n0:date"/>
+                    <xsd:element name="MoveAddrGuid" type="n0:char32"/>
+                    <xsd:element name="CityNo" type="n0:char12"/>
+                    <xsd:element name="DistrctNo" type="n0:char8"/>
+                    <xsd:element name="Chckstatus" type="n0:char1"/>
+                    <xsd:element name="PboxcitNo" type="n0:char12"/>
+                    <xsd:element name="StreetNo" type="n0:char12"/>
+                    <xsd:element name="Homecityno" type="n0:char12"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapibus1006Central">
+                <xsd:sequence>
+                    <xsd:element name="Searchterm1" type="n0:char20"/>
+                    <xsd:element name="Searchterm2" type="n0:char20"/>
+                    <xsd:element name="Partnertype" type="n0:char4"/>
+                    <xsd:element name="Authorizationgroup" type="n0:char4"/>
+                    <xsd:element name="Partnerlanguage" type="n0:lang"/>
+                    <xsd:element name="Partnerlanguageiso" type="n0:char2"/>
+                    <xsd:element name="Dataorigintype" type="n0:char4"/>
+                    <xsd:element name="Centralarchivingflag" type="n0:char1"/>
+                    <xsd:element name="Centralblock" type="n0:char1"/>
+                    <xsd:element name="TitleKey" type="n0:char4"/>
+                    <xsd:element name="Contactallowance" type="n0:char1"/>
+                    <xsd:element name="Partnerexternal" type="n0:char20"/>
+                    <xsd:element name="Titleletter" type="n0:char50"/>
+                    <xsd:element name="Notreleased" type="n0:char1"/>
+                    <xsd:element name="CommType" type="n0:char3"/>
+                    <xsd:element name="PrintMode" type="n0:char1"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiadfax">
+                <xsd:sequence>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="StdNo" type="n0:char1"/>
+                    <xsd:element name="Fax" type="n0:char30"/>
+                    <xsd:element name="Extension" type="n0:char10"/>
+                    <xsd:element name="FaxNo" type="n0:char30"/>
+                    <xsd:element name="SenderNo" type="n0:char30"/>
+                    <xsd:element name="FaxGroup" type="n0:char1"/>
+                    <xsd:element name="StdRecip" type="n0:char1"/>
+                    <xsd:element name="R3User" type="n0:char1"/>
+                    <xsd:element name="HomeFlag" type="n0:char1"/>
+                    <xsd:element name="Consnumber" type="n0:numeric3"/>
+                    <xsd:element name="Errorflag" type="n0:char1"/>
+                    <xsd:element name="FlgNouse" type="n0:char1"/>
+                    <xsd:element name="ValidFrom" type="n0:char14"/>
+                    <xsd:element name="ValidTo" type="n0:char14"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiadtel">
+                <xsd:sequence>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="StdNo" type="n0:char1"/>
+                    <xsd:element name="Telephone" type="n0:char30"/>
+                    <xsd:element name="Extension" type="n0:char10"/>
+                    <xsd:element name="TelNo" type="n0:char30"/>
+                    <xsd:element name="CallerNo" type="n0:char30"/>
+                    <xsd:element name="StdRecip" type="n0:char1"/>
+                    <xsd:element name="R3User" type="n0:char1"/>
+                    <xsd:element name="HomeFlag" type="n0:char1"/>
+                    <xsd:element name="Consnumber" type="n0:numeric3"/>
+                    <xsd:element name="Errorflag" type="n0:char1"/>
+                    <xsd:element name="FlgNouse" type="n0:char1"/>
+                    <xsd:element name="ValidFrom" type="n0:char14"/>
+                    <xsd:element name="ValidTo" type="n0:char14"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiconten">
+                <xsd:sequence>
+                    <xsd:element name="Line" type="tns:byte1022"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZL3_LPEINFO">
+                <xsd:sequence>
+                    <xsd:element name="MANDT" type="n0:clnt3"/>
+                    <xsd:element name="BPUSER" type="n0:char10"/>
+                    <xsd:element name="LICENCE_NO" type="n0:char60"/>
+                    <xsd:element name="COUNTRY" type="tns:char3"/>
+                    <xsd:element name="STATE" type="n0:char3"/>
+                    <xsd:element name="SUBJECT" type="tns:char60"/>
+                    <xsd:element name="FULLNAME" type="tns:char60"/>
+                    <xsd:element name="CATEGORY_LPE" type="tns:char60"/>
+                    <xsd:element name="EXPIRATION_DATE" type="tns:char10"/>
+                    <xsd:element name="GOODSTANDING_LPE" type="n0:char1"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Zl3IdentificationInfo">
+                <xsd:sequence>
+                    <xsd:element name="Identificationcategory" type="tns:char6"/>
+                    <xsd:element name="Identificationnumber" type="n0:char60"/>
+                    <xsd:element name="Idinstitute" type="tns:char40"/>
+                    <xsd:element name="Identrydate" type="tns:date"/>
+                    <xsd:element name="Idvalidfromdate" type="tns:date"/>
+                    <xsd:element name="Idvalidtodate" type="tns:date"/>
+                    <xsd:element name="Country" type="tns:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZwsLeeduserinfo">
+                <xsd:sequence>
+                    <xsd:element name="Companyaccessid1" type="n0:char60"/>
+                    <xsd:element name="TitleKey" type="n0:char4"/>
+                    <xsd:element name="Firstname" type="tns:char40"/>
+                    <xsd:element name="Lastname" type="tns:char40"/>
+                    <xsd:element name="Street" type="n0:char60"/>
+                    <xsd:element name="HouseNo" type="n0:char10"/>
+                    <xsd:element name="Street4" type="n0:char40"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="PostlCod1" type="n0:char10"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Telephone" type="n0:char30"/>
+                    <xsd:element name="TelExtension" type="n0:char10"/>
+                    <xsd:element name="Fax" type="n0:char30"/>
+                    <xsd:element name="FaxExtension" type="n0:char10"/>
+                    <xsd:element name="Company" type="n0:char40"/>
+                    <xsd:element name="Street2" type="n0:char40"/>
+                    <xsd:element name="EMail" type="n0:char241"/>
+                    <xsd:element name="Password" type="tns:char40"/>
+                    <xsd:element name="Password2" type="tns:char40"/>
+                    <xsd:element name="UserIndustryCode" type="n0:char20"/>
+                    <xsd:element name="UserIndustryText" type="n0:char60"/>
+                    <xsd:element name="UsgbcReferralCode" type="n0:char20"/>
+                    <xsd:element name="UsgbcReferralText" type="n0:char60"/>
+                    <xsd:element name="Projectaccessid1" type="n0:char60"/>
+                    <xsd:element name="Projectaccessid2" type="n0:char60"/>
+                    <xsd:element name="Projectaccessid3" type="n0:char60"/>
+                    <xsd:element name="ExclusiveMemberService" type="n0:char60"/>
+                    <xsd:element name="UsgbcChapContact" type="n0:char60"/>
+                    <xsd:element name="Validfromdate" type="n0:date"/>
+                    <xsd:element name="Validtodate" type="n0:date"/>
+                    <xsd:element name="Jobtitle" type="n0:char50"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="StrBupaFsAddition">
+                <xsd:sequence>
+                    <xsd:element name="Criterium" type="tns:char10"/>
+                    <xsd:element name="Addtype" type="n0:numeric2"/>
+                    <xsd:element name="DataType" type="n0:numeric2"/>
+                    <xsd:element name="Timestamp" type="tns:decimal15.0"/>
+                    <xsd:element name="Counter" type="tns:numeric4"/>
+                    <xsd:element name="CustomizingField" type="n0:char20"/>
+                    <xsd:element name="CheckField" type="tns:char1"/>
+                    <xsd:element name="Text" type="n0:char60"/>
+                    <xsd:element name="Amount" type="tns:decimal28.9"/>
+                    <xsd:element name="Currency" type="tns:cuky5"/>
+                    <xsd:element name="CurrencyIso" type="tns:char3"/>
+                    <xsd:element name="DateFrom" type="tns:date"/>
+                    <xsd:element name="DateTo" type="tns:date"/>
+                    <xsd:element name="AdditionalDate" type="tns:date"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Zl3ApDocid">
+                <xsd:sequence>
+                    <xsd:element name="Mandt" type="n0:clnt3"/>
+                    <xsd:element name="Partner" type="n0:char10"/>
+                    <xsd:element name="DocId" type="tns:char42"/>
+                    <xsd:element name="DocName" type="tns:char64"/>
+                    <xsd:element name="NameCert" type="tns:char80"/>
+                    <xsd:element name="CrDate" type="n0:date"/>
+                    <xsd:element name="CrTime" type="n0:time"/>
+                    <xsd:element name="CreatedAt" type="tns:decimal15.0"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiadsmtp">
+                <xsd:sequence>
+                    <xsd:element name="StdNo" type="n0:char1"/>
+                    <xsd:element name="EMail" type="n0:char241"/>
+                    <xsd:element name="EmailSrch" type="tns:char20"/>
+                    <xsd:element name="StdRecip" type="n0:char1"/>
+                    <xsd:element name="R3User" type="n0:char1"/>
+                    <xsd:element name="Encode" type="tns:char1"/>
+                    <xsd:element name="Tnef" type="tns:char1"/>
+                    <xsd:element name="HomeFlag" type="n0:char1"/>
+                    <xsd:element name="Consnumber" type="n0:numeric3"/>
+                    <xsd:element name="Errorflag" type="n0:char1"/>
+                    <xsd:element name="FlgNouse" type="n0:char1"/>
+                    <xsd:element name="ValidFrom" type="n0:char14"/>
+                    <xsd:element name="ValidTo" type="n0:char14"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiadtlx">
+                <xsd:sequence>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="StdNo" type="n0:char1"/>
+                    <xsd:element name="TelexNo" type="tns:char30"/>
+                    <xsd:element name="StdRecip" type="n0:char1"/>
+                    <xsd:element name="R3User" type="n0:char1"/>
+                    <xsd:element name="HomeFlag" type="n0:char1"/>
+                    <xsd:element name="Consnumber" type="n0:numeric3"/>
+                    <xsd:element name="Errorflag" type="n0:char1"/>
+                    <xsd:element name="FlgNouse" type="n0:char1"/>
+                    <xsd:element name="ValidFrom" type="n0:char14"/>
+                    <xsd:element name="ValidTo" type="n0:char14"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiadttx">
+                <xsd:sequence>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="StdNo" type="n0:char1"/>
+                    <xsd:element name="Teletex" type="tns:char30"/>
+                    <xsd:element name="StdRecip" type="n0:char1"/>
+                    <xsd:element name="R3User" type="n0:char1"/>
+                    <xsd:element name="HomeFlag" type="n0:char1"/>
+                    <xsd:element name="Consnumber" type="n0:numeric3"/>
+                    <xsd:element name="Errorflag" type="n0:char1"/>
+                    <xsd:element name="FlgNouse" type="n0:char1"/>
+                    <xsd:element name="ValidFrom" type="n0:char14"/>
+                    <xsd:element name="ValidTo" type="n0:char14"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapibus1006CentralPerson">
+                <xsd:sequence>
+                    <xsd:element name="Firstname" type="tns:char40"/>
+                    <xsd:element name="Lastname" type="tns:char40"/>
+                    <xsd:element name="Birthname" type="tns:char40"/>
+                    <xsd:element name="Middlename" type="tns:char40"/>
+                    <xsd:element name="Secondname" type="tns:char40"/>
+                    <xsd:element name="TitleAca1" type="tns:char4"/>
+                    <xsd:element name="TitleAca2" type="tns:char4"/>
+                    <xsd:element name="TitleSppl" type="tns:char4"/>
+                    <xsd:element name="Prefix1" type="tns:char4"/>
+                    <xsd:element name="Prefix2" type="tns:char4"/>
+                    <xsd:element name="Nickname" type="tns:char40"/>
+                    <xsd:element name="Initials" type="tns:char10"/>
+                    <xsd:element name="Nameformat" type="tns:char2"/>
+                    <xsd:element name="Namcountry" type="tns:char3"/>
+                    <xsd:element name="Namcountryiso" type="n0:char2"/>
+                    <xsd:element name="Sex" type="tns:char1"/>
+                    <xsd:element name="Birthplace" type="tns:char40"/>
+                    <xsd:element name="Birthdate" type="tns:date"/>
+                    <xsd:element name="Deathdate" type="tns:date"/>
+                    <xsd:element name="Maritalstatus" type="tns:char1"/>
+                    <xsd:element name="Correspondlanguage" type="tns:lang"/>
+                    <xsd:element name="Correspondlanguageiso" type="n0:char2"/>
+                    <xsd:element name="Fullname" type="tns:char80"/>
+                    <xsd:element name="Employer" type="tns:char35"/>
+                    <xsd:element name="Occupation" type="tns:char4"/>
+                    <xsd:element name="Nationality" type="tns:char3"/>
+                    <xsd:element name="Nationalityiso" type="n0:char2"/>
+                    <xsd:element name="Countryorigin" type="tns:char3"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapibus1006CentralValidity">
+                <xsd:sequence>
+                    <xsd:element name="ValidFrom" type="tns:date"/>
+                    <xsd:element name="ValidTo" type="tns:date"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZstrProjectbp">
+                <xsd:sequence>
+                    <xsd:element name="ProjPartner" type="n0:char10"/>
+                    <xsd:element name="ProjName" type="n0:char40"/>
+                    <xsd:element name="Ratingsystem" type="tns:char40"/>
+                    <xsd:element name="SchmblkDesc" type="tns:char40"/>
+                    <xsd:element name="ArchiveFlag" type="n0:char1"/>
+                    <xsd:element name="ProjadminName" type="tns:char40"/>
+                    <xsd:element name="Role" type="tns:char50"/>
+                    <xsd:element name="Reltyp" type="tns:char6"/>
+                    <xsd:element name="SaveforlaterFlag" type="tns:char4"/>
+                    <xsd:element name="Projrole" type="tns:char60"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="ProjStatus" type="tns:char60"/>
+                    <xsd:element name="Bptype" type="n0:char4"/>
+                    <xsd:element name="Numofbuildings" type="tns:char40"/>
+                    <xsd:element name="Schematype" type="tns:char40"/>
+                    <xsd:element name="Accessid" type="n0:char60"/>
+                    <xsd:element name="Restorepointpage" type="tns:char60"/>
+                    <xsd:element name="InitialProject" type="n0:char1"/>
+                    <xsd:element name="NoofrgstrdProjs" type="n0:char60"/>
+                    <xsd:element name="Reviewdate" type="tns:date"/>
+                    <xsd:element name="Reviewstatus" type="tns:char40"/>
+                    <xsd:element name="Cbagency" type="n0:char40"/>
+                    <xsd:element name="RegistrationDate" type="n0:date"/>
+                    <xsd:element name="AccRejDueDate" type="n0:date"/>
+                    <xsd:element name="ProjAdminEmail" type="n0:char241"/>
+                    <xsd:element name="OwnerName" type="tns:char80"/>
+                    <xsd:element name="LastName" type="tns:char40"/>
+                    <xsd:element name="AdminFullName" type="tns:char80"/>
+                    <xsd:element name="CbEmail" type="n0:char241"/>
+                    <xsd:element name="CbAccepted" type="n0:char1"/>
+                    <xsd:element name="CbreassignNotes" type="tns:char60"/>
+                    <xsd:element name="ActivityStatus" type="tns:char30"/>
+                    <xsd:element name="StatusCode" type="tns:char5"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZwsPrjcreditData">
+                <xsd:sequence>
+                    <xsd:element name="ProjectId" type="n0:char10"/>
+                    <xsd:element name="PhaseId" type="tns:char24"/>
+                    <xsd:element name="PhaseDescription" type="tns:char1536"/>
+                    <xsd:element name="CreditcategoryId" type="tns:char24"/>
+                    <xsd:element name="CreditcategoryDescrption" type="tns:char1536"/>
+                    <xsd:element name="CreditId" type="tns:char24"/>
+                    <xsd:element name="CreditDescription" type="tns:char1536"/>
+                    <xsd:element name="CreditStatuscode" type="tns:char4"/>
+                    <xsd:element name="CreditStatus" type="tns:char30"/>
+                    <xsd:element name="CreditShortId" type="tns:char20"/>
+                    <xsd:element name="CreditTempStatus" type="tns:char20"/>
+                    <xsd:element name="PointsAvailable" type="tns:char10"/>
+                    <xsd:element name="CreditType" type="tns:char10"/>
+                    <xsd:element name="CreditIndex" type="tns:quantum13.3"/>
+                    <xsd:element name="AppealCounter" type="tns:quantum13.3"/>
+                    <xsd:element name="Mandatory" type="tns:char1"/>
+                    <xsd:element name="Changed" type="tns:char1"/>
+                    <xsd:element name="Date1" type="tns:date"/>
+                    <xsd:element name="Date2" type="tns:date"/>
+                    <xsd:element name="PointsAttempted" type="tns:curr13.3"/>
+                    <xsd:element name="PointsAwarded" type="tns:curr13.3"/>
+                    <xsd:element name="Role" type="tns:char6"/>
+                    <xsd:element name="Rtitl" type="tns:char60"/>
+                    <xsd:element name="PartnerFunc" type="tns:char2"/>
+                    <xsd:element name="AccessLevel" type="n0:char1"/>
+                    <xsd:element name="AttemtedPoints" type="tns:char10"/>
+                    <xsd:element name="CompletedPoints" type="tns:char10"/>
+                    <xsd:element name="UnderrevwPoints" type="tns:char10"/>
+                    <xsd:element name="AnticipatedPoints" type="tns:char10"/>
+                    <xsd:element name="DeniedPoints" type="tns:char10"/>
+                    <xsd:element name="PendclrfPoints" type="tns:char10"/>
+                    <xsd:element name="AwarwdedPoints" type="tns:char10"/>
+                    <xsd:element name="AppealedPoints" type="tns:char10"/>
+                    <xsd:element name="Possible" type="tns:char20"/>
+                    <xsd:element name="PersonAssigned" type="tns:char1536"/>
+                    <xsd:element name="RegionalCrdt" type="n0:char1"/>
+                    <xsd:element name="RbcParentChildId" type="tns:char30"/>
+                    <xsd:element name="AssociatedCredit" type="tns:char30"/>
+                    <xsd:element name="LeedAp" type="tns:char20"/>
+                    <xsd:element name="EpIoApCredits" type="tns:char20"/>
+                    <xsd:element name="AppealType" type="tns:char20"/>
+                    <xsd:element name="RgProcessingMaterialNo" type="tns:char10"/>
+                    <xsd:element name="ExpecProcessingMaterialNo" type="tns:char10"/>
+                    <xsd:element name="EpIoCredit" type="tns:char10"/>
+                    <xsd:element name="DeniedPts" type="tns:char10"/>
+                    <xsd:element name="PendingPts" type="tns:char10"/>
+                    <xsd:element name="PointsDocumented" type="tns:char10"/>
+                    <xsd:element name="PercentageComplete" type="tns:char10"/>
+                    <xsd:element name="CreditAccessLevel" type="tns:char10"/>
+                    <xsd:element name="AnticipatedPts" type="tns:char10"/>
+                    <xsd:element name="IdFormType" type="tns:char10"/>
+                    <xsd:element name="QaQcFlag" type="tns:char1"/>
+                    <xsd:element name="DifferedFlag" type="tns:char1"/>
+                    <xsd:element name="RbcCreditFlag" type="tns:char1"/>
+                    <xsd:element name="IdCreditFlag" type="tns:char1"/>
+                    <xsd:element name="CreditOwnerFlag" type="tns:char1"/>
+                    <xsd:element name="CreditUrl" type="tns:char132"/>
+                    <xsd:element name="ZzUsrfldchr9" type="tns:char80"/>
+                    <xsd:element name="MaxAttemptedPts" type="tns:char3"/>
+                    <xsd:element name="PossiblePts" type="tns:char3"/>
+                    <xsd:element name="ReviewAppealCounter" type="tns:char3"/>
+                    <xsd:element name="FormVersion" type="tns:char4"/>
+                    <xsd:element name="Tbu5" type="tns:char4"/>
+                    <xsd:element name="MaxAwardedPts" type="tns:char4"/>
+                    <xsd:element name="Precert" type="tns:char10"/>
+                    <xsd:element name="CreditSecondStatus" type="tns:char10"/>
+                    <xsd:element name="Tbu9" type="tns:char10"/>
+                    <xsd:element name="Tbu10" type="tns:char20"/>
+                    <xsd:element name="Tbu13" type="tns:char20"/>
+                    <xsd:element name="Tbu14" type="tns:char20"/>
+                    <xsd:element name="OptionFlag" type="tns:char20"/>
+                    <xsd:element name="CreditTextProjectFlag" type="tns:char1"/>
+                    <xsd:element name="CreditTextCb" type="tns:char1"/>
+                    <xsd:element name="IoSplFlag" type="tns:char1"/>
+                    <xsd:element name="TbuFlag5" type="tns:char1"/>
+                    <xsd:element name="ReviewAcceptanceDate" type="tns:char10"/>
+                    <xsd:element name="Tbu12" type="tns:char10"/>
+                    <xsd:element name="Tbu15" type="tns:char20"/>
+                    <xsd:element name="Stage" type="tns:char20"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZwsPrjReqtojoin">
+                <xsd:sequence>
+                    <xsd:element name="UserAlias" type="n0:char40"/>
+                    <xsd:element name="ProjPartner" type="n0:char10"/>
+                    <xsd:element name="ProjName" type="n0:char40"/>
+                    <xsd:element name="Ratingsystem" type="tns:char40"/>
+                    <xsd:element name="SchmblkDesc" type="tns:char40"/>
+                    <xsd:element name="ArchiveFlag" type="n0:char1"/>
+                    <xsd:element name="Siteuser" type="n0:char10"/>
+                    <xsd:element name="Username" type="tns:char40"/>
+                    <xsd:element name="ProjadminName" type="tns:char40"/>
+                    <xsd:element name="Role" type="tns:char50"/>
+                    <xsd:element name="Reltyp" type="tns:char6"/>
+                    <xsd:element name="SaveforlaterFlag" type="tns:char4"/>
+                    <xsd:element name="Projrole" type="tns:char60"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="ProjStatus" type="tns:char60"/>
+                    <xsd:element name="Bptype" type="n0:char4"/>
+                    <xsd:element name="Numofbuildings" type="tns:char40"/>
+                    <xsd:element name="Schematype" type="tns:char40"/>
+                    <xsd:element name="Accessid" type="n0:char60"/>
+                    <xsd:element name="Restorepointpage" type="tns:char60"/>
+                    <xsd:element name="InitialProject" type="n0:char1"/>
+                    <xsd:element name="NoofrgstrdProjs" type="n0:char60"/>
+                    <xsd:element name="StatusCode" type="tns:char5"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapibus1006CentralOrgan">
+                <xsd:sequence>
+                    <xsd:element name="Name1" type="n0:char40"/>
+                    <xsd:element name="Name2" type="tns:char40"/>
+                    <xsd:element name="Name3" type="tns:char40"/>
+                    <xsd:element name="Name4" type="tns:char40"/>
+                    <xsd:element name="Legalform" type="tns:char2"/>
+                    <xsd:element name="Industrysector" type="tns:char10"/>
+                    <xsd:element name="Foundationdate" type="tns:date"/>
+                    <xsd:element name="Liquidationdate" type="tns:date"/>
+                    <xsd:element name="LocNo1" type="tns:numeric7"/>
+                    <xsd:element name="LocNo2" type="tns:numeric5"/>
+                    <xsd:element name="ChkDigit" type="tns:numeric1"/>
+                    <xsd:element name="Legalorg" type="tns:char2"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZbapiAddressN">
+                <xsd:sequence>
+                    <xsd:element name="Addresstype" type="n0:char10"/>
+                    <xsd:element name="Standardaddressusage" type="n0:char1"/>
+                    <xsd:element name="Usagevalidfrom" type="n0:date"/>
+                    <xsd:element name="Usagevalidto" type="n0:date"/>
+                    <xsd:element name="Validtoreadforchange" type="n0:date"/>
+                    <xsd:element name="Standardaddress" type="n0:char1"/>
+                    <xsd:element name="COName" type="n0:char40"/>
+                    <xsd:element name="City" type="n0:char40"/>
+                    <xsd:element name="District" type="n0:char40"/>
+                    <xsd:element name="Regiogroup" type="n0:char8"/>
+                    <xsd:element name="PostlCod1" type="n0:char10"/>
+                    <xsd:element name="PostlCod2" type="n0:char10"/>
+                    <xsd:element name="PostlCod3" type="n0:char10"/>
+                    <xsd:element name="Pcode1Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode2Ext" type="n0:char10"/>
+                    <xsd:element name="Pcode3Ext" type="n0:char10"/>
+                    <xsd:element name="PoBox" type="n0:char10"/>
+                    <xsd:element name="PoWONo" type="n0:char1"/>
+                    <xsd:element name="PoBoxCit" type="n0:char40"/>
+                    <xsd:element name="PoBoxReg" type="n0:char3"/>
+                    <xsd:element name="PoboxCtry" type="n0:char3"/>
+                    <xsd:element name="PoCtryiso" type="n0:char2"/>
+                    <xsd:element name="Street" type="n0:char60"/>
+                    <xsd:element name="StrAbbr" type="n0:char2"/>
+                    <xsd:element name="HouseNo" type="n0:char10"/>
+                    <xsd:element name="HouseNo2" type="n0:char10"/>
+                    <xsd:element name="HouseNo3" type="n0:char10"/>
+                    <xsd:element name="StrSuppl1" type="n0:char40"/>
+                    <xsd:element name="StrSuppl2" type="n0:char40"/>
+                    <xsd:element name="StrSuppl3" type="n0:char40"/>
+                    <xsd:element name="Location" type="n0:char40"/>
+                    <xsd:element name="Building" type="n0:char20"/>
+                    <xsd:element name="Floor" type="n0:char10"/>
+                    <xsd:element name="RoomNo" type="n0:char10"/>
+                    <xsd:element name="Country" type="n0:char3"/>
+                    <xsd:element name="Countryiso" type="n0:char2"/>
+                    <xsd:element name="Region" type="n0:char3"/>
+                    <xsd:element name="TimeZone" type="n0:char6"/>
+                    <xsd:element name="Taxjurcode" type="n0:char15"/>
+                    <xsd:element name="HomeCity" type="n0:char40"/>
+                    <xsd:element name="Transpzone" type="n0:char10"/>
+                    <xsd:element name="Langu" type="n0:lang"/>
+                    <xsd:element name="Languiso" type="n0:char2"/>
+                    <xsd:element name="CommType" type="n0:char3"/>
+                    <xsd:element name="Extaddressnumber" type="n0:char20"/>
+                    <xsd:element name="DontUseP" type="n0:char4"/>
+                    <xsd:element name="DontUseS" type="n0:char4"/>
+                    <xsd:element name="MoveDate" type="n0:date"/>
+                    <xsd:element name="MoveAddress" type="n0:char10"/>
+                    <xsd:element name="Validfromdate" type="n0:date"/>
+                    <xsd:element name="Validtodate" type="n0:date"/>
+                    <xsd:element name="MoveAddrGuid" type="n0:char32"/>
+                    <xsd:element name="CityNo" type="n0:char12"/>
+                    <xsd:element name="DistrctNo" type="n0:char8"/>
+                    <xsd:element name="Chckstatus" type="n0:char1"/>
+                    <xsd:element name="PboxcitNo" type="n0:char12"/>
+                    <xsd:element name="StreetNo" type="n0:char12"/>
+                    <xsd:element name="Homecityno" type="n0:char12"/>
+                    <xsd:element name="Telephone" type="n0:char30"/>
+                    <xsd:element name="Fax" type="n0:char30"/>
+                    <xsd:element name="EMail" type="n0:char241"/>
+                    <xsd:element name="Nationalmember" type="n0:char1"/>
+                    <xsd:element name="Uri" type="tns:char132"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZstrAdminteam">
+                <xsd:sequence>
+                    <xsd:element name="Businesspartner" type="n0:char10"/>
+                    <xsd:element name="Reltyp" type="tns:char6"/>
+                    <xsd:element name="Role" type="tns:char50"/>
+                    <xsd:element name="Projadmin" type="tns:char40"/>
+                    <xsd:element name="Searchterm1" type="n0:char20"/>
+                    <xsd:element name="Searchterm2" type="n0:char20"/>
+                    <xsd:element name="Projectowner" type="n0:char40"/>
+                    <xsd:element name="SchmblkDesc" type="tns:char40"/>
+                    <xsd:element name="SchmblkName" type="n0:char40"/>
+                    <xsd:element name="Longitude" type="n0:char60"/>
+                    <xsd:element name="Latitude" type="n0:char60"/>
+                    <xsd:element name="Ratingsystem" type="n0:char60"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZstrTlineCurrent">
+                <xsd:sequence>
+                    <xsd:element name="OptElement" type="tns:char24"/>
+                    <xsd:element name="OptDescription" type="tns:char1536"/>
+                    <xsd:element name="PhaseElement" type="tns:char24"/>
+                    <xsd:element name="PhaseDescription" type="tns:char1536"/>
+                    <xsd:element name="RvwElement" type="tns:char24"/>
+                    <xsd:element name="RvwDescription" type="tns:char1536"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Bapiorders">
+                <xsd:sequence>
+                    <xsd:element name="SdDoc" type="tns:char10"/>
+                    <xsd:element name="ItmNumber" type="tns:numeric6"/>
+                    <xsd:element name="Material" type="tns:char18"/>
+                    <xsd:element name="ShortText" type="tns:char40"/>
+                    <xsd:element name="DocType" type="tns:char4"/>
+                    <xsd:element name="DocDate" type="tns:date"/>
+                    <xsd:element name="ReqQty" type="tns:quantum15.3"/>
+                    <xsd:element name="ReqDate" type="tns:date"/>
+                    <xsd:element name="PurchNo" type="tns:char20"/>
+                    <xsd:element name="Batch" type="tns:char10"/>
+                    <xsd:element name="ValidFrom" type="tns:date"/>
+                    <xsd:element name="ValidTo" type="tns:date"/>
+                    <xsd:element name="BillBlock" type="tns:char2"/>
+                    <xsd:element name="DlvBlock" type="tns:char2"/>
+                    <xsd:element name="SoldTo" type="tns:char10"/>
+                    <xsd:element name="Name" type="tns:char35"/>
+                    <xsd:element name="ExchgRate" type="tns:decimal9.5"/>
+                    <xsd:element name="DlvQty" type="tns:quantum13.3"/>
+                    <xsd:element name="BaseUom" type="tns:unit3"/>
+                    <xsd:element name="NetPrice" type="tns:curr11.2"/>
+                    <xsd:element name="CondPUnt" type="tns:decimal5.0"/>
+                    <xsd:element name="CondUnit" type="tns:unit3"/>
+                    <xsd:element name="NetValHd" type="tns:curr15.2"/>
+                    <xsd:element name="NetValue" type="tns:curr15.2"/>
+                    <xsd:element name="Division" type="tns:char2"/>
+                    <xsd:element name="DocStatus" type="tns:char20"/>
+                    <xsd:element name="SalesGrp" type="tns:char3"/>
+                    <xsd:element name="SalesOff" type="tns:char4"/>
+                    <xsd:element name="SalesOrg" type="tns:char4"/>
+                    <xsd:element name="SalesUnit" type="tns:unit3"/>
+                    <xsd:element name="ShipPoint" type="tns:char4"/>
+                    <xsd:element name="DistrChan" type="tns:char2"/>
+                    <xsd:element name="GiDate" type="tns:date"/>
+                    <xsd:element name="Currency" type="tns:cuky5"/>
+                    <xsd:element name="Plant" type="tns:char4"/>
+                    <xsd:element name="StoreLoc" type="tns:char4"/>
+                    <xsd:element name="OrdReason" type="tns:char3"/>
+                    <xsd:element name="ReasonRej" type="tns:char2"/>
+                    <xsd:element name="BUomIso" type="tns:char3"/>
+                    <xsd:element name="CdUntIso" type="tns:char3"/>
+                    <xsd:element name="SUnitIso" type="tns:char3"/>
+                    <xsd:element name="CurrIso" type="tns:char3"/>
+                    <xsd:element name="PurchNoC" type="tns:char35"/>
+                    <xsd:element name="ExchgRateV" type="tns:decimal9.5"/>
+                    <xsd:element name="MatExt" type="tns:char40"/>
+                    <xsd:element name="MatGuid" type="tns:char32"/>
+                    <xsd:element name="MatVers" type="tns:char10"/>
+                    <xsd:element name="CreationDate" type="tns:date"/>
+                    <xsd:element name="CreationTime" type="tns:time"/>
+                    <xsd:element name="StatusDoc" type="tns:char1"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZstrRatingsystem">
+                <xsd:sequence>
+                    <xsd:element name="Ratingsys" type="tns:char40"/>
+                    <xsd:element name="RsDesc" type="tns:char40"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZratSys">
+                <xsd:sequence>
+                    <xsd:element name="Ratingsystem" type="tns:char40"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="Zstatus">
+                <xsd:sequence>
+                    <xsd:element name="ProjStatus" type="tns:char5"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="RfcException.Message">
+                <xsd:sequence>
+                    <xsd:element name="ID" type="xsd:string"/>
+                    <xsd:element name="Number" type="tns:RfcException.Message.Number"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="getAliasDetails.RfcException">
+                <xsd:sequence>
+                    <xsd:element name="Name" type="tns:getAliasDetails.RfcExceptions"/>
+                    <xsd:element name="Text" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="Message" type="tns:RfcException.Message" minOccurs="0"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZwsFmErrorLog">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZwsFmErrorLog" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZbapiAddress">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZbapiAddress" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiconten">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiconten" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TABLE_OF_ZL3_LPEINFO">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZL3_LPEINFO" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZl3IdentificationInfo">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Zl3IdentificationInfo" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiStrBupaFsAddition">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:StrBupaFsAddition" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZl3ApDocid">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Zl3ApDocid" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiadfax">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiadfax" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiadsmtp">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiadsmtp" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiadtel">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiadtel" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiadtlx">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiadtlx" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiadttx">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiadttx" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZstrProjectbp">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZstrProjectbp" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZwsPrjcreditData">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZwsPrjcreditData" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZwsPrjReqtojoin">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZwsPrjReqtojoin" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZbapiAddressN">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZbapiAddressN" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZstrAdminteam">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZstrAdminteam" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZstrTlineCurrent">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZstrTlineCurrent" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfBapiorders">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Bapiorders" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZstrRatingsystem">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZstrRatingsystem" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZratSys">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:ZratSys" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="TableOfZstatus">
+                <xsd:sequence>
+                    <xsd:element name="item" type="tns:Zstatus" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:simpleType name="getAliasDetails.RfcExceptions">
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="AliasOrPwdIncorrect"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:element name="getAliasDetails.Exception" type="tns:getAliasDetails.RfcException"/>
+            <xsd:element name="addCompanyMembership">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ICompanyAccessid" type="n0:char60" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="addCompanyMembershipResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ECompanyAccessid" type="n0:char60"/>
+                        <xsd:element name="ECompanyName" type="n0:char40"/>
+                        <xsd:element name="EExpirationDate" type="n0:date"/>
+                        <xsd:element name="EPrimaryContact" type="tns:char80"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="cancelProject">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="cancelProjectResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createProject">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IBlockAdminAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="IBlockId" type="n0:char10" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="INumOfRegPrjUnderBlock" type="n0:char60" minOccurs="0"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IPortfolioId" type="n0:char10" minOccurs="0"/>
+                        <xsd:element name="IProjAddressData" type="tns:Bapibus1006Address" minOccurs="0"/>
+                        <xsd:element name="IProjCentralData" type="tns:Bapibus1006Central" minOccurs="0"/>
+                        <xsd:element name="IProjDeveloperAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="IProjFaxData" type="tns:Bapiadfax" minOccurs="0"/>
+                        <xsd:element name="IProjOwnerAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="IProjRatingsystem" type="n0:char20" minOccurs="0"/>
+                        <xsd:element name="IProjTelephoneData" type="tns:Bapiadtel" minOccurs="0"/>
+                        <xsd:element name="IProjType" type="n0:char20" minOccurs="0"/>
+                        <xsd:element name="IProjectTitle" type="n0:char40"/>
+                        <xsd:element name="ISchemaId" type="n0:char10" minOccurs="0"/>
+                        <xsd:element name="ITermsAndCondAcceptOrRej" type="n0:char6"/>
+                        <xsd:element name="ITermsAndCondFileContent" type="xsd:base64Binary"/>
+                        <xsd:element name="ITermsAndCondFileName" type="tns:char255"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItAdditionalData" type="n0:TABLE_OF_ZCAC_BP_ADDITION" minOccurs="0"/>
+                        <xsd:element name="ItAddress" type="tns:TableOfZbapiAddress" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createProjectResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EProjAccessId" type="n0:char60"/>
+                        <xsd:element name="EProjTemplateId" type="n0:char24"/>
+                        <xsd:element name="EProjectId" type="n0:char10"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ItAdditionalData" type="n0:TABLE_OF_ZCAC_BP_ADDITION"/>
+                        <xsd:element name="ItAddress" type="tns:TableOfZbapiAddress"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createUser">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IApFileName" type="tns:char1000" minOccurs="0"/>
+                        <xsd:element name="IApNameOnCert" type="tns:char80" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="ITermsAndCondAcceptOrRej" type="n0:char6"/>
+                        <xsd:element name="ITermsAndCondFileName" type="tns:char1000"/>
+                        <xsd:element name="IUserInfo" type="tns:ZwsLeeduserinfo"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten" minOccurs="0"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION" minOccurs="0"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO" minOccurs="0"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo" minOccurs="0"/>
+                        <xsd:element name="ItTermsAndCondFileContent" type="tns:TableOfBapiconten"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createUserResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EApDocId" type="tns:char42"/>
+                        <xsd:element name="EPartnerType" type="n0:char4"/>
+                        <xsd:element name="EUserAlias" type="n0:char40"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten" minOccurs="0"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo"/>
+                        <xsd:element name="ItTermsAndCondFileContent" type="tns:TableOfBapiconten"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="removeCompanyMembership">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ICompanyAccessid" type="n0:char60" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="removeCompanyMembershipResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ECompanyAccessid" type="n0:char60"/>
+                        <xsd:element name="ECompanyName" type="n0:char40"/>
+                        <xsd:element name="EExpirationDate" type="n0:date"/>
+                        <xsd:element name="EPrimaryContact" type="tns:char80"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getBdsDocument">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtFileContent" type="tns:TableOfBapiconten" minOccurs="0"/>
+                        <xsd:element name="IAlias" type="n0:char40"/>
+                        <xsd:element name="IDocid" type="tns:char42" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getBdsDocumentResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EFileName" type="tns:char1000"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtFileContent" type="tns:TableOfBapiconten"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getAliasDetails">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition" minOccurs="0"/>
+                        <xsd:element name="EtApDocList" type="tns:TableOfZl3ApDocid" minOccurs="0"/>
+                        <xsd:element name="EtBapiadtlx" type="tns:TableOfBapiadtlx" minOccurs="0"/>
+                        <xsd:element name="EtBapiadttx" type="tns:TableOfBapiadttx" minOccurs="0"/>
+                        <xsd:element name="EtEmailData" type="tns:TableOfBapiadsmtp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtFaxData" type="tns:TableOfBapiadfax" minOccurs="0"/>
+                        <xsd:element name="EtLicencedetails" type="tns:TABLE_OF_ZL3_LPEINFO" minOccurs="0"/>
+                        <xsd:element name="EtTelephoneData" type="tns:TableOfBapiadtel" minOccurs="0"/>
+                        <xsd:element name="IAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getAliasDetailsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EAddressdata" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EAdminname" type="tns:char40"/>
+                        <xsd:element name="ECentraldata" type="tns:Bapibus1006Central"/>
+                        <xsd:element name="ECentraldataperson" type="tns:Bapibus1006CentralPerson"/>
+                        <xsd:element name="ECentraldatavalidity" type="tns:Bapibus1006CentralValidity"/>
+                        <xsd:element name="ECompanyname" type="n0:char40"/>
+                        <xsd:element name="ECorpmembershipid" type="n0:char10"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition"/>
+                        <xsd:element name="EtApDocList" type="tns:TableOfZl3ApDocid" minOccurs="0"/>
+                        <xsd:element name="EtBapiadtlx" type="tns:TableOfBapiadtlx"/>
+                        <xsd:element name="EtBapiadttx" type="tns:TableOfBapiadttx"/>
+                        <xsd:element name="EtEmailData" type="tns:TableOfBapiadsmtp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtFaxData" type="tns:TableOfBapiadfax"/>
+                        <xsd:element name="EtLicencedetails" type="tns:TABLE_OF_ZL3_LPEINFO"/>
+                        <xsd:element name="EtTelephoneData" type="tns:TableOfBapiadtel"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectsWithCredits">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtActiveProjCreditList" type="tns:TableOfZwsPrjcreditData" minOccurs="0"/>
+                        <xsd:element name="EtActiveProjects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtSavedProjCreditList" type="tns:TableOfZwsPrjcreditData" minOccurs="0"/>
+                        <xsd:element name="EtSavedProjects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectsWithCreditsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtActiveProjCreditList" type="tns:TableOfZwsPrjcreditData"/>
+                        <xsd:element name="EtActiveProjects" type="tns:TableOfZstrProjectbp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtSavedProjCreditList" type="tns:TableOfZwsPrjcreditData"/>
+                        <xsd:element name="EtSavedProjects" type="tns:TableOfZstrProjectbp"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getArchivedProjectList">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtArchivedProjects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getArchivedProjectListResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtArchivedProjects" type="tns:TableOfZstrProjectbp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getInvitationsRequests">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtInvitations" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="EtRequests" type="tns:TableOfZwsPrjReqtojoin" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getInvitationsRequestsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtInvitations" type="tns:TableOfZstrProjectbp"/>
+                        <xsd:element name="EtRequests" type="tns:TableOfZwsPrjReqtojoin"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectByAccessId">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjAccessid" type="n0:char60"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectByAccessIdResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ECentraldataorganization" type="tns:Bapibus1006CentralOrgan"/>
+                        <xsd:element name="EProjectId" type="n0:char10"/>
+                        <xsd:element name="ERatingsysVersion" type="n0:char40"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectList">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtActiveProjects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtSavedProjects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectListResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtActiveProjects" type="tns:TableOfZstrProjectbp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtSavedProjects" type="tns:TableOfZstrProjectbp"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectAddresses">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtAddresses" type="tns:TableOfZbapiAddressN" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectAddressesResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtAddresses" type="tns:TableOfZbapiAddressN"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectDetails">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition" minOccurs="0"/>
+                        <xsd:element name="EtAdminTeam" type="tns:TableOfZstrAdminteam" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtFaxInfo" type="tns:TableOfBapiadfax" minOccurs="0"/>
+                        <xsd:element name="EtTelephoneInfo" type="tns:TableOfBapiadtel" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectDetailsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EAddressdata" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="ECentraldata" type="tns:Bapibus1006Central"/>
+                        <xsd:element name="ECentraldataorganization" type="tns:Bapibus1006CentralOrgan"/>
+                        <xsd:element name="ELastchangedate" type="tns:date"/>
+                        <xsd:element name="EOwner" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EProjStatus" type="tns:char30"/>
+                        <xsd:element name="EProjStatusDescription" type="tns:char60"/>
+                        <xsd:element name="EProjadmin" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EProjarchitect" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EProjdeveloper" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EProjmanager" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="ERegistrationdate" type="tns:date"/>
+                        <xsd:element name="EStatusCode" type="tns:char5"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition"/>
+                        <xsd:element name="EtAdminTeam" type="tns:TableOfZstrAdminteam"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtFaxInfo" type="tns:TableOfBapiadfax"/>
+                        <xsd:element name="EtTelephoneInfo" type="tns:TableOfBapiadtel"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectTimelineOptions">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtCurrentTimelineOption" type="tns:TableOfZstrTlineCurrent"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtPossibleTimelineOption" type="tns:TableOfZstrTlineCurrent"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getProjectTimelineOptionsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtCurrentTimelineOption" type="tns:TableOfZstrTlineCurrent"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtPossibleTimelineOption" type="tns:TableOfZstrTlineCurrent"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getTermsConditionDoc">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjRatingSystem" type="tns:char40" minOccurs="0"/>
+                        <xsd:element name="ITcType" type="tns:char2"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getTermsConditionDocResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EFileContent" type="xsd:base64Binary"/>
+                        <xsd:element name="EFileType" type="tns:char5"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getUserDetails">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition" minOccurs="0"/>
+                        <xsd:element name="EtApDocList" type="tns:TableOfZl3ApDocid" minOccurs="0"/>
+                        <xsd:element name="EtBapiadtlx" type="tns:TableOfBapiadtlx" minOccurs="0"/>
+                        <xsd:element name="EtBapiadttx" type="tns:TableOfBapiadttx" minOccurs="0"/>
+                        <xsd:element name="EtEmailData" type="tns:TableOfBapiadsmtp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtFaxData" type="tns:TableOfBapiadfax" minOccurs="0"/>
+                        <xsd:element name="EtLicenceDetails" type="tns:TABLE_OF_ZL3_LPEINFO" minOccurs="0"/>
+                        <xsd:element name="EtTelephoneData" type="tns:TableOfBapiadtel" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getUserDetailsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EAddressdata" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EAdminname" type="tns:char40"/>
+                        <xsd:element name="ECentraldata" type="tns:Bapibus1006Central"/>
+                        <xsd:element name="ECentraldataperson" type="tns:Bapibus1006CentralPerson"/>
+                        <xsd:element name="ECentraldatavalidity" type="tns:Bapibus1006CentralValidity"/>
+                        <xsd:element name="ECompanyname" type="n0:char40"/>
+                        <xsd:element name="ECorpmembershipid" type="n0:char10"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtAdditionalData" type="tns:TableOfBapiStrBupaFsAddition"/>
+                        <xsd:element name="EtApDocList" type="tns:TableOfZl3ApDocid" minOccurs="0"/>
+                        <xsd:element name="EtBapiadtlx" type="tns:TableOfBapiadtlx"/>
+                        <xsd:element name="EtBapiadttx" type="tns:TableOfBapiadttx"/>
+                        <xsd:element name="EtEmailData" type="tns:TableOfBapiadsmtp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtFaxData" type="tns:TableOfBapiadfax"/>
+                        <xsd:element name="EtLicenceDetails" type="tns:TABLE_OF_ZL3_LPEINFO"/>
+                        <xsd:element name="EtTelephoneData" type="tns:TableOfBapiadtel"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getOrderHistory">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="EtSalesOrders" type="tns:TableOfBapiorders" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getOrderHistoryResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EShippingAddress" type="tns:Bapibus1006Address"/>
+                        <xsd:element name="EShippingFirstName" type="tns:char40"/>
+                        <xsd:element name="EShippingLastName" type="tns:char40"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="EtSalesOrders" type="tns:TableOfBapiorders"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getRatingSystemList">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtRatingSystem" type="tns:TableOfZstrRatingsystem" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getRatingSystemListResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtRatingSystem" type="tns:TableOfZstrRatingsystem"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="searchProject">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtBpprojects" type="tns:TableOfZstrProjectbp" minOccurs="0"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IKeyword" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjtype" type="n0:char1" minOccurs="0"/>
+                        <xsd:element name="IRatingsys" type="tns:char20" minOccurs="0"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItRatingsys" type="tns:TableOfZratSys" minOccurs="0"/>
+                        <xsd:element name="ItStatus" type="tns:TableOfZstatus" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="searchProjectResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtBpprojects" type="tns:TableOfZstrProjectbp"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItRatingsys" type="tns:TableOfZratSys"/>
+                        <xsd:element name="ItStatus" type="tns:TableOfZstatus"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateProject">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IBlockidAdminAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjAddressData" type="tns:Bapibus1006Address" minOccurs="0"/>
+                        <xsd:element name="IProjCentralData" type="tns:Bapibus1006Central" minOccurs="0"/>
+                        <xsd:element name="IProjDeveloperAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="IProjFaxData" type="tns:Bapiadfax" minOccurs="0"/>
+                        <xsd:element name="IProjOwnerAddr" type="tns:ZbapiAddress" minOccurs="0"/>
+                        <xsd:element name="IProjTelephoneData" type="tns:Bapiadtel" minOccurs="0"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IProjectTitle" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItAdditionalData" type="n0:TABLE_OF_ZCAC_BP_ADDITION" minOccurs="0"/>
+                        <xsd:element name="ItAddress" type="tns:TableOfZbapiAddress" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateProjectResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItAdditionalData" type="n0:TABLE_OF_ZCAC_BP_ADDITION"/>
+                        <xsd:element name="ItAddress" type="tns:TableOfZbapiAddress"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateProjectAddresses">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IProjectId" type="n0:char10"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItAddresses" type="tns:TableOfZbapiAddressN" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateProjectAddressesResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItAddresses" type="tns:TableOfZbapiAddressN"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUser">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IApFileName" type="tns:char1000" minOccurs="0"/>
+                        <xsd:element name="IApNameOnCert" type="tns:char80" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserInfo" type="tns:ZwsLeeduserinfo"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten" minOccurs="0"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION" minOccurs="0"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO" minOccurs="0"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUserResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EApDocId" type="tns:char42"/>
+                        <xsd:element name="EPartnerType" type="n0:char4"/>
+                        <xsd:element name="EUserAlias" type="n0:char40"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten" minOccurs="0"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getUserCompanyMemberShip">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ICompanyAccessid" type="n0:char60" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IOperation" type="n0:char1"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getUserCompanyMemberShipResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ECompanyAccessid" type="n0:char60"/>
+                        <xsd:element name="ECompanyId" type="n0:char10"/>
+                        <xsd:element name="ECompanyName" type="n0:char40"/>
+                        <xsd:element name="EExpirationDate" type="n0:date"/>
+                        <xsd:element name="EPrimaryContact" type="tns:char80"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="deleteUserApInfo">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IApDocId" type="tns:char42"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="deleteUserApInfoResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="deleteUserLpInfo">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="deleteUserLpInfoResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="changeUserPassword">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserNewPwd" type="n0:char40"/>
+                        <xsd:element name="IUserOldPwd" type="n0:char40"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="changeUserPasswordResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUserApinfo">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="IApFileName" type="tns:char1000"/>
+                        <xsd:element name="IApNameOnCert" type="tns:char80"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUserApinfoResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EApDocId" type="tns:char42"/>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItApFileContent" type="tns:TableOfBapiconten"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUserLpInfo">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog" minOccurs="0"/>
+                        <xsd:element name="ILeedPartnerAlias" type="n0:char40"/>
+                        <xsd:element name="ILeedPartnerPwd" type="n0:char40"/>
+                        <xsd:element name="IPartnerUserAlias" type="n0:char40"/>
+                        <xsd:element name="IUserAlias" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="IUserGuid" type="n0:byte16" minOccurs="0"/>
+                        <xsd:element name="IUserPwd" type="n0:char40" minOccurs="0"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION" minOccurs="0"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO" minOccurs="0"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateUserLpInfoResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EUserGuid" type="n0:byte16"/>
+                        <xsd:element name="EtErrorLogInfo" type="tns:TableOfZwsFmErrorLog"/>
+                        <xsd:element name="ItLicenseAddition" type="n0:TABLE_OF_ZCAC_BP_ADDITION"/>
+                        <xsd:element name="ItLicenseDetails" type="tns:TABLE_OF_ZL3_LPEINFO"/>
+                        <xsd:element name="ItLicenseInfo" type="tns:TableOfZl3IdentificationInfo"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="addCompanyMembership">
+        <wsdl:part name="parameters" element="tns:addCompanyMembership"/>
+    </wsdl:message>
+    <wsdl:message name="addCompanyMembershipResponse">
+        <wsdl:part name="parameter" element="tns:addCompanyMembershipResponse"/>
+    </wsdl:message>
+    <wsdl:message name="cancelProject">
+        <wsdl:part name="parameters" element="tns:cancelProject"/>
+    </wsdl:message>
+    <wsdl:message name="cancelProjectResponse">
+        <wsdl:part name="parameter" element="tns:cancelProjectResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createProject">
+        <wsdl:part name="parameters" element="tns:createProject"/>
+    </wsdl:message>
+    <wsdl:message name="createProjectResponse">
+        <wsdl:part name="parameter" element="tns:createProjectResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createUser">
+        <wsdl:part name="parameters" element="tns:createUser"/>
+    </wsdl:message>
+    <wsdl:message name="createUserResponse">
+        <wsdl:part name="parameter" element="tns:createUserResponse"/>
+    </wsdl:message>
+    <wsdl:message name="removeCompanyMembership">
+        <wsdl:part name="parameters" element="tns:removeCompanyMembership"/>
+    </wsdl:message>
+    <wsdl:message name="removeCompanyMembershipResponse">
+        <wsdl:part name="parameter" element="tns:removeCompanyMembershipResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getBdsDocument">
+        <wsdl:part name="parameters" element="tns:getBdsDocument"/>
+    </wsdl:message>
+    <wsdl:message name="getBdsDocumentResponse">
+        <wsdl:part name="parameter" element="tns:getBdsDocumentResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getAliasDetails">
+        <wsdl:part name="parameters" element="tns:getAliasDetails"/>
+    </wsdl:message>
+    <wsdl:message name="getAliasDetailsResponse">
+        <wsdl:part name="parameter" element="tns:getAliasDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectsWithCredits">
+        <wsdl:part name="parameters" element="tns:getProjectsWithCredits"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectsWithCreditsResponse">
+        <wsdl:part name="parameter" element="tns:getProjectsWithCreditsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getArchivedProjectList">
+        <wsdl:part name="parameters" element="tns:getArchivedProjectList"/>
+    </wsdl:message>
+    <wsdl:message name="getArchivedProjectListResponse">
+        <wsdl:part name="parameter" element="tns:getArchivedProjectListResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getInvitationsRequests">
+        <wsdl:part name="parameters" element="tns:getInvitationsRequests"/>
+    </wsdl:message>
+    <wsdl:message name="getInvitationsRequestsResponse">
+        <wsdl:part name="parameter" element="tns:getInvitationsRequestsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectByAccessId">
+        <wsdl:part name="parameters" element="tns:getProjectByAccessId"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectByAccessIdResponse">
+        <wsdl:part name="parameter" element="tns:getProjectByAccessIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectList">
+        <wsdl:part name="parameters" element="tns:getProjectList"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectListResponse">
+        <wsdl:part name="parameter" element="tns:getProjectListResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectAddresses">
+        <wsdl:part name="parameters" element="tns:getProjectAddresses"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectAddressesResponse">
+        <wsdl:part name="parameter" element="tns:getProjectAddressesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectDetails">
+        <wsdl:part name="parameters" element="tns:getProjectDetails"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectDetailsResponse">
+        <wsdl:part name="parameter" element="tns:getProjectDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectTimelineOptions">
+        <wsdl:part name="parameters" element="tns:getProjectTimelineOptions"/>
+    </wsdl:message>
+    <wsdl:message name="getProjectTimelineOptionsResponse">
+        <wsdl:part name="parameter" element="tns:getProjectTimelineOptionsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getTermsConditionDoc">
+        <wsdl:part name="parameters" element="tns:getTermsConditionDoc"/>
+    </wsdl:message>
+    <wsdl:message name="getTermsConditionDocResponse">
+        <wsdl:part name="parameter" element="tns:getTermsConditionDocResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getUserDetails">
+        <wsdl:part name="parameters" element="tns:getUserDetails"/>
+    </wsdl:message>
+    <wsdl:message name="getUserDetailsResponse">
+        <wsdl:part name="parameter" element="tns:getUserDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getOrderHistory">
+        <wsdl:part name="parameters" element="tns:getOrderHistory"/>
+    </wsdl:message>
+    <wsdl:message name="getOrderHistoryResponse">
+        <wsdl:part name="parameter" element="tns:getOrderHistoryResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getRatingSystemList">
+        <wsdl:part name="parameters" element="tns:getRatingSystemList"/>
+    </wsdl:message>
+    <wsdl:message name="getRatingSystemListResponse">
+        <wsdl:part name="parameter" element="tns:getRatingSystemListResponse"/>
+    </wsdl:message>
+    <wsdl:message name="searchProject">
+        <wsdl:part name="parameters" element="tns:searchProject"/>
+    </wsdl:message>
+    <wsdl:message name="searchProjectResponse">
+        <wsdl:part name="parameter" element="tns:searchProjectResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateProject">
+        <wsdl:part name="parameters" element="tns:updateProject"/>
+    </wsdl:message>
+    <wsdl:message name="updateProjectResponse">
+        <wsdl:part name="parameter" element="tns:updateProjectResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateProjectAddresses">
+        <wsdl:part name="parameters" element="tns:updateProjectAddresses"/>
+    </wsdl:message>
+    <wsdl:message name="updateProjectAddressesResponse">
+        <wsdl:part name="parameter" element="tns:updateProjectAddressesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateUser">
+        <wsdl:part name="parameters" element="tns:updateUser"/>
+    </wsdl:message>
+    <wsdl:message name="updateUserResponse">
+        <wsdl:part name="parameter" element="tns:updateUserResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getUserCompanyMemberShip">
+        <wsdl:part name="parameters" element="tns:getUserCompanyMemberShip"/>
+    </wsdl:message>
+    <wsdl:message name="getUserCompanyMemberShipResponse">
+        <wsdl:part name="parameter" element="tns:getUserCompanyMemberShipResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteUserApInfo">
+        <wsdl:part name="parameters" element="tns:deleteUserApInfo"/>
+    </wsdl:message>
+    <wsdl:message name="deleteUserApInfoResponse">
+        <wsdl:part name="parameter" element="tns:deleteUserApInfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteUserLpInfo">
+        <wsdl:part name="parameters" element="tns:deleteUserLpInfo"/>
+    </wsdl:message>
+    <wsdl:message name="deleteUserLpInfoResponse">
+        <wsdl:part name="parameter" element="tns:deleteUserLpInfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="changeUserPassword">
+        <wsdl:part name="parameters" element="tns:changeUserPassword"/>
+    </wsdl:message>
+    <wsdl:message name="changeUserPasswordResponse">
+        <wsdl:part name="parameter" element="tns:changeUserPasswordResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateUserApinfo">
+        <wsdl:part name="parameters" element="tns:updateUserApinfo"/>
+    </wsdl:message>
+    <wsdl:message name="updateUserApinfoResponse">
+        <wsdl:part name="parameter" element="tns:updateUserApinfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateUserLpInfo">
+        <wsdl:part name="parameters" element="tns:updateUserLpInfo"/>
+    </wsdl:message>
+    <wsdl:message name="updateUserLpInfoResponse">
+        <wsdl:part name="parameter" element="tns:updateUserLpInfoResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="Z_WS_ADM_WSE">
+        <wsp:Policy>
+            <wsp:PolicyReference URI="#IF_Z_WS_ADM_WSE"/></wsp:Policy>
+        <wsdl:operation name="addCompanyMembership">
+            <wsdl:input message="tns:addCompanyMembership"/>
+            <wsdl:output message="tns:addCompanyMembershipResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="cancelProject">
+            <wsdl:input message="tns:cancelProject"/>
+            <wsdl:output message="tns:cancelProjectResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createProject">
+            <wsdl:input message="tns:createProject"/>
+            <wsdl:output message="tns:createProjectResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createUser">
+            <wsdl:input message="tns:createUser"/>
+            <wsdl:output message="tns:createUserResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="removeCompanyMembership">
+            <wsdl:input message="tns:removeCompanyMembership"/>
+            <wsdl:output message="tns:removeCompanyMembershipResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getBdsDocument">
+            <wsdl:input message="tns:getBdsDocument"/>
+            <wsdl:output message="tns:getBdsDocumentResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAliasDetails">
+            <wsdl:input message="tns:getAliasDetails"/>
+            <wsdl:output message="tns:getAliasDetailsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectsWithCredits">
+            <wsdl:input message="tns:getProjectsWithCredits"/>
+            <wsdl:output message="tns:getProjectsWithCreditsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getArchivedProjectList">
+            <wsdl:input message="tns:getArchivedProjectList"/>
+            <wsdl:output message="tns:getArchivedProjectListResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getInvitationsRequests">
+            <wsdl:input message="tns:getInvitationsRequests"/>
+            <wsdl:output message="tns:getInvitationsRequestsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectByAccessId">
+            <wsdl:input message="tns:getProjectByAccessId"/>
+            <wsdl:output message="tns:getProjectByAccessIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectList">
+            <wsdl:input message="tns:getProjectList"/>
+            <wsdl:output message="tns:getProjectListResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectAddresses">
+            <wsdl:input message="tns:getProjectAddresses"/>
+            <wsdl:output message="tns:getProjectAddressesResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectDetails">
+            <wsdl:input message="tns:getProjectDetails"/>
+            <wsdl:output message="tns:getProjectDetailsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectTimelineOptions">
+            <wsdl:input message="tns:getProjectTimelineOptions"/>
+            <wsdl:output message="tns:getProjectTimelineOptionsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getTermsConditionDoc">
+            <wsdl:input message="tns:getTermsConditionDoc"/>
+            <wsdl:output message="tns:getTermsConditionDocResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getUserDetails">
+            <wsdl:input message="tns:getUserDetails"/>
+            <wsdl:output message="tns:getUserDetailsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderHistory">
+            <wsdl:input message="tns:getOrderHistory"/>
+            <wsdl:output message="tns:getOrderHistoryResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getRatingSystemList">
+            <wsdl:input message="tns:getRatingSystemList"/>
+            <wsdl:output message="tns:getRatingSystemListResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="searchProject">
+            <wsdl:input message="tns:searchProject"/>
+            <wsdl:output message="tns:searchProjectResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateProject">
+            <wsdl:input message="tns:updateProject"/>
+            <wsdl:output message="tns:updateProjectResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateProjectAddresses">
+            <wsdl:input message="tns:updateProjectAddresses"/>
+            <wsdl:output message="tns:updateProjectAddressesResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateUser">
+            <wsdl:input message="tns:updateUser"/>
+            <wsdl:output message="tns:updateUserResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getUserCompanyMemberShip">
+            <wsdl:input message="tns:getUserCompanyMemberShip"/>
+            <wsdl:output message="tns:getUserCompanyMemberShipResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteUserApInfo">
+            <wsdl:input message="tns:deleteUserApInfo"/>
+            <wsdl:output message="tns:deleteUserApInfoResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteUserLpInfo">
+            <wsdl:input message="tns:deleteUserLpInfo"/>
+            <wsdl:output message="tns:deleteUserLpInfoResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="changeUserPassword">
+            <wsdl:input message="tns:changeUserPassword"/>
+            <wsdl:output message="tns:changeUserPasswordResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateUserApinfo">
+            <wsdl:input message="tns:updateUserApinfo"/>
+            <wsdl:output message="tns:updateUserApinfoResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateUserLpInfo">
+            <wsdl:input message="tns:updateUserLpInfo"/>
+            <wsdl:output message="tns:updateUserLpInfoResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="Z_WS_ADM_WSE" type="tns:Z_WS_ADM_WSE">
+        <wsp:Policy>
+            <wsp:PolicyReference URI="#BN_Z_WS_ADM_WSE"/></wsp:Policy>
+        <wsa:EndpointReference xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+            <wsa:ReferenceParameters/>
+        </wsa:EndpointReference>
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="addCompanyMembership">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="cancelProject">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createProject">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createUser">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="removeCompanyMembership">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBdsDocument">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAliasDetails">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectsWithCredits">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getArchivedProjectList">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInvitationsRequests">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectByAccessId">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectList">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectAddresses">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectDetails">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getProjectTimelineOptions">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getTermsConditionDoc">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getUserDetails">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderHistory">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRatingSystemList">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="searchProject">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateProject">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateProjectAddresses">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateUser">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getUserCompanyMemberShip">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteUserApInfo">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteUserLpInfo">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="changeUserPassword">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateUserApinfo">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateUserLpInfo">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="service">
+        <wsdl:port name="Z_WS_ADM_WSE" binding="tns:Z_WS_ADM_WSE">
+            <soap:address location="https://prd.dispatch.usgbc.org/sap/bc/srt/rfc/sap/z_ws_adm_wse/300/z_ws_adm_wse/z_ws_adm_wse"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

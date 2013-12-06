@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map_xml>
+    <search_coordinates lat="40.093306" lng="-76.295242" address="Lancaster, PA" />
+    <location name="Green Building Association of Central PA" lat="40.296288" lng="-76.926270" city="Carlisle" state="PA" profile_url="/chapters/green-building-association-central-pa" join_url="/join-center/chapter/" handle_reg="true" />
+    <location name="Delaware Valley Green Building Council" lat="39.972912" lng="-75.190430" city="" state="" profile_url="/chapters/delaware-valley-green-building-council" join_url="/join-center/chapter/?q=1" handle_reg="true" />
+    <location name="Maryland Chapter" lat="39.253525" lng="-76.624146" city="Baltimore" state="MD" profile_url="/chapters/maryland-chapter" join_url="/join-center/chapter/" handle_reg="true" />
+    <location name="National Capital Region Chapter" lat="39.031509" lng="-77.395920" city="Washington" state="DC" profile_url="/chapters/national-capital-region-chapter" join_url="http://usgbcncr.org" handle_reg="false" />
+    <location name="New Jersey Chapter" lat="40.413494" lng="-74.465332" city="Morristown" state="NJ" profile_url="/chapters/new-jersey-chapter" join_url="/join-center/chapter/" handle_reg="true" />
+</map_xml>

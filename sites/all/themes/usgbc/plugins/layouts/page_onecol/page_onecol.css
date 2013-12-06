@@ -1,0 +1,18 @@
+/* $Id: onecol.css,v 1.1 $ */
+
+#mainCol {
+  float: left;
+}
+
+
+.subcontent-wrapper,
+#mainCol,
+#content.twoColRight .subcontent-wrapper #mainCol {
+  float: left;
+  width: 780px;
+}
+
+
+#panels-dnd-main {
+  overflow: hidden;
+}

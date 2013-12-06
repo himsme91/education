@@ -1,0 +1,317 @@
+/* @group Modals */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: static !important;
+    width: 100%;
+}
+
+/*Commented out because it was causing issues in the secluded forms
+
+#body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+*/
+
+.overlay-decorator {
+    background-color: white;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.overlay-wrap {
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2001;
+}
+
+.overlay {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: middle;
+    width: 500px;
+    z-index: 9999;
+}
+
+.dialog-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dialog-decorator { display: none; }
+
+#dialog {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 8px 8px;
+    padding: 8px;
+}
+
+#dialog .modal-content {
+    background: none repeat scroll 0 0 white;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 4px rgba(10, 10, 10, 0.3);
+    padding: 12px 20px;
+    position: relative;
+}
+
+.modal-title {
+    border-bottom: 1px solid #EEEEEE;
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 14px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.modal-title span { float: left; }
+
+.modal-title .modal-title-note {
+    color: #777777;
+    float: right;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.modal-close {
+    background: url(../img/modal-close.png) repeat scroll 0 0 transparent;
+    display: block;
+    height: 37px;
+    position: absolute;
+    right: -16px;
+    text-indent: -9999px;
+    top: -16px;
+    width: 35px;
+}
+
+.modal-close:active { top: -15px; }
+
+.dialog .modal-close {
+    right: -21px;
+    top: -23px;
+}
+
+.modal-footer {
+    border-top: 1px solid #EEEEEE;
+    clear: both;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#ask-question-modal .element { clear: both; }
+#ask-question-modal .field { width: 400px; }
+
+#ask-question-modal .inputlist {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+#ask-question-modal .inputlist li { width: 80px; }
+#ask-question-modal .tabs .aside { margin-bottom: 0; }
+#ask-question-contact-form .overlay { width: 650px; }
+
+#ask-question-contact-form .ask-alt-column {
+    float: left;
+    padding-right: 20px;
+    width: 190px;
+}
+
+#ask-question-contact-form .ask-main-column {
+    border-left: 1px solid #EEEEEE;
+    float: left;
+    padding-left: 20px;
+    width: 345px;
+}
+
+#ask-question-contact-form .ask-alt-column .field { width: 178px; }
+#ask-question-contact-form .ask-main-column .field { width: 338px; }
+#ask-question-success h1 { margin-bottom: 0; }
+#ask-question-success p { margin-bottom: 0; }
+#credentials-selector .overlay { width: 600px; }
+
+#credentials-selector ul {
+    border: 2px solid #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
+    height: 400px;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 10px;
+}
+#credentials-selector ul li {
+    margin: 0;
+    padding: 8px 0;
+}
+
+#credentials-selector ul li input { margin-top: 1px; }
+
+/* @end */
+
+/* @group Text Counter */
+.textblock {
+	clear: both;
+}
+
+.textblock .meter {
+	font-size: 11px;
+	overflow: hidden;
+	padding: 6px 0;
+}
+
+.meter .meter_label {
+	display: block;
+	float: left;
+	margin-right: 6px;
+	font-size: 10px;
+}
+
+.textblock .meter_bar {
+	display: block;
+	float: right;
+	width: 250px;
+	height: 12px;
+	border: 1px solid #ccc;
+
+	background-image: url(../img/meter-bg.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2) inset;
+}
+/* @end */
+
+/* @group 2-Col Modal */
+#modal .two-col {
+    overflow: hidden;
+}
+
+#modal .left-col {
+    width: 35%;
+    float: left;
+}
+
+#modal .right-col {
+    width: 58%;
+    float: right;
+}
+/* @end */
+
+/* @group Uniform Edits */
+#navCol .selector,
+#navCol .selector select {
+	width: 146px;
+}
+
+#navCol .selector span { width: 114px !important; }
+
+#navCol input.uniform {
+	width: 138px;
+	margin: 0 2px;
+}
+/* @end */
+
+/* @group Pretty Photo */
+ div.facebook .pp_top .pp_left{background: url(../img/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat;}div.facebook .pp_top .pp_middle{background: url(../img/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x;}div.facebook .pp_top .pp_right{background: url(../img/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat;}div.facebook .pp_content .ppt{color:#000;}div.facebook .pp_content_container .pp_left{background: url(../img/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y;}div.facebook .pp_content_container .pp_right{background: url(../img/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y;}div.facebook .pp_content{background:#fff;}div.facebook .pp_expand{background: url(../img/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;cursor: pointer;}div.facebook .pp_expand:hover{background: url(../img/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;cursor: pointer;}div.facebook .pp_contract{background: url(../img/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;cursor: pointer;}div.facebook .pp_contract:hover{background: url(../img/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;cursor: pointer;}div.facebook .pp_close{width:22px;height:22px;background: url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;cursor: pointer;}div.facebook #pp_full_res .pp_inline{color:#000;}div.facebook .pp_loaderIcon{background: url(../img/prettyPhoto/facebook/loader.gif) center center no-repeat;}div.facebook .pp_arrow_previous{background: url(../img/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;height:22px;margin-top:0;width:22px;}div.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default;}div.facebook .pp_arrow_next{background: url(../img/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;height:22px;margin-top:0;width:22px;}div.facebook .pp_arrow_next.disabled{background-position: -32px -96px;cursor:default;}div.facebook .pp_nav{margin-top:0;}div.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px;}div.facebook .pp_nav .pp_play{background: url(../img/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;height:22px;width:22px;}div.facebook .pp_nav .pp_pause{background: url(../img/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;height:22px;width:22px;}div.facebook .pp_next:hover{background: url(../img/prettyPhoto/facebook/btnNext.png) center right no-repeat;cursor: pointer;}div.facebook .pp_previous:hover{background: url(../img/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;cursor: pointer;}div.facebook .pp_bottom .pp_left{background: url(../img/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat;}div.facebook .pp_bottom .pp_middle{background: url(../img/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x;}div.facebook .pp_bottom .pp_right{background: url(../img/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat;}div.pp_pic_holder a:focus{outline:none;}div.pp_overlay{background:#000;display: none;left:0;position:absolute;top:0;width:100%;z-index:9500;}div.pp_pic_holder{display: none;position:absolute;width:100px;z-index:10000;}.pp_top{height:20px;position: relative;}* html .pp_top{padding:0 20px;}.pp_top .pp_left{height:20px;left:0;position:absolute;width:20px;}.pp_top .pp_middle{height:20px;left:20px;position:absolute;right:20px;}* html .pp_top .pp_middle{left:0;position: static;}.pp_top .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px;}.pp_content{height:40px;}.pp_fade{display: none;}.pp_content_container{position: relative;text-align: left;width:100%;}.pp_content_container .pp_left{padding-left:20px;}.pp_content_container .pp_right{padding-right:20px;}.pp_content_container .pp_details{float: left;margin:10px 0 2px 0;}.pp_description{display: none;font-size:0;margin:0 0 5px 0;}.pp_nav{clear: left;float: left;margin:3px 0 0 0;}.pp_nav p{float: left;margin:2px 4px;}.pp_nav .pp_play,.pp_nav .pp_pause{float: left;margin-right:4px;text-indent: -10000px;}a.pp_arrow_previous,a.pp_arrow_next{display:block;float: left;height:15px;margin-top:3px;overflow: hidden;text-indent: -10000px;width:14px;}.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000;}.pp_gallery{left:50%;margin-top: -50px;position:absolute;z-index:10000;}.pp_gallery ul{float: left;height:35px;margin:0 0 0 5px;overflow: hidden;position: relative;}.pp_gallery ul a{border:1px #000 solid;border:1px rgba(0,0,0,0.5) solid;display:block;float: left;height:33px;overflow: hidden;}.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff;}.pp_gallery ul a img{border:0;}.pp_gallery li{display:block;float: left;margin:0 5px 0 0;}.pp_gallery li.default a{background: url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px;}.pp_gallery li.default a img{display: none;}.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px !important;}a.pp_next{background: url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float: right;height:100%;text-indent: -10000px;width:49%;}a.pp_previous{background: url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float: left;height:100%;text-indent: -10000px;width:49%;}a.pp_expand,a.pp_contract{cursor: pointer;display: none;height:20px;position:absolute;right:30px;text-indent: -10000px;top:10px;width:20px;z-index:20000;}a.pp_close{display:block;float: right;line-height:22px;text-indent: -10000px;}.pp_bottom{height:20px;position: relative;}* html .pp_bottom{padding:0 20px;}.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px;}.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px;}* html .pp_bottom .pp_middle{left:0;position: static;}.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px;}.pp_loaderIcon{display:block;height:24px;left:50%;margin: -12px 0 0 -12px;position:absolute;top:50%;width:24px;}#pp_full_res{line-height:1 !important;}#pp_full_res .pp_inline{text-align: left;}#pp_full_res .pp_inline p{margin:0 0 15px 0;}div.ppt{color:#fff;display: none !important;font-size:14px;margin:0 0 5px 15px;z-index:9999;}
+/* @end */
+
+/* @group Custom Scrollbars */
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane { position: absolute; }
+
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 4px;
+	width: 5px;
+	height: 100%;
+}
+
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap { display: none; }
+.jspHorizontalBar .jspCap { float: left; }
+.jspTrack { position: relative; }
+
+.jspDrag {
+	background-color: #eee;
+	background-color: rgba(0,0,0,.1);
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+
+.jspArrow {
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled { cursor: default; }
+.jspVerticalBar .jspArrow { height: 5px; }
+
+.jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus { outline: none; }
+
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+.ie6 .jspCorner { margin: 0 -3px 0 0; }
+/* @end */

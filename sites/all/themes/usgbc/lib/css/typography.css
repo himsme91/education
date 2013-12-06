@@ -1,0 +1,327 @@
+/* @group DEFAULT SANS SERIF */
+input, select, textarea, body,
+.default-type,
+.entry-column h1,
+.search-report .print-link,
+#globalNav #utilityNav li,
+#footer #legal li,
+.jumbo-search .advanced-search-header,
+.mini-search-field,
+.ag-sort h3 a,
+.ag-pagination input,
+#ui-datepicker-div *,
+.manage-user-list .user h4 a,
+.jumbo-search-field,
+.registration-process input.field,
+.checkout-process input.field,
+textarea.field,
+#filter .rounded ol li a,
+.course .byline,
+.progress_bar li,
+.field,
+#reg-summary .total dd,
+.filter .filter-value input,
+input.text,
+input.email, 
+input.password,
+textarea.uniform,
+div.button span,
+div.selector select,
+#event-list li h3 span,
+#event-list li h3 span,
+#haiti #donate input[type=text],
+ul.tabNavigation li a .count,
+.archive-list li li,
+#course-list .sort { 
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	
+}
+
+/* @end */
+/* @group GOTHAM-LIKE SANS SERIF */
+.geometric-type,
+h1,h2,h3,h4,h5,h6,
+#header p#page-title a,
+.search-report,
+#navBar #mainNav li a,
+#nav ul li a,
+#navCol .menu,
+#utilityNav #account-nav ul a,
+ul.tabNavigation li a,
+.jumbo-search .search-meta,
+.mini-progbar-bar span,
+#content .mem-status p strong,
+blockquote.pullquote p.author,
+#project-profile-info .cert-badge h4 *,
+#performance-block *,
+.bg-grid  .bg-entry .bg-entry-header,
+.bg-grid .bg-entry .bg-overlay h3,
+.jumbo-button,
+.jumbo-button-dark,
+.large-button,
+.gray-button,
+.small-button,
+.large-button-dark,
+.arrow-button,
+.registration-steps li span,
+.registration-steps li strong,
+.order-summary .aside-dark dl dt,
+.order-summary .aside-dark dl dd,
+.due-amt label,
+.RadTreeView_Vista,
+.RadTreeView_Vista a.rtIn,
+.RadTreeView_Vista .rtEdit .rtIn input,
+#series-head .sh-actions a,
+.register-action .conference-register-btn,
+#design h1,
+#design h2,
+#design .button,
+#design .schedule th,
+#design.finalists .six p.caption,
+#haiti div.banner p,
+.slider-label,
+#slider-scale span,
+.button,
+.small-button,
+.small-alt-button,
+.small-warning-button,
+.warning-button,
+.large-button,
+.jumbo-button,
+.jumbo-button-dark,
+.alt-button,
+#filter legend,
+#filterOptions h4,
+.discounts thead th,
+.discounts th,
+ul.year-nav li a,
+div.winner p.placement,
+div.winner .enlarge,
+.credit-list p.credit-id,
+a.highlight span.info strong.date,
+#haiti .progress .prog-target,
+#haiti .progress .prog-raised,
+.rating-widget,
+.bg-entry-footer span,
+.archive-list li,
+table#cart,
+.isfavorite a,
+.manage-user-list .user h4 span a,
+#chapt-map .search-area ul li strong,
+#chapt-map .search-area ul li .count,
+#blog .entry-column h1,
+#scorecard,
+#pricing-table,
+#activity-list .filter-menu *,
+#ui-datepicker-div *,
+.rating-count,
+.smartfilters-trigger,
+#course-list *,
+.course-badge,
+.bundle-badge,
+#smartfilters .button-group label,
+#blog-contribution-feed .article-status *,
+#blog-contribution-feed .article-status,
+#tracking-widget .nav,
+#static-panels,
+.galleries,
+.key-image,
+#get-certified li,
+.grid-item .system-version,
+#project-metrics dl,
+.homepage-button-group a,
+.node-form input.form-submit,
+input[type="button"].form-submit,
+input.form-submit,
+input[type="submit"],
+#member-banner p,
+.widget,
+.breadcrumb,
+[class^="leed-certificate-"],
+#project-profile-info .cert .cert-icon .cert-expire-date,
+#utilityNav li a,
+.message-banner,
+.simple-search .ss-results li span,
+.simple-search .ss-results li.active a,
+#draft-certificate *,
+.leedv4-promo *,
+#mainCol .course-list *,
+#modal.profile-snapshot *,
+#content .infographic *,
+#sideCol .rpc-indicator *,
+#jump-top *,
+#opener * {
+	 font-family: "proxima-nova-1","proxima-nova-2", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* @end */
+/* CONDENSED STYLE SANS SERIF */
+.condensed-type,
+.bg-grid .bg-entry h2,
+.bg-grid .bg-entry h3,
+.bg-grid .bg-entry h4,
+.bg-grid .bg-entry h2 a,
+.bg-grid .bg-entry h3 a,
+.bg-grid .bg-entry h4 a,
+.ch-feat .ch-feat-header h1,
+.ch-feat .feat-article h3,
+div#member-data div.total,
+#dashboard .db-sect-head,
+#dashboard h2,
+#dashboard h3,
+#dashboard #progress .main-progress p.overall-progress,
+.ag-item-credentials li.certification-badge span,
+#scorecard .sc-header h2,
+#scorecard .sc-header p,
+#mini-scorecard * { 
+	/* DIN styles go here */
+	font-family: "ff-din-web-condensed-1","ff-din-web-condensed-2","Helvetica Neue", Arial, sans-serif;
+
+	/*	text-transform: uppercase;*/
+}
+
+/* @end */
+/* @group SERIF */
+.serif-type,
+blockquote.pullquote p,
+blockquote
+{ 
+	font-family:  Georgia, Times, serif;	 
+}
+
+
+/* @end */
+
+
+
+input, select, textarea, body { 
+    font-size: 13px;
+    line-height: 1.4; 
+    background-color:#fff; 
+    color: #333;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:#505050;
+	font-weight:normal;
+	margin: 0 0 0.5em;
+}
+
+h1 {font-size:28px; color:#86c240; font-weight: 600;}
+h2 {font-size:20px; color: #646464;}
+h3 {font-size:18px; color:#6EA035;}
+h4 {font-size:16px; font-weight: 600;}
+h5 {font-size:14px; font-weight: bold;}
+
+h6 {font-size:12px; color:#2d4046; font-weight: bold;}
+
+/* andre asked for this */
+/*h3, h4 {
+    padding: 8px 0;
+}*/
+
+.nopadding {
+    padding: 0;
+}
+
+.all-caps {
+	letter-spacing: .088em;
+	text-transform: uppercase;
+}
+
+.double-heading {
+    padding: 15px 0 ;
+}
+
+.section-break {
+    padding: 20px 0 0 0;
+}
+
+.kicker {
+	font-size: 20px;
+}
+
+.title-wrapper {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.title-wrapper h1,
+.title-wrapper h2,
+.title-wrapper h3 {line-height: 1em; margin-bottom: 2px;}
+
+
+p {
+	margin:2px 0 18px;
+	padding:0;
+	font-size: 15px;
+	color: #333;
+}
+
+#content .blog-article p { 
+	font-size: 15px; 
+	line-height: 22px;
+	margin-bottom: 18px;
+}
+
+#sideCol p, div p.not-sideCol { 
+	font-size: 11px;
+	color: #666;
+}
+
+a {
+    text-decoration:none; 
+    color:#17b0cd;
+}
+
+/* Content: title links */
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a,
+.content h5 a,
+.content h6 a {
+    color:#189cc9; 
+    text-decoration:none; 
+    background-color:transparent;
+}
+
+.content h1 a:hover,
+.content h2 a:hover,
+.content h3 a:hover,
+.content h4 a:hover,
+.content h5 a:hover,
+.content h6 a:hover {
+    color:#1e6a92; 
+    border-bottom:1px solid #1e6a92;
+    background-color:transparent;
+}
+
+ul li,
+ol li { 
+	margin-bottom: 5px; 
+}
+
+ul li { 
+	margin-left: 10px;
+	list-style: disc;	
+}
+
+ol li {
+    margin-left: 16px;
+    list-style: decimal;
+}
+
+
+#mainCol ul li ul,
+
+#mainCol ul li ol,
+
+#mainCol ol li ol,
+
+#mainCol ol li ul {
+	margin-top: 18px;
+}
+
+.feat-article h3{
+		font-family: "ff-din-web-condensed-1","ff-din-web-condensed-2","Helvetica Neue", Arial, sans-serif
+}

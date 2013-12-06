@@ -1,0 +1,49 @@
+#international {
+	* { font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Nueue', Helvetica, Arial, sans-serif; }
+	
+	h1 {
+		font-size: 100px;
+		font-weight: 700;
+		color: white;
+		margin-bottom: .25em;
+	}
+	
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		color: white;
+	}
+	
+	h3 {
+		font-size: 24px;
+		font-weight: 100;
+		color: white;
+	}
+	
+	h4 {
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: white;
+	}
+	
+	p, li {
+		font-size: 18px;
+		font-weight: 100;
+		color: white;
+		line-height: 1.5em;
+	}
+	
+	li { list-style-position: inside; }
+	
+	a {
+		color: @textDark; 
+		font-weight: 400; 
+		&:hover { 
+			color: lighten(@textDark, 5%); 
+			text-decoration: underline; 
+		}
+	}
+	
+	p + h3 { margin-top: 50px; }
+}

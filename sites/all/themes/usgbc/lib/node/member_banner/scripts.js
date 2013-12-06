@@ -1,0 +1,3 @@
+$(document).ready(function(){
+	$('#member-banner').append('<div class="industries"><div class="industry consultants" /><div class="industry builders" /><div class="industry engineers" /><div class="industry education" /><div class="industry non-profit" /><div class="industry real-estate" /><div class="industry architects" /></div>').append('<div class="member-logo" />').append('<div class="final-scene" />').addClass('animate');
+});

@@ -1,0 +1,440 @@
+#wrapper {
+	position: static;
+}
+
+#leaders #hero {
+	background: #F4F4F4;
+	height: 490px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+/* The padding extends this wider
+than 960 to allow for the background
+to fade out past the content, the 
+neg. margin & left 50% re-center */	
+#leaders #hero .container {
+	width: 960px;
+	height: 490px;
+	padding: 0 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -780px;
+}
+
+#leaders v.bio > p:last-of-type {
+	margin-bottom: 30px;
+}
+
+/* overflow hidden to make sure
+there's no horizontal scrolling */
+body {
+	overflow-x: hidden;
+}
+
+
+#leaders #hero .container:after {
+	content: " ";
+	display: block;
+	width: 1239px;
+	height: 20px;
+	position: absolute;
+	background: url("/themes/usgbc/lib/node/leaders/img/shadow.png") center bottom no-repeat;
+	bottom: 0;
+	left: 50%;
+	margin-left: -600px;
+}
+
+#leaders #hero .back {
+	display: block;	
+	position: absolute;
+	left: 1220px;
+	top: 15px;
+}
+
+
+#leaders #hero .back span {
+	display: block;
+	text-indent: -9999px;
+	width: 40px;
+	height: 40px;	
+
+	background: rgba(0,0,0,.15) url("/themes/usgbc/lib/node/leaders/img/back.gif") 47% 50% no-repeat;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+}
+
+#leaders #hero .back:hover span {
+	background-color: rgba(0,0,0,.25);
+	-webkit-transform: rotateY( 360deg );
+	-moz-transform: rotateY( 360deg );
+	transform: rotateY( 360deg );
+}
+
+/* @group Hero layout */    
+
+#hero h1 {
+	color: #333;
+	font-size: 66px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+#hero h2 {
+	color: #666;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 300;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+#hero blockquote {
+	font-family: "adelle", georgia, serif;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	width: 580px;
+	quotes: "\201C" "\201D";
+	position: relative;
+	border: 0;
+	
+}
+
+#hero blockquote:before,
+#hero blockquote:after {
+	display: block;
+	position: absolute;
+	font-family: georgia;
+	color: #ccc;
+	font-size: 52px;
+	/*background: red;*/
+}
+
+
+#hero blockquote:before { 
+	content: open-quote;
+	left: -30px;
+	top: -10px;
+}
+
+#hero blockquote:after { 
+	content: close-quote;	
+	bottom: -34px;
+	right: -10px;
+}
+
+
+
+
+/* ------ specific layouts -------- */
+
+#rachel {
+	background: url('/themes/usgbc/lib/node/leaders/img/rachel.jpg') no-repeat 720px 0; /* use X coordinate to adjust placement */
+}
+
+#rachel h1 {
+	padding-top: 45px;
+}
+
+
+
+
+/* @end */
+
+
+#leaders #content {
+	padding-top: 535px;
+}
+
+#leaders #content.no-hero {
+	padding-top: 15px;
+}
+
+#leaders .primary-content {
+	width: 590px;
+	float: right;
+	font-family: "adelle", georgia, serif;
+}
+
+#leaders .primary-content.normal-text {
+	font-family: inherit;
+}
+
+
+#leaders .primary-content p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+#leaders .secondary-content {
+	float: left;
+	width: 318px;
+}
+
+.box,
+.color-box {
+	margin-bottom: 30px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.box .head,
+.color-box .head {
+	margin:-15px -15px 12px;
+	padding: 10px 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.color-box {
+	background: #E9F2F3;
+	border: 1px solid #C0D1D5;
+}
+
+.color-box .head {
+	border-color: #C0D1D5;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+
+
+.event-list .event {
+	margin: 0 0 20px;
+	padding-left: 55px;
+	list-style: none;
+}
+
+.event-list .event .date {
+	float: left;
+	width: 42px;
+	height: 42px;
+	background: #fff;
+	margin-left: -55px;
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;
+	z-index: 2;
+	
+	-webkit-box-shadow: 
+	        0 1px 0 rgba(255,255,255,1), 
+	        0 2px 0 rgba(0,0,0,.18), 
+	        0 3px 0 rgba(255,255,255,1.0),  
+	        0 4px 0 rgba(0,0,0,0.1),
+	        0 4px 4px rgba(0,0,0,.15);	
+	-moz-box-shadow: 
+	        0 1px 0 rgba(255,255,255,1), 
+	        0 2px 0 rgba(0,0,0,.18), 
+	        0 3px 0 rgba(255,255,255,1.0),  
+	        0 4px 0 rgba(0,0,0,0.1),
+	        0 4px 4px rgba(0,0,0,.15);	
+	box-shadow: 
+	        0 1px 0 rgba(255,255,255,1), 
+	        0 2px 0 rgba(0,0,0,.18), 
+	        0 3px 0 rgba(255,255,255,1.0),  
+	        0 4px 0 rgba(0,0,0,0.1),
+	        0 4px 4px rgba(0,0,0,.15);	
+}
+
+.event-list .event .date .m {
+	font-size: 11px;
+	line-height: 11px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px 0 0;
+}
+
+.event-list .event .date .d {
+	font-size: 22px;
+	line-height: 22px;
+	text-align: center;
+	display: block;
+	font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", arial;
+	font-weight: bold;
+	margin-top: 1px;
+	color: #98C646;
+}
+
+.event-list .event .title {
+	font-size: 15px;
+	line-height: 1.3;
+	display: block;
+	font-weight: bold;
+	font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", arial;
+	margin-bottom: 3px;
+}
+
+.event-list .event .meta {
+	font-size: 11px;
+	color: #777;
+}
+
+
+.publication-list {
+	font-family: "helvetica neue", arial;
+	padding: 6px;
+}
+
+.publication-list li {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 10px 52px;
+	background-position: left 2px;
+	background-repeat: no-repeat;
+}
+
+	.publication-list li.web {
+		background-image: url(img/icon-web.gif);
+	}
+	
+	.publication-list li.video {
+		background-image: url(img/icon-video.gif);
+	}
+	
+	.publication-list li.book {
+		background-image: url(img/icon-web.gif);
+	}
+
+
+.publication-list li a {
+	font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", arial;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.publication-list li .meta {
+	font-size: 12px;
+	display: block;
+}
+
+.bio h1 {
+	font-family: "adelle", georgia, serif;
+	color: #333;
+	font-weight: normal;
+}
+
+@-webkit-keyframes banner-fade {
+        0%   { left: 130%; }
+        100% { left: 50%; }
+}
+
+#rachel {
+     -webkit-animation: banner-fade .5s 1;
+}
+
+/* @group Twitter Box */    
+#twitter-box {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0;
+}
+
+#twitter-box:after {
+	content: " ";
+	display: block;
+	background: url("img/blue-fade.png") left bottom repeat-x;
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	height: 60px;	
+}
+
+	#twitter-box .head .follow {
+		float: right;
+		width: 140px;
+	}
+	
+	#twitter-box a {
+		color: #5e8ea4;
+	}
+	
+	#twitter-box a:hover {
+		text-decoration: underline;
+	}
+
+#twitter-box li {
+	list-style: none;
+	margin-left: 0;
+	font-size: 12px;	
+	padding-left: 42px;
+	margin-bottom: 15px;
+	overflow: hidden;
+
+}
+
+	
+	
+	#twitter-box .tweet_avatar {
+		float: left;
+		margin: 3px 0 0 -42px;
+		display: block;
+		overflow: hidden;
+	
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.8) inset, 0 1px 0 white;
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.8) inset, 0 1px 0 white;
+		box-shadow: 0 1px 2px rgba(0,0,0,.8) inset, 0 1px 0 white;
+	}
+	
+		#twitter-box li img {
+			position: relative;
+			z-index: -1;
+			margin: 0;
+			display: block;
+			
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		
+			
+		}
+
+	#twitter-box .tweet_user {
+		display: block;
+		float: left;
+		font-weight: bold;
+		color: inherit;
+	}
+	
+		#twitter-box .tweet_user:before {
+			content: "@";
+		}
+		
+	#twitter-box .tweet_time {
+		display: block;
+		float: right;
+		font-size: 11px;
+	}
+	
+	#twitter-box .tweet_text {
+		display: block;
+		float: left;
+	}
+
+
+/* @end */
+
+
+
+
+

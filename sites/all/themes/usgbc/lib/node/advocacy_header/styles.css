@@ -1,0 +1,324 @@
+/* @override
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/lib/node/education_header/styles.css
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/lib/node/advocacy_header/styles.css */
+#content {
+	position: relative;
+}
+/* @group Education Header */
+	#map_shadow {
+		position: absolute;
+		top: 0xp;
+		height: 304px;
+		width: 960px;
+		z-index:1;
+		background: url(../../img/leed-header-shadow.png) no-repeat;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+	}
+	#map_canvas {
+		height: 304px;
+		width: 960px;
+		overflow: hidden;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		display: block;
+		margin-bottom: 30px;
+	}
+	#map_content {
+		height: 304px;
+		width: 960px;
+		overflow: hidden;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+		#map_content #rays {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			display: block;
+			left: 50%;
+			margin-left: -10px;
+			top: 59px;
+		}
+	#map_content span.ray {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		box-shadow:
+			inset 0px 0px 1px #FFFFFF,
+			inset 0px 0px 5px #FFFFFF,
+			inset 0px 0px 10px #FFFFFF;
+	}
+	#map_content span.ray.opacity {
+		opacity: 0 !important;
+	}
+		#map_content span#ray-1 {
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			margin-left: -25px;
+			top: -15px;
+			opacity: 0.7;
+		}
+		#map_content span#ray-2 {
+			width: 90px;
+			height: 90px;
+			border-radius: 45px;
+			margin-left: -45px;
+			top: -35px;
+			opacity: 0.6;
+		}		
+		#map_content span#ray-3 {
+			width: 140px;
+			height: 140px;
+			border-radius: 70px;
+			margin-left: -70px;
+			top: -60px;
+			opacity: 0.5;
+		}
+		#map_content span#ray-4 {
+			width: 210px;
+			height: 210px;
+			border-radius: 105px;
+			margin-left: -107px;
+			top: -95px;
+			border: 2px solid #FFFFFF;
+			opacity: 0.4;
+		}
+		#map_content span#ray-5 {
+			width: 320px;
+			height: 320px;
+			border-radius: 160px;
+			margin-left: -163px;
+			top: -150px;
+			border: 3px solid #FFFFFF;
+			opacity: 0.3;
+		}
+		#map_content span#ray-6 {
+			width: 480px;
+			height: 480px;
+			border-radius: 240px;
+			margin-left: -246px;
+			top: -230px;
+			border: 6px solid #FFFFFF;
+			opacity: 0.2;
+			box-shadow:
+				inset 0px 0px 1px #FFFFFF,
+				inset 0px 0px 5px #FFFFFF,
+				inset 0px 0px 10px #FFFFFF,
+				inset 0px 0px 20px #FFFFFF;
+		}
+		#map_content span#ray-7 {
+			width: 700px;
+			height: 700px;
+			border-radius: 350px;
+			margin-left: -360px;
+			top: -340px;
+			border: 10px solid #FFFFFF;
+			opacity: 0.2;
+			box-shadow:
+				inset 0px 0px 1px #FFFFFF,
+				inset 0px 0px 5px #FFFFFF,
+				inset 0px 0px 10px #FFFFFF,
+				inset 0px 0px 20px #FFFFFF;
+		}
+		#map_content span#ray-8 {
+			width: 900px;
+			height: 900px;
+			border-radius: 450px;
+			margin-left: -470px;
+			top: -440px;
+			border: 20px solid #FFFFFF;
+			opacity: 0.1;
+			box-shadow:
+				inset 0px 0px 1px #FFFFFF,
+				inset 0px 0px 5px #FFFFFF,
+				inset 0px 0px 10px #FFFFFF,
+				inset 0px 0px 20px #FFFFFF;
+		}
+		@-webkit-keyframes pulse {
+		    0% { -webkit-transform: scale(0.5); opacity: 0;} 
+		    50% { -webkit-transform: scale(1.1); opacity: 0.8; }
+		    100% { -webkit-transform: scale(1); }
+		}
+		@-moz-keyframes pulse {
+		    0% { -moz-transform: scale(1); }    
+		    50% { -moz-transform: scale(1.1); }
+		    100% { -moz-transform: scale(1); }
+		}
+		@-ms-keyframes pulse {
+		    0% { -ms-transform: scale(1); } 
+		    50% { -ms-transform: scale(1.1); }
+		    100% { -ms-transform: scale(1); }
+		}
+		@-o-keyframes pulse {
+		    0% { -o-transform: scale(1); }  
+		    50% { -o-transform: scale(1.1); }
+		    100% { -o-transform: scale(1); }
+		}
+		@keyframes pulse {
+		    0% { transform: scale(1); } 
+		    50% { transform: scale(1.1); }
+		    100% { transform: scale(1); }
+		}
+		
+		.pulse {
+			-webkit-animation: pulse 1s ease-in-out 1s both;
+		}
+	#map_content h1 {
+		text-align: center;
+		font-size: 134px;
+		line-height: 136px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		color: #FFF;
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 #ccc,
+		             0 2px 0 #c9c9c9,
+		             0 3px 0 #bbb,
+		             0 4px 0 #b9b9b9,
+		             0 5px 0 #aaa,
+		             0 6px 1px rgba(0,0,0,.1),
+		             0 0 5px rgba(0,0,0,.1),
+		             0 1px 3px rgba(0,0,0,.3),
+		             0 3px 5px rgba(0,0,0,.2),
+		             0 5px 10px rgba(0,0,0,.25),
+		             0 10px 10px rgba(0,0,0,.2),
+		             0 20px 20px rgba(0,0,0,.15);
+		z-index: 2;
+		position: absolute;
+		top: 83px;
+		left: 0px;
+		width: 100%;
+	}
+	
+	
+	/* @end */
+
+/* @group landing page content */
+.primary {
+	float: left;
+	width: 525px;
+	margin-right: 35px;
+}
+
+.secondary {
+	float: left;
+	width: 400px;
+}
+
+.secondary p {
+	font-size: 12px;
+	line-height: 1.4;
+}
+	#content .visual {
+	    margin: 0 0 18px 10px;
+	    overflow: hidden;
+	    list-style: none;
+	    width: 90px;
+	    float: right;
+	}
+	
+	#content .visual li {
+	    list-style: none;
+	    float: left;
+	    opacity: 0.3;
+	    width: 17px;
+	    height: 17px;
+	    background: url('/sites/all/assets/section/leed/building-icon.png') no-repeat;
+	    margin: 0 0 3px 3px;
+	}
+	#content .visual li.mark { opacity: 1; }
+	
+	#content .percentage.emphasized-box {
+		display: none;
+		float: right;
+		width:100px;
+		padding: 26px 15px 13px;
+		font-size:50px;
+		font-weight:600;
+		text-align: center;
+		margin-bottom: 0px;
+		margin-left:8px;
+		margin-right:12px;
+		color: #444;
+		line-height: 30px
+	}
+	.percentage.emphasized-box span {
+		text-transform: uppercase;
+		font-size: 10px;
+		display: block;
+		line-height: 22px;
+	}
+	#content .bottom.aside p{
+	   margin: 6px 0 0;
+	   line-height: 20px;
+	   float: left;
+	}
+	#content .bottom.aside a {
+	   width:80px;
+	   margin: 0;
+	   float: right;
+	}
+/* @end */
+
+/* IE */
+
+.ie6 #map_canvas,
+.ie7 #map_canvas,
+.ie8 #map_canvas,
+.ie9 #map_canvas {
+	background:url('img/ie-placeholder.png');
+}
+
+.ie6 #map_canvas *,
+.ie7 #map_canvas *,
+.ie8 #map_canvas *,
+.ie9 #map_canvas * {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

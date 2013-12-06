@@ -1,0 +1,29 @@
+/* @group Credit Overview List */
+.credit-overview {
+	margin: 0;
+}
+
+.credit-overview .credit {
+	list-style: none;
+	padding: 5px 0 5px 40px;
+	margin: 1em 0 .5em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.credit-overview .ss { background-image: url('/sites/all/assets/section/leed/leed-category-icons/ss-sm.png'); }
+.credit-overview .we { background-image: url('/sites/all/assets/section/leed/leed-category-icons/we-sm.png'); }
+.credit-overview .ea { background-image: url('/sites/all/assets/section/leed/leed-category-icons/ea-sm.png'); }
+.credit-overview .mr { background-image: url('/sites/all/assets/section/leed/leed-category-icons/mr-sm.png'); }
+.credit-overview .ieq { background-image: url('/sites/all/assets/section/leed/leed-category-icons/ieq-sm.png'); }
+.credit-overview .id { background-image: url('/sites/all/assets/section/leed/leed-category-icons/idp-sm.png'); }
+.credit-overview .rp { background-image: url('/sites/all/assets/section/leed/leed-category-icons/rp-sm.png');  }
+
+.credit-overview .pg,
+.credit-overview .pd { background-image: url('/sites/all/assets/section/leed/leed-category-icons/pg-sm.png');  }
+.credit-overview .ll { background-image: url('/sites/all/assets/section/leed/leed-category-icons/ll-sm.png');  }
+.credit-overview .ae { background-image: url('/sites/all/assets/section/leed/leed-category-icons/ae-sm.png');  }
+.credit-overview .bi { background-image: url('/sites/all/assets/section/leed/leed-category-icons/bi-sm.png');  }
+
+
+/* @end */

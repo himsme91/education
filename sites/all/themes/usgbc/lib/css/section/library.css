@@ -1,0 +1,13 @@
+/* @group Global theme adjustments */
+.grid-item {
+  height: 265px;
+}
+
+.grid-item h5 {
+  margin-bottom: 10px;
+}
+
+#navCol ul .groups .selector {
+  margin: 3px 0;
+}
+/* @end */

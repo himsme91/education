@@ -1,0 +1,507 @@
+/* @override
+	http://phase2.usgbc.josiah.mododev.com/themes/usgbc/lib/node/education_header/styles.css */
+.fullCol {
+	position: relative;
+}
+/* @group Education Header */
+	#education-shadow {
+		position: absolute;
+		top: 0xp;
+		height: 304px;
+		width: 960px;
+		z-index:1;
+		background: url(../../img/leed-header-shadow.png) no-repeat;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset;
+	}
+	#education-mask {
+		height: 304px;
+		width: 960px;
+		overflow: hidden;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		display: block;
+	}
+		#education-mask #education-container {
+			width: 1100px;
+			overflow: hidden;
+			position: relative;
+			left: -70px;
+			top: -77px;
+		}
+			#education-mask #education-container .row {
+				position: relative;
+			}
+		#education-mask .credential {
+			width: 140px;
+			height: 140px;
+			float: left;
+			margin: 0 20px 20px 0;
+			position: relative;
+
+			-webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+			box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+		}
+		
+		#education-mask .opacity {
+			-webkit-animation: opacity 1s ease both;
+			   -moz-animation: opacity 1s ease both;
+			    -ms-animation: opacity 1s ease both;
+			     -o-animation: opacity 1s ease both;
+			        animation: opacity 1s ease both;
+			-webkit-backface-visibility: visible !important;
+			-moz-backface-visibility: visible !important;
+			-ms-backface-visibility: visible !important;
+			-o-backface-visibility: visible !important;
+			backface-visibility: visible !important;
+		}
+			
+			
+			
+		#education-mask .last {
+			margin-right: 0;
+		}
+			#education-mask .credential-1 {
+				background: url(img/credential-1.png);
+			}
+			#education-mask .credential-2 {
+				background: url(img/credential-2.png);
+			}
+			#education-mask .credential-3 {
+				background: url(img/credential-3.png);
+			}
+			#education-mask .credential-4 {
+				background: url(img/credential-4.png);
+			}
+			#education-mask .credential-5 {
+				background: url(img/credential-5.png);
+			}
+			#education-mask .credential-6 {
+				background: url(img/credential-6.png);
+			}
+			#education-mask .credential-7 {
+				background: url(img/credential-7.png);
+			}
+	#education-mask h1 {
+		text-align: center;
+		opacity: 1;
+		width: 780px;
+		height: 140px;
+		font-size: 134px;
+		line-height: 136px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		display: block;
+		color: #FFF;
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 #ccc,
+		             0 2px 0 #c9c9c9,
+		             0 3px 0 #bbb,
+		             0 4px 0 #b9b9b9,
+		             0 5px 0 #aaa,
+		             0 6px 1px rgba(0,0,0,.1),
+		             0 0 5px rgba(0,0,0,.1),
+		             0 1px 3px rgba(0,0,0,.3),
+		             0 3px 5px rgba(0,0,0,.2),
+		             0 5px 10px rgba(0,0,0,.25),
+		             0 10px 10px rgba(0,0,0,.2),
+		             0 20px 20px rgba(0,0,0,.15);
+		position: absolute;
+		top: 160px;
+		z-index: 2;
+		left: 160px;
+		background: #47504d;
+		-webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+		box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+		//-webkit-transform: perspective(400px) rotateY(0) rotateX(-80deg);
+	}
+	
+	
+	/* @end */
+
+/*---------------       Education FlipInX          ---------------*/
+
+.flipInX {
+	-webkit-animation: flipInX 1.7s ease 0.2s both;
+	   -moz-animation: flipInX 1.7s ease 0.2s both;
+	    -ms-animation: flipInX 1.7s ease 0.2s both;
+	     -o-animation: flipInX 1.7s ease 0.2s both;
+	        animation: flipInX 1.7s ease 0.2s both;
+	-webkit-backface-visibility: visible !important;
+	-moz-backface-visibility: visible !important;
+	-ms-backface-visibility: visible !important;
+	-o-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(0) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        
+    }
+}
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateY(0) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -moz-transform: perspective(400px) rotateX(10deg);
+    }
+
+    70% {
+        -moz-transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-ms-keyframes flipInX {
+    0% {
+        -ms-transform: perspective(400px) rotateY(0) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -ms-transform: perspective(400px) rotateX(10deg);
+    }
+
+    70% {
+        -ms-transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100% {
+        -ms-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-o-keyframes flipInX {
+    0% {
+        -o-transform: perspective(400px) rotateY(0) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -o-transform: perspective(400px) rotateX(10deg);
+    }
+
+    70% {
+        -o-transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateY(0) rotateX(-90deg);
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+
+    70% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+
+/*---------------        Middle Tiles FlipOutX          ---------------*/
+
+
+#education-mask .credential.flipOutX {
+	-webkit-animation: flipOutX 0.8s ease both;
+	   -moz-animation: flipOutX 0.8s ease both;
+	    -ms-animation: flipOutX 0.8s ease both;
+	     -o-animation: flipOutX 0.8s ease both;
+	        animation: flipOutX 0.8s ease both;
+	-webkit-backface-visibility: visible !important;
+	-moz-backface-visibility: visible !important;
+	-ms-backface-visibility: visible !important;
+	-o-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+@-webkit-keyframes flipOutX {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+	50% {
+		opacity: 0;
+	}
+    100% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+        
+    }
+}
+@-moz-keyframes flipOutX {
+    0% {
+        -moz-transform: perspective(400px) rotateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+    
+	50% {
+		opacity: 0;
+	}
+	
+    100% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+@-ms-keyframes flipOutX {
+    0% {
+        -ms-transform: perspective(400px) rotateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+    
+    50% {
+    	opacity: 0;
+    }
+
+    100% {
+        -ms-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+@-o-keyframes flipOutX {
+    0% {
+        -o-transform: perspective(400px) rotateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+    
+    50% {
+    	opacity: 0;
+    }
+
+    100% {
+        -o-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+@keyframes flipOutX {
+    0% {
+        transform: perspective(400px) rotateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+    
+    50% {
+    	opacity: 0;
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+
+/*---------------        Initial Opacity          ---------------*/
+
+
+@-webkit-keyframes opacity {
+	0% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@-moz-keyframes opacity {
+	0% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@-ms-keyframes opacity {
+	0% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@-o-keyframes opacity {
+	0% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes opacity {
+	0% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+/*---------------        Each Tile FlipInY          ---------------*/
+
+.flipInY {
+	-webkit-animation: flipInY 1s ease both;
+	   -moz-animation: flipInY 1s ease both;
+	    -ms-animation: flipInY 1s ease both;
+	     -o-animation: flipInY 1s ease both;
+	        animation: flipInY 1s ease both;
+	-webkit-backface-visibility: visible !important;
+	-moz-backface-visibility: visible !important;
+	-ms-backface-visibility: visible !important;
+	-o-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(0) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateY(-20deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes flipInY {
+    0% {
+        -moz-transform: perspective(400px) rotateX(0) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -moz-transform: perspective(400px) rotateY(-20deg);
+    }
+    
+    70% {
+        -moz-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -moz-transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@-ms-keyframes flipInY {
+    0% {
+        -ms-transform: perspective(400px) rotateX(0) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -ms-transform: perspective(400px) rotateY(-20deg);
+    }
+    
+    70% {
+        -ms-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -ms-transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@-o-keyframes flipInY {
+    0% {
+        -o-transform: perspective(400px) rotateX(0) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -o-transform: perspective(400px) rotateY(-20deg);
+    }
+    
+    70% {
+        -o-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -o-transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateX(0) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        transform: perspective(400px) rotateY(-20deg);
+    }
+    
+    70% {
+        transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+
+/* @group landing page content */
+.primary {
+	float: left;
+	width: 525px;
+	margin-right: 35px;
+}
+
+.secondary {
+	float: left;
+	width: 400px;
+}
+
+.secondary p {
+	font-size: 12px;
+	line-height: 1.4;
+}
+/* @end */
+
+/* IE7 */
+
+
+#education-mask {
+	*background: url(img/ie-placeholder.png);
+}
+
+#education-mask * {
+	*display: none;
+}
+
+
+

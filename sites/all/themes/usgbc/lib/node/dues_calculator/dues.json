@@ -1,0 +1,3357 @@
+[
+    {
+        "name": "Contractors and Builders",
+        "value": "10",
+        "description": "by Construction Volume",
+        "subcategories": [
+            {
+                "name": "Contractor/Builder: Commercial",
+                "value": "75",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Contractor/Builder: Residential",
+                "value": "76",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Contractor/Builder: Mixed",
+                "value": "77",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Contractor/Builder: Other",
+                "value": "78",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Corporate",
+        "value": "13",
+        "description": "",
+        "subcategories": [
+            {
+                "name": "Business Services: Accountants",
+                "value": "32",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Business Services: Attorneys",
+                "value": "35",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Business Services: Other",
+                "value": "79",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Financial Services",
+                "value": "80",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Healthcare, Pharmaceuticals, & Biotech",
+                "value": "81",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Insurance",
+                "value": "82",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Media",
+                "value": "72",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Retail: Restaurants, Bars and Food Services",
+                "value": "83",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Retail: Grocery, Convenience Store",
+                "value": "84",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Retail: Other",
+                "value": "85",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Technology",
+                "value": "86",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Transportation, Delivery and Warehousing Services",
+                "value": "87",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Travel, Recreation & Leisure",
+                "value": "88",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Other Corporate",
+                "value": "89",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Educational Institutions",
+        "value": "12",
+        "description": "K-12 School Systems, Universities and Research Institutes",
+        "subcategories": [
+            {
+                "name": "Early Childhood Education",
+                "value": "90",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            },
+            {
+                "name": "Independent or Nonprofit Education Institutes/Centers",
+                "value": "91",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Elementary and Secondary Schools: Public",
+                "value": "92",
+                "size": [
+                    {
+                        "name": "Individual K-12 School",
+                        "value": "148",
+                        "dues": "$35.00",
+                        "pricegroup": "E5"
+                    },
+                    {
+                        "name": "District K-12 School Systems",
+                        "value": "149",
+                        "dues": "$500.00",
+                        "pricegroup": "E6"
+                    }
+                ]
+            },
+            {
+                "name": "Elementary and Secondary Schools: Public Charter",
+                "value": "93",
+                "size": [
+                    {
+                        "name": "Individual K-12 School",
+                        "value": "148",
+                        "dues": "$35.00",
+                        "pricegroup": "E5"
+                    },
+                    {
+                        "name": "District K-12 School Systems",
+                        "value": "149",
+                        "dues": "$500.00",
+                        "pricegroup": "E6"
+                    }
+                ]
+            },
+            {
+                "name": "Elementary and Secondary Schools: Independent",
+                "value": "94",
+                "size": [
+                    {
+                        "name": "Individual K-12 School",
+                        "value": "148",
+                        "dues": "$35.00",
+                        "pricegroup": "E5"
+                    },
+                    {
+                        "name": "District K-12 School Systems",
+                        "value": "149",
+                        "dues": "$500.00",
+                        "pricegroup": "E6"
+                    }
+                ]
+            },
+            {
+                "name": "Colleges & Universities: 2-year institution",
+                "value": "95",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            },
+            {
+                "name": "Colleges & Universities: 4-year institution (public)",
+                "value": "96",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            },
+            {
+                "name": "Colleges & Universities: 4-year institution (private)",
+                "value": "97",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            },
+            {
+                "name": "Colleges & Universities: 4-year institution with graduate programs (public)",
+                "value": "98",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            },
+            {
+                "name": "Colleges & Universities: 4-year institution with graduate programs (private)",
+                "value": "99",
+                "size": [
+                    {
+                        "name": "1-999 FTE student enrollment",
+                        "value": "33",
+                        "dues": "$750.00",
+                        "pricegroup": "E1"
+                    },
+                    {
+                        "name": "1,000-4,999 FTE student enrollment",
+                        "value": "113",
+                        "dues": "$1,000.00",
+                        "pricegroup": "E2"
+                    },
+                    {
+                        "name": "5,000-9,999 FTE student enrollment",
+                        "value": "114",
+                        "dues": "$1,500.00",
+                        "pricegroup": "E3"
+                    },
+                    {
+                        "name": "10,000-14,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "15,000-19,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "20,000-29,999 FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    },
+                    {
+                        "name": "30,000+ FTE student enrollment",
+                        "value": "115",
+                        "dues": "$2,000.00",
+                        "pricegroup": "E4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Federal Government",
+        "value": "8",
+        "description": "Government Owned, Contractor Operated Labs",
+        "subcategories": [
+            {
+                "name": "Federal Government",
+                "value": "8",
+                "size": [
+                    {
+                        "name": "Federal Agency",
+                        "value": "20",
+                        "dues": "$1,000.00",
+                        "pricegroup": "F1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "State and Local Governments",
+        "value": "7",
+        "description": "",
+        "subcategories": [
+            {
+                "name": "Local Government",
+                "value": "63",
+                "size": [
+                    {
+                        "name": "Population under 500,000",
+                        "value": "17",
+                        "dues": "$500.00",
+                        "pricegroup": "G1"
+                    },                    {
+                        "name": "Pop. 500,000 to 1 million",
+                        "value": "18",
+                        "dues": "$750.00",
+                        "pricegroup": "G2"
+                    },
+                    {
+                        "name": "Pop. more than 1 million",
+                        "value": "19",
+                        "dues": "$1,000.00",
+                        "pricegroup": "G3"
+                    }
+                ]
+            },
+            {
+                "name": "State Government",
+                "value": "62",
+                "size": [
+                    {
+                        "name": "Pop. 500,000 to 1 million",
+                        "value": "18",
+                        "dues": "$750.00",
+                        "pricegroup": "G2"
+                    },
+                    {
+                        "name": "Pop. more than 1 million",
+                        "value": "19",
+                        "dues": "$1,000.00",
+                        "pricegroup": "G3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Nonprofit and Environmental Organizations",
+        "value": "6",
+        "description": "by annual budget, Excluding 501-C(6) Organizations",
+        "subcategories": [
+            {
+                "name": "Charitable Organizations & Foundations",
+                "value": "100",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Social & Membership Organizations",
+                "value": "101",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Religious",
+                "value": "102",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Other Non-Profit",
+                "value": "103",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Professional Societies and Trade Associations",
+        "value": "5",
+        "description": "by annual budget",
+        "subcategories": [
+            {
+                "name": "Trade Groups & Labor Unions",
+                "value": "104",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+                
+            },
+            {
+                "name": "Advocacy Organizations",
+                "value": "105",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+                
+            },
+            {
+                "name": "Professional Associations",
+                "value": "106",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+                
+            }
+        ]
+    },
+    {
+        "name": "Manufacturer",
+        "value": "2",
+        "description": "",
+        "subcategories": [
+            {
+                "name": "Product Manufacturer: Building Materials",
+                "value": "28",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Product Manufacturer: Distributors",
+                "value": "61",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Manufacturer: Other",
+                "value": "27",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Building Industry Professional Firms",
+        "value": "9",
+        "description": "Accountants, Architects, Attorneys, Commissioning Providers, Consultants, Engineers, Interior Designers, Landscape Architects, Planners, Press, Residential Designers",
+        "subcategories": [
+            {
+                "name": "Architects",
+                "value": "33",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Architects/Engineers",
+                "value": "34",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Commissioning Providers",
+                "value": "60",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Building/LEED Consultants",
+                "value": "36",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Engineers",
+                "value": "56",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Interior Designers",
+                "value": "57",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Landscape Architects",
+                "value": "58",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Planners",
+                "value": "59",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Residential Designer",
+                "value": "74",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Other",
+                "value": "107",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Real Estate",
+        "value": "4",
+        "description": "Building Owners, Facility Managers, Developers, Brokers, Property Managers, Appraisers",
+        "subcategories": [
+            {
+                "name": "Real Estate: Commercial Brokerage & Management",
+                "value": "108",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Commerical REITs",
+                "value": "109",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Residential Brokerage & Management",
+                "value": "110",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Residential Property Investment",
+                "value": "111",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Institutional Investor",
+                "value": "112",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Privately Held Owner",
+                "value": "113",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Real Estate: Service Contractors",
+                "value": "114",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Utility/Energy Services",
+        "value": "3",
+        "description": "",
+        "subcategories": [
+            {
+                "name": "Energy Service Companies",
+                "value": "30",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            },
+            {
+                "name": "Utilities",
+                "value": "31",
+                "size": [
+                    {
+                        "name": "Less than $250,000",
+                        "value": "26",
+                        "dues": "$33.00",
+                        "pricegroup": "C1"
+                    },
+                    {
+                        "name": "$250,000 &ndash; $1 million",
+                        "value": "27",
+                        "dues": "$500.00",
+                        "pricegroup": "C2"
+                    },
+                    {
+                        "name": "$1 million &ndash; $5 million",
+                        "value": "28",
+                        "dues": "$750.00",
+                        "pricegroup": "C3"
+                    },
+                    {
+                        "name": "$5 &ndash; $25 million",
+                        "value": "29",
+                        "dues": "$1,500.00",
+                        "pricegroup": "C4"
+                    },
+                    {
+                        "name": "$25 &ndash; $50 million",
+                        "value": "30",
+                        "dues": "$2,500.00",
+                        "pricegroup": "C5"
+                    },
+                    {
+                        "name": "$50 &ndash; $250 million",
+                        "value": "202",
+                        "dues": "$3,500.00",
+                        "pricegroup": "C6"
+                    },
+                    {
+                        "name": "$250 million &ndash; $1 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "$1 billion &ndash; $5 billion",
+                        "value": "203",
+                        "dues": "$4,000.00",
+                        "pricegroup": "C7"
+                    },
+                    {
+                        "name": "More than $5 billion",
+                        "value": "204",
+                        "dues": "$5,000.00",
+                        "pricegroup": "C8"
+                    }
+                ]
+            }
+        ]
+    }
+]

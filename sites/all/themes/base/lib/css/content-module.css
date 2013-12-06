@@ -1,0 +1,205 @@
+/* @override 
+	http://usgbc.name/sites/all/modules/cck/theme/content-module.css?U
+	http://usgbc.name/sites/all/modules/cck/theme/content-module.css?6
+	http://usgbc.name/sites/all/modules/cck/theme/content-module.css?c
+	http://usgbc.name/sites/all/modules/cck/theme/content-module.css?o
+	http://usgbc.name/sites/all/modules/cck/theme/content-module.css?A */
+
+/* $Id: content-module.css,v 1.1.2.6 2009/03/14 18:45:38 yched Exp $ */
+
+/* Node display */
+.field .field-label,
+.field .field-label-inline,
+.field .field-label-inline-first {
+  font-weight:bold;
+}
+.field .field-label-inline,
+.field .field-label-inline-first {
+  display:inline;
+}
+.field .field-label-inline {
+  visibility:hidden;
+}
+
+/* Node form display */
+.node-form .content-multiple-table td.content-multiple-drag {
+  width:3%;
+  padding-right:0;/*LTR*/
+}
+.node-form .content-multiple-table td.content-multiple-drag a.tabledrag-handle{
+  padding-right:.5em;/*LTR*/
+}
+
+.node-form .content-add-more .form-submit{
+  margin:0;
+}
+
+.node-form .number {
+  display:inline;
+  width:auto;
+}
+.node-form .text {
+  width:auto;
+}
+
+/* CSS overrides for Views-based autocomplete results.
+  - #autocomplete uses "white-space:pre", which is no good with
+    Views' template-based rendering
+  - Field titles are rendered with <label> in default templates,
+    but we don't want the 'form' styling it gets under .form-item
+*/
+.form-item #autocomplete .reference-autocomplete {
+  white-space:normal;
+}
+
+.form-item #autocomplete .reference-autocomplete label {
+  display:inline;
+  font-weight:normal;
+}
+
+/* 'Manage fields' overview */
+#content-field-overview-form .advanced-help-link,
+#content-display-overview-form .advanced-help-link {
+  margin: 4px 4px 0 0;/*LTR*/
+}
+#content-field-overview-form .label-group,
+#content-display-overview-form .label-group,
+#content-copy-export-form .label-group {
+  font-weight: bold;
+}
+table#content-field-overview .label-add-new-field,
+table#content-field-overview .label-add-existing-field,
+table#content-field-overview .label-add-new-group {
+  float: left;/*LTR*/
+}
+table#content-field-overview tr.content-add-new .tabledrag-changed {
+  display: none;
+}
+table#content-field-overview tr.content-add-new .description {
+  margin-bottom: 0;
+}
+table#content-field-overview .content-new {
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+/* 'Advanced help' pages */
+.advanced-help-topic h3,
+.advanced-help-topic h4,
+.advanced-help-topic h5,
+.advanced-help-topic h6  {
+  margin:1em 0 .5em 0;
+}
+.advanced-help-topic dd {
+  margin-bottom: .5em;
+}
+.advanced-help-topic span.code {
+  background-color:#EDF1F3;
+  font-family:"Bitstream Vera Sans Mono",Monaco,"Lucida Console",monospace;
+  font-size:0.9em;
+  padding:1px;
+}
+.advanced-help-topic .content-border {
+  border:1px solid #AAA
+}
+
+
+/*-------------------------------------------------------*/
+
+.content-multiple-table * {
+	border: none;
+}
+
+.node-form input.form-submit,
+.node-form input.form-submit:hover {
+	color: #FFF;
+}
+.node-form #edit-save-edit,
+.node-form #edit-submit,
+.node-form #edit-preview {
+	float: left;
+}
+.tabledrag-handle {
+	background: url('/sites/all/themes/usgbc/lib/img/drag.png') no-repeat;
+	padding: 0 !important;
+	margin-left: 5px;
+}
+
+tr.draggable{
+	border: 1px solid #CCC;
+	border-bottom: none;
+}
+	tr.draggable .form-item{
+		margin: 0;
+	}
+		tr.draggable .form-item td {
+			position: relative;
+		}
+		
+		tr.draggable .form-item input {
+			width: 97%;
+		}
+		
+		tr.draggable .form-item input[type=submit] {
+			width: auto;
+			
+		}
+		
+		
+		
+		
+span.tabledrag-changed {
+	display: none;
+}
+tr.draggable.drag {
+	background: #DDD;
+	-webkit-box-shadow: 0px 3px 5px #444;
+	border: 1px solid #666;
+}
+
+.content-multiple-table {
+	border: 1px solid #CCC;
+	background: #EEEEEE;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+}
+
+.content-add-more {
+	margin-bottom: 15px;
+}
+
+.node-form .tips li{
+	margin-left: 25px;
+}
+.node-form label {
+	margin-bottom: 5px;
+}
+
+.form-autocomplete {
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

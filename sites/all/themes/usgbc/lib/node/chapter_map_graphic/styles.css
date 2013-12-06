@@ -1,0 +1,21 @@
+/* @group Chapter Map Graphic */
+.find-chapter {
+    background: url(img/chapter-map-graphic.png) 0 0 no-repeat;
+    
+    -webkit-box-shadow: 0 2px 5px rgba(204,204,204,1);
+	-moz-box-shadow: 0 2px 5px rgba(204,204,204,1);
+    box-shadow: 0 2px 5px rgba(204,204,204,1);
+    
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 780px;
+}
+.find-chapter .mini-search {
+    position: absolute;
+    top: 140px;
+    left: 355px;
+    width: 200px;
+}
+.find-chapter .mini-search .mini-search-field { width: 170px; }
+/* @end */

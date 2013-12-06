@@ -1,0 +1,44 @@
+#int-help {
+	h2, .language-list li { display: inline-block; }
+	
+	.languages { margin-bottom: 50px; }
+	
+	.language-list {
+		margin-top: 25px;
+		
+		li { 
+			margin: 0; 
+			.clearfix;
+		}
+		
+		li + li { margin-left: 50px; }
+		
+		.flag {
+			float: left;
+			margin-right: 8px;
+		}
+		
+		.language, .phone { 
+			display: block;
+			margin-left: 56px; 
+		}
+		
+		.language {
+			font-size: 14px;
+			line-height: 1.4em;
+			text-transform: uppercase;
+			display: block;
+			color: @textDark;
+			font-weight: 600;
+			margin-top: -3px;
+			margin-bottom: 2px;
+		}
+		
+		.phone {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1em;
+			white-space: nowrap;
+		}
+	}
+}

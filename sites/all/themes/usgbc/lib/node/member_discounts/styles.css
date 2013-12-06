@@ -1,0 +1,84 @@
+/* @group Discounts Table */
+.discounts {
+    margin: 25px 0;
+}
+
+.discounts,
+.discounts th,
+.discounts td {
+    border: none;
+    padding: 6px 0;
+}
+
+.discounts thead th {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.discounts thead .col-fee, 
+.discounts thead .col-savings {
+	width:17%;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	background: #858585;
+	color: white;
+	font-size: 11px;
+	text-align: center;
+	
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+
+.discounts thead .col-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #86C240;
+}
+
+.discounts tbody td {
+    font-size: 11px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 12px;
+}
+
+.discounts tbody .category {
+	font-weight:bold;
+	padding-left: 0;
+}
+
+.discounts tbody .note,
+p.note {
+    display: table-cell;
+    color: #a1a1a1;
+    padding-left: 0;
+}
+
+.discounts tbody .col-fee,
+.discounts tbody .col-savings {
+    text-align: center;
+    padding-left: 0;
+}
+
+.discounts tbody .col-fee:nth-child(3),
+.discounts tbody .col-savings {
+    font-weight: bold;
+}
+
+.discounts tbody .col-fee {
+    border-left: 1px solid #e1e1e1;
+}
+
+.discounts tbody tr td.col-savings {
+    background: #f1f1f1;
+    border: 1px solid #e1e1e1;
+    
+    -moz-box-shadow: 0 0 2px #FFF inset;
+    -webkit-box-shadow: 0 0 2px #FFF inset;
+    box-shadow: 0 0 2px #FFF inset;
+}
+
+p.note {
+    display: block;
+    font-size: 11px;
+    padding-bottom: 25px;
+}
+/* @end */

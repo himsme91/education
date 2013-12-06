@@ -1,0 +1,128 @@
+@media @tabletAndUnder {
+	#navBar, #page-title .section { display: none; }
+	
+	#wrapper, .wrapper, #header { width: 100%; }
+	
+	.wrapper, #header { 
+		.box-sizing(border-box);
+		padding-left: 25px; 
+		padding-right: 25px; 
+	}
+	
+	#header {
+		.clearfix;
+		
+		#personalNav {
+			margin-top: 30px;
+			.mini-search { margin-top: 0; clear: none; }
+		}
+		
+		p#page-title { 
+			width: auto; 
+			float: left; 
+			
+			a.logo {
+				.square(60px);
+				background-size: contain;
+			}
+		}
+	}
+	
+	#gbig {
+		#gbig-header {
+			#gbig-video { 
+				.size(auto, 100%);
+				background: none;
+				border: none;
+				.box-shadow(none);
+				margin-bottom: 175px; 
+				iframe { display: none; }
+				.btn-group { display: block; }
+			}	
+		}
+		
+		#gbig-nav {
+			a {
+				width: 45%;
+				margin-left: 5%;
+				
+				&:nth-child(2n - 1){ margin-left: 0; }
+				&:nth-child(4){ margin-left: 5%; }
+			}
+		}
+		
+		.section {
+			.header { margin-bottom: 30px; }
+			
+			.primary, .secondary {
+				padding: 0 !important;
+				text-align: center; 
+				
+				img {
+					position: static;
+					max-width: 100%;
+					display: block;
+					margin: 0 auto 40px;
+				}
+			}
+		}
+	}
+}
+
+@media @handheld {
+	#gbig {
+		#gbig-nav {
+			a { 
+				width: 100%; 
+				margin-left: 0 !important;
+				margin-bottom: 12px;
+				text-align: center;
+				padding-left: 0;
+				
+				span { display: none; }
+				
+				strong, img { 
+					display: inline-block; 
+					height: 50px;
+					line-height: 50px;
+					margin: 0;
+					vertical-align: middle;
+				}
+				
+				img { 
+					position: static;
+				}
+			}
+		}
+		
+		.section {
+			.header {
+				background-size: 50px;
+				padding-left: 65px;
+				
+				h2 { 
+					font-size: 18px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	
+	#footer {
+		#quickLinksNav, #legal {
+			float: none;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+			
+			li { display: inline-block; }
+		}
+		
+		#quickLinksNav li:last-child a { margin-right: 0; }
+		
+		#legal {
+			margin-top: 8px; 
+			li:first-child a { margin-left: 0;}
+		}
+	}
+}

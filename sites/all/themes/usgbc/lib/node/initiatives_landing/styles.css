@@ -1,0 +1,348 @@
+/* @group Banner */
+#feature {
+	position: relative;
+	height: 304px;
+	width: 960px;
+	margin-bottom: 10px;
+	background: url(img/bg-pattern.png) repeat 0 0;
+	z-index: 1;
+	overflow: hidden;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	
+	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset, 0 0 125px rgba(0,0,0,.4) inset;
+	-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset, 0 0 125px rgba(0,0,0,.4) inset;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset, 0 0 125px rgba(0,0,0,.4) inset;
+}
+
+	#feature h1 {
+		position: absolute;
+		text-transform: uppercase;
+		text-align: center;
+		top: 18px;
+		width: 960px;
+		display: block;
+		color: #FFF;
+		font-size: 140px;
+		text-shadow: 0 1px 0 #ccc,
+			0 2px 0 #c9c9c9,
+		    0 3px 0 #bbb,
+		    0 4px 0 #b9b9b9,
+		    0 5px 0 #aaa,
+		    0 6px 1px rgba(0,0,0,.1),
+		    0 0 5px rgba(0,0,0,.1),
+		    0 1px 3px rgba(0,0,0,.3),
+		    0 3px 5px rgba(0,0,0,.2),
+		    0 5px 10px rgba(0,0,0,.25),
+		    0 10px 10px rgba(0,0,0,.2),
+		    0 20px 20px rgba(0,0,0,.15)
+		;
+	}
+
+	#content #feature ul {
+		overflow: hidden;
+		position: relative;
+		top: 190px;
+		left: 50%;
+		width: 750px;
+		margin-left: -375px;
+	}
+
+		#feature ul li {
+			list-style: none;
+			float: left;
+			margin-right: 18px;
+			margin-left: 18px;
+		}
+
+h2.tagline {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 25px;
+	border-bottom: 1px solid #ddd;
+	color: #555;
+	padding: 10px 10px 20px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+	/* @group Animations */
+		/* @group Headline Animation */
+		@-webkit-keyframes slideText {
+			from {
+				 top: 60px;
+				 opacity: 0;
+				 text-shadow: none;
+			}
+			to {
+				top: 20px;
+				opacity: 1;
+				text-shadow: 0 1px 0 #ccc, 
+				             0 2px 0 #c9c9c9,
+				             0 3px 0 #bbb,
+				             0 4px 0 #b9b9b9,
+				             0 5px 0 #aaa,
+				             0 6px 1px rgba(0,0,0,.1),
+				             0 0 5px rgba(0,0,0,.1),
+				             0 1px 3px rgba(0,0,0,.3),
+				             0 3px 5px rgba(0,0,0,.2),
+				             0 5px 10px rgba(0,0,0,.25),
+				             0 10px 10px rgba(0,0,0,.2),
+				             0 20px 20px rgba(0,0,0,.15);
+			}
+		}
+		
+		@-moz-keyframes slideText {
+			from {
+				 top: 60px;
+				 opacity: 0;
+				 text-shadow: none;
+			}
+			to {
+				top: 20px;
+				opacity: 1;
+				text-shadow: 0 1px 0 #ccc, 
+				             0 2px 0 #c9c9c9,
+				             0 3px 0 #bbb,
+				             0 4px 0 #b9b9b9,
+				             0 5px 0 #aaa,
+				             0 6px 1px rgba(0,0,0,.1),
+				             0 0 5px rgba(0,0,0,.1),
+				             0 1px 3px rgba(0,0,0,.3),
+				             0 3px 5px rgba(0,0,0,.2),
+				             0 5px 10px rgba(0,0,0,.25),
+				             0 10px 10px rgba(0,0,0,.2),
+				             0 20px 20px rgba(0,0,0,.15);
+			}
+		}
+		
+		@-o-keyframes slideText {
+			from {
+				 top: 60px;
+				 opacity: 0;
+				 text-shadow: none;
+			}
+			to {
+				top: 20px;
+				opacity: 1;
+				text-shadow: 0 1px 0 #ccc, 
+				             0 2px 0 #c9c9c9,
+				             0 3px 0 #bbb,
+				             0 4px 0 #b9b9b9,
+				             0 5px 0 #aaa,
+				             0 6px 1px rgba(0,0,0,.1),
+				             0 0 5px rgba(0,0,0,.1),
+				             0 1px 3px rgba(0,0,0,.3),
+				             0 3px 5px rgba(0,0,0,.2),
+				             0 5px 10px rgba(0,0,0,.25),
+				             0 10px 10px rgba(0,0,0,.2),
+				             0 20px 20px rgba(0,0,0,.15);
+			}
+		}
+		
+		@-ms-keyframes slideText {
+			from {
+				 top: 60px;
+				 opacity: 0;
+				 text-shadow: none;
+			}
+			to {
+				top: 20px;
+				opacity: 1;
+				text-shadow: 0 1px 0 #ccc, 
+				             0 2px 0 #c9c9c9,
+				             0 3px 0 #bbb,
+				             0 4px 0 #b9b9b9,
+				             0 5px 0 #aaa,
+				             0 6px 1px rgba(0,0,0,.1),
+				             0 0 5px rgba(0,0,0,.1),
+				             0 1px 3px rgba(0,0,0,.3),
+				             0 3px 5px rgba(0,0,0,.2),
+				             0 5px 10px rgba(0,0,0,.25),
+				             0 10px 10px rgba(0,0,0,.2),
+				             0 20px 20px rgba(0,0,0,.15);
+			}
+		}
+		
+		@keyframes slideText {
+			from {
+				 top: 60px;
+				 opacity: 0;
+				 text-shadow: none;
+			}
+			to {
+				top: 20px;
+				opacity: 1;
+				text-shadow: 0 1px 0 #ccc, 
+				             0 2px 0 #c9c9c9,
+				             0 3px 0 #bbb,
+				             0 4px 0 #b9b9b9,
+				             0 5px 0 #aaa,
+				             0 6px 1px rgba(0,0,0,.1),
+				             0 0 5px rgba(0,0,0,.1),
+				             0 1px 3px rgba(0,0,0,.3),
+				             0 3px 5px rgba(0,0,0,.2),
+				             0 5px 10px rgba(0,0,0,.25),
+				             0 10px 10px rgba(0,0,0,.2),
+				             0 20px 20px rgba(0,0,0,.15);
+			}
+		}
+		
+		#feature h1 {
+			-webkit-animation: slideText .6s ease .4s 1 both;
+			-moz-animation: slideText .6s ease .4s 1 both;
+			-o-animation: slideText .6s ease .4s 1 both;
+			-ms-animation: slideText .6s ease .4s 1 both;
+			animation: slideText .6s ease .4s 1 both;
+		}
+		/* @end */
+		
+		/* @group Background Loop */
+		@-webkit-keyframes 'bgLoop' {
+			from { background-position: 0 0; }
+			to { background-position: 0 180px; }
+		}
+		
+		@-moz-keyframes 'bgLoop' {
+			from { background-position: 0 0; }
+			to { background-position: 0 180px; }
+		}
+		
+		@-o-keyframes 'bgLoop' {
+			from { background-position: 0 0; }
+			to { background-position: 0 180px; }
+		}
+		
+		@-ms-keyframes 'bgLoop' {
+			from { background-position: 0 0; }
+			to { background-position: 0 180px; }
+		}
+		
+		@keyframes 'bgLoop' {
+			from { background-position: 0 0; }
+			to { background-position: 0 180px; }
+		}
+		
+		#feature {
+			-webkit-animation: bgLoop 12s linear 0 infinite;
+			-moz-animation: bgLoop 12s linear 0 infinite;
+			-o-animation: bgLoop 12s linear 0 infinite;
+			-ms-animation: bgLoop 12s linear 0 infinite;
+			animation: bgLoop 12s linear 0 infinite;
+		}
+		/* @end */
+		
+		/* @group Logo Slide */
+		@-webkit-keyframes 'imageSlide' {
+			from { margin-top: 120px; }
+			to { margin-top: 0; }
+		}
+		
+		@-moz-keyframes 'imageSlide' {
+			from { margin-top: 120px; }
+			to { margin-top: 0; }
+		}
+		
+		@-o-keyframes 'imageSlide' {
+			from { margin-top: 120px; }
+			to { margin-top: 0; }
+		}
+		
+		@-ms-keyframes 'imageSlide' {
+			from { margin-top: 120px; }
+			to { margin-top: 0; }
+		}
+		
+		@keyframes 'imageSlide' {
+			from { margin-top: 120px; }
+			to { margin-top: 0; }
+		}
+		
+		#feature ul li:nth-child(1) {
+			-webkit-animation: imageSlide .4s ease .6s 1 both;
+			-moz-animation: imageSlide .4s ease .6s 1 both;
+			-o-animation: imageSlide .4s ease .6s 1 both;
+			-ms-animation: imageSlide .4s ease .6s 1 both;
+			animation: imageSlide .4s ease .6s 1 both;
+		}
+		
+		#feature ul li:nth-child(2) {
+			-webkit-animation: imageSlide .4s ease .8s 1 both;
+			-moz-animation: imageSlide .4s ease .8s 1 both;
+			-o-animation: imageSlide .4s ease .8s 1 both;
+			-ms-animation: imageSlide .4s ease .8s 1 both;
+			animation: imageSlide .4s ease .8s 1 both;
+		}
+		
+		#feature ul li:nth-child(3) {
+			-webkit-animation: imageSlide .4s ease 1s 1 both;
+			-moz-animation: imageSlide .4s ease 1s 1 both;
+			-o-animation: imageSlide .4s ease 1s 1 both;
+			-ms-animation: imageSlide .4s ease 1s 1 both;
+			animation: imageSlide .4s ease 1s 1 both;
+		}
+		/* @end */
+	/* @end */
+/* @end */
+
+/* @group Main Content */
+.primary {
+	float: left;
+	width: 525px;
+	margin-right: 35px;
+}
+
+.secondary {
+	float: left;
+	width: 400px;
+}
+
+#content .secondary p {
+	font-size: 12px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.secondary #cfgs-callout { border-bottom: none; }
+
+.secondary img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.secondary #haiti-callout img {
+	float: left;
+	margin-right: 20px;
+}
+
+.aside h4 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 6px;
+	font-size: 15px;
+}
+
+.aside ul li {
+	float: left;
+	list-style: none;
+	margin: 0 20px 0 0;
+}
+/* @end */
+
+/* IE7 fixes - 6-25-2012 - TL */
+#feature {
+	*border: 1px solid #ccc;
+}
+
+#feature h1 {
+	*color: #777;
+	*left: 50%;
+	*margin-left: -400px;
+	*width: 800px;
+}
+

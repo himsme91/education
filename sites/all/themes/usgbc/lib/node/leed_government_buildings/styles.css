@@ -1,0 +1,62 @@
+#project-metrics {
+	overflow: hidden;
+}
+
+#project-metrics h4 {
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+
+#content #project-metrics dt,
+#content #project-metrics dd {
+	float: left;
+	line-height: 22px;
+	height: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	margin-bottom: 8px;
+}
+
+#content #project-metrics dt {
+	font-size: 18px;
+	color: #98cd58;
+	margin-right: 5px;
+}
+
+#content #project-metrics dd {
+	font-size: 10px;
+	color: #686868;
+}
+
+#project-metrics .persuing {
+	float: left;
+	width: 260px;
+}
+
+#project-metrics .certified {
+	float: right;
+	width: 220px;
+}
+
+#project-metrics .visual {
+	margin: 0 0 18px -3px;
+	overflow: hidden;
+	list-style: none;
+	clear: both;
+}
+
+#project-metrics .persuing .visual { opacity: .5; }
+
+#project-metrics .visual li {
+	list-style: none;
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url('/sites/all/assets/section/leed/building-icon.png') no-repeat;
+	margin: 0 0 3px 3px;
+}
+
+#project-metrics .visual li.quarter { width: 5px; }
+#project-metrics .visual li.half { width: 9px; }
+#project-metrics .visual li.three-quarters { width: 13px; }

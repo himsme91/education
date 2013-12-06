@@ -1,0 +1,44 @@
+#int-news {
+	.article {
+		float: left;
+		width: 282px;
+		margin-left: 57px;
+		margin-bottom: 50px;
+		
+		&:nth-child(3n - 2){ 
+			margin-left: 0; 
+			clear: left; 
+		}
+	}
+	
+	.date {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1em;
+		margin: 0 0 .5em;
+	}
+	
+	h3 {
+		font-size: 24px;
+		line-height: 1.3em;
+		margin: 0 !important;
+		
+		a {
+			font-weight: 100;
+			color: white;
+			display: block;
+			
+			img { 
+				display: block;
+				margin-bottom: 12px; 
+			}
+			
+			small {
+				display: block;
+				font-size: 16px;
+				font-weight: 700;
+				color: @textDark;
+			}
+		}
+	}
+}

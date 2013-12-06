@@ -1,0 +1,93 @@
+core = 7.x
+description = This is the base drupal theme for all usgbc sites. <em>This theme requires the Tao theme.</em>
+name = USGBC Base
+
+; Regions =====================================================================
+
+
+; Stylesheets =================================================================
+
+stylesheets[all][] = lib/css/drupal_core.css
+stylesheets[all][] = lib/css/base.css
+stylesheets[all][] = lib/css/forms.css
+stylesheets[all][] = lib/css/ie.css
+stylesheets[screen][] = lib/css/jquery-ui-1.8.2.css
+stylesheets[screen][] = lib/css/jqModal.css
+stylesheets[screen][] = lib/css/uniform.default.css
+stylesheets[screen][] = lib/css/content-module.css
+
+; Omit Stylesheets ===========================================================
+
+;core
+stylesheets[all][] = "admin.css"
+stylesheets[all][] = "block.css"
+stylesheets[all][] = "book.css"
+stylesheets[all][] = "comment.css"
+stylesheets[all][] = "dblog.css"
+stylesheets[all][] = "defaults.css"
+stylesheets[all][] = "forum.css"
+stylesheets[all][] = "help.css"
+stylesheets[all][] = "maintenance.css"
+stylesheets[all][] = "node.css"
+stylesheets[all][] = "openid.css"
+stylesheets[all][] = "poll.css"
+stylesheets[all][] = "profile.css"
+stylesheets[all][] = "search.css"
+stylesheets[all][] = "system.css"
+stylesheets[all][] = "system-menus.css"
+stylesheets[all][] = "taxonomy.css"
+stylesheets[all][] = "tracker.css"
+stylesheets[all][] = "update.css"
+stylesheets[all][] = "user.css"
+
+;stylesheets[all][] = "aggregator/aggregator.css"
+;stylesheets[all][] = "farbtastic/farbtastic.css"
+
+;Modules
+stylesheets[all][] = "modules/cck/theme/content-module.css"
+stylesheets[all][] = "modules/glossary/glossary.css"
+;stylesheets[all][] = "modules/context/plugins/context_reaction_block.css"
+;stylesheets[all][] = "modules/ckeditor/ckeditor.css"
+;stylesheets[all][] = "modules/colorbox/styles/default/colorbox_default_style.css"
+;stylesheets[all][] = "modules/ctools/css/ctools.css"
+;stylesheets[all][] = "modules/panels/css/panels.css"
+;stylesheets[all][] = "modules/cck/modules/fieldgroup/fieldgroup.css"
+;stylesheets[all][] = "modules/views/css/views.css"
+
+;stylesheets[all][] = "modules/extlink/extlink.css"
+;stylesheets[all][] = "modules/dhtml_menu/dhtml_menu.css"
+;stylesheets[all][] = "modules/itweak_upload/itweak_upload.css"
+;stylesheets[all][] = "modules/uc_discounts_alt/uc_discounts/uc_discounts.css"
+;stylesheets[all][] = "modules/date/date.css"
+;stylesheets[all][] = "modules/date/date_popup/themes/datepicker.css"
+;stylesheets[all][] = "modules/date/date_popup/themes/jquery.timeentry.css"
+;stylesheets[all][] = "modules/filefield/filefield.css"
+;stylesheets[all][] = "modules/fivestar/css/fivestar.css"
+;stylesheets[all][] = "modules/fivestar/widgets/small/small.css"
+;stylesheets[all][] = "modules/gallery/gallery.css"
+;stylesheets[all][] = "modules/gallery/gallery_filter.css"
+;stylesheets[all][] = "modules/lightbox2/css/lightbox.css"
+;stylesheets[all][] = "modules/og/theme/og.css"
+;stylesheets[all][] = "modules/simplewiki/SimpleWiki.css"
+;stylesheets[all][] = "modules/ubercart/shipping/uc_quote/uc_quote.css"
+;stylesheets[all][] = "modules/ubercart/shipping/uc_ups/uc_ups.css"
+;stylesheets[all][] = "modules/ubercart/uc_attribute/uc_attribute.css"
+;stylesheets[all][] = "modules/ubercart/uc_file/uc_file.css"
+;stylesheets[all][] = "modules/ubercart/uc_order/uc_order.css"
+;stylesheets[all][] = "modules/ubercart/uc_product/uc_product.css"
+;stylesheets[all][] = "modules/ubercart/uc_roles/uc_roles.css"
+;stylesheets[all][] = "modules/ubercart/uc_store/uc_store.css"
+;stylesheets[all][] = "modules/uc_fedex/uc_fedex.css"
+;stylesheets[all][] = "modules/calendar/calendar.css"
+;stylesheets[all][] = "modules/vote_up_down/widgets/updown/updown.css"
+
+
+
+; SCRIPTS =================================================================
+
+scripts[] = lib/js/jquery.uniform.min.js
+scripts[] = lib/js/jquery.easing.1.3.js
+scripts[] = lib/js/jquery-ui-1.8.2.js
+scripts[] = lib/js/jqModal.js
+scripts[] = lib/js/base.js
+scripts[] = lib/js/pager.js

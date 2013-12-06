@@ -1,0 +1,46 @@
+#int-resources {
+	.column {
+		width: 410px;
+		float: left;
+	}
+	
+	.column + .column { float: right; }
+	
+	.list-head {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 34px;
+		text-transform: uppercase;
+		color: white;
+		padding-bottom: 12px;
+		border-bottom: 1px solid @teal;
+		margin-bottom: 28px;
+		
+		.flag {
+			float: left;
+			margin-right: 8px;
+		}
+	}
+	
+	.doc-list {
+		margin-bottom: 75px;
+		
+		li { .clearfix; } 
+		li + li { margin-top: 25px; }
+		
+		a {
+			font-size: 18px;
+			text-transform: uppercase;
+			display: inline-block; 
+			padding-top: 20px; 
+			
+		}
+		
+		img { 
+			float: left;
+			width: 46px;
+			margin-right: 18px; 
+			margin-top: -20px;
+		}
+	}
+}

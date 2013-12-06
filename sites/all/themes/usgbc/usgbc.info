@@ -1,0 +1,43 @@
+core = 7.x
+description = Custom theme for usgbc.org. <em>This theme requires the USGBC Base theme.</em>
+name = usgbc.org
+base theme = base
+
+
+; Regions =====================================================================
+
+regions[page_top] = Page top
+regions[content] = Content
+regions[footer] = Footer
+
+
+; Stylesheets =================================================================
+
+stylesheets[all][] = lib/css/typography.css
+stylesheets[screen][] = lib/css/jquery-plugins.css
+stylesheets[screen][] = lib/css/uniform.default.css
+stylesheets[screen][] = lib/css/theme.css
+stylesheets[screen][] = lib/css/comments.css
+stylesheets[screen][] = lib/css/jq-gallery.css
+stylesheets[print][] = lib/css/print.css
+stylesheets[screen][] = lib/css/floating-alerts.css
+
+
+
+; SCRIPTS =================================================================
+
+scripts[] = lib/js/jquery.client.js
+scripts[] = lib/js/jquery.usgbc.externalLinks.js
+scripts[] = lib/js/jquery.autoclear.min.js
+scripts[] = lib/js/jquery.usgbc.tabNavigation.js
+scripts[] = lib/js/hoverintent.js
+scripts[] = lib/js/leed.js
+scripts[] = lib/js/text-counter.js
+scripts[] = lib/js/jq-gallery.js
+scripts[] = lib/js/global-functions.js
+scripts[] = lib/js/global.js
+scripts[] = lib/js/floating-alerts.js
+
+
+; Panels layouts ===========================================================
+plugins[panels][layouts] = plugins/layouts

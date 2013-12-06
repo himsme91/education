@@ -1,0 +1,328 @@
+/* @group IE6-8 */
+/*.ie * {
+	zoom: 1;
+}*/
+.ie .mini-search,
+.ie .jumbo-search,
+.ie .mini-search-container,
+.ie #globalNav #utilityNav li a.active,
+.ie .profile-sub-menu .internal-navigation li a,
+.ie ul.quicktabs_tabs a {
+    position:relative;
+    behavior:  url('/sites/all/libraries/pie/PIE.php');
+}
+
+.ie #nav li a,
+.ie #mainCol .member-list,
+.ie #slider-scale,
+.ie #filter .rounded-window,
+.ie #filter .steps,
+.ie #filter .width-control,
+.ie #filter .steps-container,
+.ie #filter a,
+.ie .overlay-wrap,
+.ie .jumbo-search .advanced-search-header,
+.ie .dialog-wrap,
+.ie .dialog-decorator,
+.ie .modal-title,
+.ie .contributor-list li,
+.ie #image-gallery .photo-menu,
+.ie .pf-info,
+.ie .profile-sub-menu,
+.ie ul,
+.ie #company-link-results li,
+.ie #change_comptags .taxonomy-formtag-container ul.taxonomy-formtag-list,
+.ie .container_12,
+.ie .container_16,
+.ie .container-12,
+.ie .container-12,
+.ie #header,
+.ie #nav,
+.ie #footer,
+.ie #page,
+.ie #body,
+.ie #donate-nav,
+.ie #process-bar,
+.ie .tabs,
+.ie .columnlist,
+.ie #content,
+.ie #mainCol .three-cols .col .linelist li div,
+.ie #store-list div img,
+.ie .load-more-entries{
+    zoom: 1;
+}
+
+.ie #nav ul {
+	zoom: 0;
+}
+
+/* rgba fixes */
+.ie #page #body { background-color: #fbfbfb !important; }
+
+.ie #page #over {background: #FFF; }
+
+/* hides arrow */
+.ie #page .action-button .arrow { display: none; }
+
+
+/* replaces :last-child rule */
+.ie #page #anon_donor_info .pulled-item { margin-bottom: 0; }
+.ie .arrow-button { font-size: 12px; }
+
+.ie #content .tabbed-box ul.tabNavigation {
+    z-index: 1;
+    position: relative;
+}
+
+.ie #screen_state,
+.ie .overlay_menu,
+.ie .menu-closed {
+    display: none;
+}
+
+.ie div#member-data div.total { color: #e4e4e4; }
+.ie div#member-data div.total strong { color: #bcbcbc; }
+
+/* add border to elements that have box-shadow */
+.ie .pf-info,
+.ie #image-gallery .current-photo,
+.ie #image-gallery .photo-menu {
+    border: 1px solid #bbb;
+}
+
+
+.ie #haiti .progress .prog-raised { color: white !important; }
+/* @end */
+
+/* @group IE7 Only */
+.ie7 #header #personalNav {
+    margin-top: 20px;
+}
+
+.ie7 .radio-triplets .triplet-panel .inputlist li {
+    margin: 0;
+    clear: left;
+}
+
+.ie7 #leed-projects .ag-item-certification { white-space: nowrap; }
+
+.ie7 #mini-scorecard .cert,
+.ie7 #mini-scorecard .recert {
+	width: 100%;
+}
+
+.ie7 #utilityNav div.menu-block-1{
+	padding-right:70px;
+}
+
+.ie7 #utilitynav li a.active-trail{
+	margin-top:10px;
+}
+
+.ie7 #utilityNav ul.signinmenu{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.ie7 #scorecard ul li {
+	clear: both;
+}
+/* @end */
+
+/* @group IE6 Only */
+.ie6 #navBar #mainNav li a { margin-right: 15px; }
+
+.ie6 .sub-suv-columns,
+.ie6 .section-head,
+.ie6 .member-list li,
+.ie6 .cred-list li,
+.ie6 .manage-user-list .user h4,
+.ie6 #online-access-list li,
+.ie6 .jumbo-search,
+.ie6 .jumbo-search-container,
+.ie6 .mini-search-container,
+.ie6 .ag-header,
+.ie6 .ag-footer,
+.ie6 #event-list li,
+.ie6 .simple-pagination,
+.ie6 .dropdown_list li,
+.ie6 .dropdown_list li a,
+.ie6 .picture-item-list,
+.ie6 .form-section,
+.ie6 .filter,
+.ie6 #dashboard .col-container {
+    zoom:1;
+}
+
+.ie6 #globalNav #mainNav li a,
+.ie6 #globalNav #utilityNav li a,
+.ie6 #nav ul li a {
+    float: left;
+}
+
+.ie6 #header #personalNav {
+    margin-top: 20px;
+    width: 220px;
+}
+
+.ie6 #header .mini-search {
+    margin-right: 0;
+}
+
+.ie6 #content,
+.ie6 #side-social ul,
+.ie6 div.section,
+.ie6 .checkout-process .total,
+.ie6 .subCol-line-row,
+.ie6 .button-group,
+.ie6 .panel,
+.ie6 .static-panel,
+.ie6 .panel_label,
+.ie6 .panel_summary,
+.ie6 .panel_content,
+.ie6 #mainCol .form-column-set,
+.ie6 .form-section,
+.ie6 .winner,
+.ie6 div.sell-pubs {
+    height: 1%;
+}
+
+.ie6 .winner p.placement { margin-left:0; }
+
+.ie6 #design .five .note { width:375px; }
+
+.ie6 #dashboard table.gantt { width: 835px; }
+
+.ie6 subCol-line-row { margin-left: -13px; }
+
+.ie6 .left { border-right: none; }
+
+.ie6 .ag-pagination input {
+	padding-top: 2px;
+	height: 12px;
+}
+
+.ie6 .right { border-left: none; }
+
+.ie6 .sectionSubNav li ul li a { height: 15px; }
+
+.ie6 .checkout-process #attention-feed li { width: 150px; }
+
+.ie6 #mainCol .form-column-set { width: 735px; }
+
+.ie6 .payment-instr { width: 45%; }
+
+.ie6 div.version-switcher select {
+    margin-top: 13px;
+    margin-right: 12px;
+}
+
+.ie6 a.highlight span.bubble-padd,
+.ie6 a.highlight:hover span.bubble-padd,
+.ie6 a.highlight span.bubble-padd span.info,
+.ie6 a.highlight:hover span.bubble-padd span.info {
+    display: none !important;
+}
+
+.ie6 a.highlight { cursor: pointer !important; }
+
+
+.ie6 #page .inputlist li .label-text { float: none; }
+
+.ie6 #page .sub-form-element .pulled-item { padding-left: 0; }
+
+.ie6 #page .sub-form-element .pulled-item label {
+    float: none;
+    margin-left: 0;
+    text-align: left;
+}
+
+.ie6 #page .sub-form-element textarea { width: 400px; }
+
+.ie6 #page .button-group .button { background: #666 !important; }
+/* @end */
+
+/* @group Profile Menu Fix */
+.ie7 .profile-sub-menu .internal-navigation { float: left; }
+
+.ie7 .profile-sub-menu .external-navigation { width: 165px; }
+/* @end */
+
+/* @group Modal fix */    
+.ie #modal { padding-bottom: 10px; }
+/* @end */
+
+/* @group Slider fix */
+.ie #slider-scale .v300 { margin-right: 20px; }
+/* @end */
+
+/* @group Member-list min-height fix */
+.ie #mainCol .member-list li { height: 185px; }
+/* @end */
+
+/* @group LEED Scorecard fixes */
+.ie7 #scorecard .criteria-head .criteria-score {
+	position: relative;
+	top: -27px;
+	zoom:1;
+}
+/* @end */
+/* remove top border to hide the IE li vertical gap */
+.ie #attention-feed ul li,
+.ie #attention-feed ul li ul li:first-child {
+    border-top: 0;
+}
+
+.ie .mini-search,
+.ie .mini-search-container {
+    box-shadow: none;
+}
+
+.ie .mini-search-container {
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+	.ie .mini-search-container form {
+		height: 26px;
+	}
+
+.ie7 input[type='submit'].small-button,
+.ie7 input[type='submit'].small-alt-button,
+.ie7 input[type='submit'].small-warning-button,
+.ie7 .node-form .content-add-more input[type='submit'].form-submit {
+	height: auto;
+}
+
+.ie7 .button-group input.action-button {
+	padding-right: 10px;
+}
+
+.ie9 #parallax h1, 
+.ie8 #parallax h1, 
+.ie7 #parallax h1 {
+	display: none;
+}
+
+.ie8 .bg-grid .bg-column,
+.ie9 .bg-grid .bg-column{
+	margin-right:12px;
+}
+
+.ie8 .jumbo-button-dark,
+.ie9 .jumbo-button-dark{
+	z-inxdex:3000;
+}
+
+.ie8 #related-websites a,
+.ie9 #related-websites a{
+	width: 232px !important;
+}
+
+.ie8 .project-haiti .box ,
+.ie9 .project-haiti .box {
+	background: black !important;
+}
+.ie8 .disabled{
+	filter:none;
+}

@@ -1,0 +1,316 @@
+#navBar, #header, .footer-menu, .social, #nav, #console {
+    display: none; 
+}
+
+#footer #copyright {
+    float: none;
+    text-align: center;
+}
+#wrapper{
+	width:100%;
+}
+#content, body {
+    background-color: #F4F4F4;
+}
+.logo {
+    background: url("/sites/all/themes/usgbc/lib/img/leaf.png") no-repeat scroll left center transparent;
+    float: left;
+   /* margin-right: 17px;*/
+    height: 85px;
+    text-indent: -9999px;
+    width: 86px;
+}
+#banner-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+#global-message-banner {
+    background: none repeat scroll 0 0 white;
+}
+body #wrapper div#banner.gradient .banner-bg-wrapper {
+    height: 225px;
+}
+body #wrapper div#banner .banner-bg-wrapper {
+    height: 60px;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+body #wrapper div#banner .banner-background {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+body #wrapper div#banner.gradient .banner-background .semitransparent-bg {
+    opacity: 0;
+}
+body #wrapper div#banner .banner-background .semitransparent-bg {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.85);
+    height: 60px;
+    left: 0;
+    top: 0;
+    transition-duration: 500ms;
+    transition-property: all;
+}
+
+body #wrapper div#banner .banner-background .gradient-bg {
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    height: 225px;
+    left: 0;
+    top: 0;
+    transition-duration: 500ms;
+    transition-property: all;
+    width: 100%;
+}
+body #wrapper div#banner .page-width:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+body #wrapper div#banner .page-width {
+    position: relative;
+}
+body .page-width {
+    min-width: 946px;
+    width: 960px;
+}
+.page-width {
+    margin: 0 auto;
+    max-width: 1426px;
+}
+body #wrapper div#banner .page-width .header:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+body #wrapper div#banner .page-width .header {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+body #wrapper div#banner .page-width .header .header-left {
+    height: 60px;
+    left: 0;
+    padding-top: 19px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+body #wrapper div#banner .page-width .header #logo {
+    float: left;
+}
+body #wrapper div#banner .page-width #user-menu {
+    padding-top: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+body #wrapper div#banner .page-width #user-menu .nav-link {
+    margin-left: 25px;
+    text-align: right;
+}
+.nav-link a.text, .nav-link span.text {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+body #wrapper div#banner .page-width #search-container {
+    left: 50%;
+    margin-left: -112px;
+    position: absolute;
+    top: 0;
+}
+body #wrapper div#banner .page-width #search-container form#search-theme-form {
+    margin: 13px auto 0;
+    position: relative;
+}
+body #wrapper div#banner .page-width #search-container form#search-theme-form {
+    background: url("http://static.huluim.com/huluguru/bg-search-bar-74890c7b6c29f0d9bc27d17dc4b8712b.png") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    padding: 3px 3px 4px 11px;
+    width: 210px;
+}
+body #wrapper div#banner .page-width #search-container form#search-theme-form:hover {
+    background: url("http://static.huluim.com/huluguru/bg-search-bar-74890c7b6c29f0d9bc27d17dc4b8712b.png") no-repeat scroll 0 -34px transparent;
+}
+
+body #wrapper div#banner .page-width #search-container form#search-theme-form:focus {
+    background: url("http://static.huluim.com/huluguru/bg-search-bar-74890c7b6c29f0d9bc27d17dc4b8712b.png") no-repeat scroll 0 -68px transparent;
+}
+#search-theme-form #edit-search-theme-form-1:focus {
+    color: #444444;
+}
+body #wrapper div#banner .page-width #search-container form#search-theme-form #edit-submit:hover {
+    cursor: pointer;
+}
+body #wrapper div#banner .page-width #search-container form#search-theme-form #edit-submit {
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    width: 16px;
+}
+#search-theme-form #edit-search-theme-form-1 {
+    background: url("http://static.huluim.com/huluguru/bg-transparent-a56f1655142fadf0dcea5e9ed97d7480.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #CCCCCC;
+    font-size: 13px;
+    height: 100%;
+    width: 182px;
+}
+
+.extra-header-wrapper {
+    background: none repeat scroll 0 0 rgba(225, 225, 225, 0.95);
+}
+
+#courses-promo-blocks {
+    margin-left: 130px;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    height: 270px;
+    width: 1200px;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 1200px;
+}
+.jcarousel-skin-tango .jcarousel-item {
+    background-color: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    width: 220px;
+}
+
+.jcarousel-item .left{
+	margin-left: 3px;
+}
+.jcarousel-item h4{
+	font-size: 14px;
+	margin-left: 6px;
+	margin-bottom: 10px;
+	height: 75px;
+}
+
+.jcarousel-item .CE{
+	font-size: 13px;
+}
+
+
+.jcarousel-item .grid_3{
+	margin-left:0px;
+	margin-right:0px;
+}
+.jcarousel-item .grid_3 img{
+	padding-bottom:5px;
+}
+.bg-grid .bg-column {
+    width: 220px;
+    margin-right:10px;
+}
+.bg-grid .jcarousel-item{
+	margin-bottom:18px;
+}
+.container_12{
+	width:1200px;
+}
+.bx-viewport{
+ 	height: 455px;
+}
+.bx-wrapper .bx-viewport {
+	border-top: 0px;
+}
+ul.bxslider li{
+	height: 450px;
+	margin-left:0px;
+	margin-bottom:0px;
+}
+#course-opener {
+    padding: 0;
+}
+.bx-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+.block-link:hover{
+	background-color:#FFFFFF;
+}
+
+#course-opener:after {
+    background: url("http://static.huluim.com/huluguru/shadow-box-bottom-5f4e3abe835390d25ba614215d46c83e.png") no-repeat scroll 50% 0 transparent;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+#course-opener {
+    display: block;
+    height: 100%;
+    max-height: 600px;
+    min-height: 450px;
+    position: relative;
+    width: 100%;
+}
+.slider .previous {
+    background-color: transparent;
+    height: 238px;
+    left: 0;
+    margin-top: 6px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    z-index: 14;
+}
+.slider .next {
+    background-color: transparent;
+    height: 238px;
+    margin-top: 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    z-index: 14;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:before{
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    content: " ";
+    display: block;
+    left: 50%;
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:before {
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    content: " ";
+    display: block;
+    left: 50%;
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:before{
+    border-right: 30px solid #E6E6FA;
+    margin-left: -15px;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal:before {
+    border-left: 30px solid #E6E6FA;
+    margin-left: -15px;
+}
+.boxShotDivider {
+    background: url("http://cdn-0.nflximg.com/en_us/boxborders/boxShotDivider.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 115px;
+    margin: 80px 108px 0;
+    width: 3px;
+}

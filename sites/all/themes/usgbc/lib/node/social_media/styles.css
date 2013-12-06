@@ -1,0 +1,14 @@
+#content .form-section-head { margin-top: 20px; }
+#content .plainlist { margin-bottom: 30px; }
+
+#content .plainlist li {
+	line-height: 16px;
+	margin-bottom: 8px;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+#content .plainlist li a.social-link {
+	font-weight: bold;
+	line-height: 16px;
+}

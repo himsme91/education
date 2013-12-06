@@ -1,0 +1,261 @@
+/* @group Dues Calculator */
+#mainCol #dues-calc .widget-title h1 {
+  color: #86C240;
+  margin: 1em 0 0 0;
+}
+
+#dues-calculator {
+ 	display: block;
+	overflow: hidden;
+	clear: both;
+	border: 1px solid #ddd;
+	margin: 5px 0 20px;
+	
+	background-color: #FEFEFE;
+	background-color: rgba(255,255,255,.85);
+	
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	
+}
+
+#dues-calculator div.calc-head {
+	border-bottom: 1px solid #ccc;
+	background: white;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	text-shadow: 0 1px 0 white;
+	
+	background-color: #e1e1e1; /* fallback color */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #e1e1e1, #f1f1f1);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#e1e1e1));
+	-pie-background: linear-gradient(#f1f1f1, #e1e1e1 100%);
+}
+
+#dues-calculator div.calc-head p.instructions {
+	margin: 0;
+}
+
+#dues-calculator ul {
+	margin-bottom: 0;
+}
+
+#dues-calculator li {
+	margin: 0;
+	list-style-type: none;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+#dues-calculator .cat-list li:last-child {
+	border-bottom: none;
+}
+
+#dues-calculator li a {
+	font-weight: bold;
+	display: block;
+	padding: 8px 10px;
+	color: #414141;
+	font-size: 12px;
+	position: relative;
+	border-top: 1px solid #ccc;
+}
+
+#dues-calculator li:first-child a {
+    border: none;
+}
+
+#dues-calculator li a small {
+	display: block;
+	font-weight: normal;
+	color: #999;
+	font-size: 10px;
+}
+
+#dues-calculator li a:hover {
+	background: #fff4c6;
+	border-color: #999;
+	padding-top: 9px;
+	margin-top: -1px;
+	border-width: 1px 0;
+	
+	-moz-box-shadow: 0 1px 3px #fff4c6;
+	-webkit-box-shadow: 0 1px 3px #fff4c6;
+	box-shadow: 0 1px 3px #fff4c6;
+}
+
+#dues-calculator .nav-head { 
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+}
+
+#dues-calculator .nav-head {
+	float: right;
+}
+
+#dues-calculator .nav-head li { 
+	float: left; 
+	list-style: none;
+	width: 150px;
+	margin: 0 10px;
+	border-bottom: none;
+	line-height: 12px;
+}
+
+#dues-calculator .nav-head li a {
+	font-size: 11px;
+	text-shadow: 0 1px 0 white;
+	text-transform: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #414141;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+}
+
+#dues-calculator .nav-head li a span {
+	font-size: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #888;
+	display: block;
+}
+
+#dues-calculator .nav-head li a:hover,
+#dues-calculator .nav-head li a:hover span {
+	background: none;
+	border: none;
+	margin: 0;	
+	color: #517988;
+}
+
+#dues-calculator .panel-title {
+	margin-top: 12px;
+}
+
+#dues-calculator .total-annual-dues {
+    color: #505050 !important;
+    
+}
+
+#dues-calculator .panel-title,
+#dues-calculator .total-annual-dues {
+	margin-left: 10px;
+}
+
+#dues-calculator p.note {
+	padding: 4px 10px;
+	margin: 0;
+}
+
+.due-amt {
+	margin-left:12px;
+	clear:both;
+}
+
+.due-amt label {
+	padding-bottom:5px;
+	margin-bottom:8px;
+	border-bottom:1px solid #ddd;
+	font-size: 24px;
+	font-weight: 600;
+	color:#999;
+}
+/* @end Dues Calculator */
+
+
+/* @group Form Dues Calculator */    
+.form-element #dues-calculator {
+ 	display: block;
+	overflow: hidden;
+	clear: both;
+	border: 1px solid #ddd;
+	margin: 5px 0;
+	height: 210px;
+	
+	background: #FFFFFF;
+	background: rgba(255,255,255,.85);
+	
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 2px rgba(0,0,0,.03) inset, 0 1px 0 #FFF;
+}
+
+.form-element #dues-calculator .radio-triplets { 
+	width: 2376px;
+	margin-left: 0;
+}
+
+.form-element #dues-calculator .triplet-panel { 
+	padding: 15px;
+	height: 180px;
+	width: 564px;
+	float: left;
+	 
+}
+
+.form-element #dues-calculator .triplet-panel .nav-head { 
+	padding: 10px 0 10px 15px;
+	border-bottom: 1px solid #eee;
+	margin: -15px -15px 14px; 
+	list-style: none;
+	overflow: hidden;
+	float: none;
+}
+
+.form-element #dues-calculator .triplet-panel .nav-head li { 
+	float: left; 
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-right: 14px;
+	font-weight: normal;
+	color: inherit;
+	width: auto;
+}
+.form-element #dues-calculator .triplet-panel .nav-head li a {
+  color: #17B0CD;
+  display: inline;
+}
+.form-element #dues-calculator .triplet-panel .nav-head li a:hover { color: #11859b; }
+
+.form-element #dues-calculator #size-slide.triplet-panel .columnlist li { border:none; width: 265px !important; }
+.form-element #dues-calculator .triplet-panel ul { 	margin-top: 5px; margin-bottom: 10px !important; }
+.form-element #dues-calculator #size-slide .inputlist li .label-text {margin-top: 1px;}
+
+.triplet-panel .panel-title {
+	font-weight: bold;
+	margin-bottom: 8px; 
+}
+
+.total-annual-dues {
+    float: left;
+}
+.ie7 #dues-calculator #val {
+	padding-bottom: 12px;
+}
+#dues-calculator .jumbo-action-button {
+    float: right;
+    margin-top: -12px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 130px;
+}
+
+#dues-calculator .jumbo-action-button span {
+    background:url(/sites/all/themes/usgbc/lib/img/arrow-button-blue.gif) no-repeat right center; 
+    padding-right: 22px
+}
+
+/* @end */
