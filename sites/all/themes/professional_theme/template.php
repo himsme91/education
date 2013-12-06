@@ -92,10 +92,10 @@ function professional_theme_preprocess_node(&$variables) {
     $variables['classes_array'][] = 'node-full';
   }
   */
-  $vars['classes_array'][] = 'node--' . $vars['type'] . '--' . $vars['view_mode'];
+  $variables['classes_array'][] = 'node--' . $variables['type'] . '--' . $variables['view_mode'];
   
   // Make "node--NODETYPE--VIEWMODE.tpl.php" templates available for nodes
-  $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__' . $vars['view_mode'];
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['type'] . '__' . $variables['view_mode'];
 }
 
 function professional_theme_page_alter($page) {
