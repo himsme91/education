@@ -28,6 +28,11 @@ function professional_theme_breadcrumb($variables) {
  * Override or insert variables into the page template.
  */
 function professional_theme_preprocess_page(&$vars) {
+if (isset($vars['node'])) {
+  // If the node type is "blog" the template suggestion will be "page--blog.tpl.php".
+   $vars['theme_hook_suggestions'][] = 'page__'. str_replace('_', '--', $vars['node']->type);
+  }
+  
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
