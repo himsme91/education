@@ -63,9 +63,10 @@
  * @see template_preprocess_page()
  * @see template_process()
  */
+
+drupal_add_css(drupal_get_path('theme', 'professional_theme') . '/lib/css/session.css', 'theme', 'all');
 ?>
 
-<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/professional_theme/lib/css/session.css">
 <div id="wrapper">
   <header id="header" role="banner">
     <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div><?php endif; ?>
