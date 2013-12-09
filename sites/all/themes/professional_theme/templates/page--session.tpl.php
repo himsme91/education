@@ -213,8 +213,8 @@ drupal_add_css(drupal_get_path('theme', 'professional_theme') . '/lib/css/sessio
         <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php dsm($page['content']);
-        //print render($page['content']); ?>
+        <?php //dsm($page['content']);
+        print render($page['content']); ?>
       </section> <!-- /#main -->
     </div>
   
