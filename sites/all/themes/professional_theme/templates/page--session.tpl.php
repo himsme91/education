@@ -65,6 +65,7 @@
  */
 ?>
 
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/professional_theme/lib/css/session.css">
 <div id="wrapper">
   <header id="header" role="banner">
     <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div><?php endif; ?>
